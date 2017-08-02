@@ -12,31 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'tg_get_demo_file_url' ) ) {
-
-	/**
-	 * Get a demo file URL.
-	 *
-	 * @param  string $demo_dir demo dir.
-	 * @return string the demo data file URL.
-	 */
-	function tg_get_demo_file_url( $demo_dir ) {
-		return apply_filters( 'themegrill_demo_file_url', get_template_directory_uri() . '/inc/demo-data/' . $demo_dir, $demo_dir );
-	}
-}
-
-if ( ! function_exists( 'tg_get_demo_file_path' ) ) {
-
-	/**
-	 * Get a demo file path.
-	 *
-	 * @param  string $demo_dir demo dir.
-	 * @return string the demo data file path.
-	 */
-	function tg_get_demo_file_path( $demo_dir ) {
-		return apply_filters( 'themegrill_demo_file_path', get_template_directory() . '/inc/demo-data/' . $demo_dir . '/dummy-data', $demo_dir );
-	}
-}
+// Include core functions (available in both admin and frontend).
+include_once( TGDM_ABSPATH . 'includes/functions-demo-update.php' );
 
 /**
  * Get an attachment ID from the filename.
@@ -82,6 +59,40 @@ function tg_get_attachment_id( $filename ) {
 
 	return $attachment_id;
 }
+
+/**
+ * Bulk plugin activation action.
+ */
+function tg_activate_bulk_plugin() {
+	if ( ! empty( $_REQUEST['bulk_action'] ) ) {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
+			wp_die( __( 'Sorry, you are not allowed to activate plugins for this site.', 'themegrill-demo-importer' ) );
+		}
+
+		check_admin_referer( 'bulk-plugins-activate' );
+
+		$plugins = isset( $_POST['checked'] ) ? (array) $_POST['checked'] : array();
+
+		if ( is_network_admin() ) {
+			foreach ( $plugins as $i => $plugin ) {
+				// Only activate plugins which are not already network activated.
+				if ( is_plugin_active_for_network( $plugin ) ) {
+					unset( $plugins[ $i ] );
+				}
+			}
+		} else {
+			foreach ( $plugins as $i => $plugin ) {
+				// Only activate plugins which are not already active and are not network-only when on Multisite.
+				if ( is_plugin_active( $plugin ) || ( is_multisite() && is_network_only_plugin( $plugin ) ) ) {
+					unset( $plugins[ $i ] );
+				}
+			}
+		}
+
+		activate_plugins( $plugins, '', is_network_admin() );
+	}
+}
+add_action( 'admin_init', 'tg_activate_bulk_plugin' );
 
 /**
  * Ajax handler for deleting a demo pack.
@@ -215,6 +226,32 @@ function tg_delete_demo_pack( $demo_pack, $redirect = '' ) {
 	return true;
 }
 
+if ( ! function_exists( 'tg_demo_installer_enabled' ) ) {
+
+	/**
+	 * Is demo installer enabled?
+	 * @return bool
+	 */
+	function tg_demo_installer_enabled() {
+		return apply_filters( 'themegrill_demo_importer_installer', true );
+	}
+}
+
+if ( ! function_exists( 'tg_demo_installer_preview' ) ) {
+
+	/**
+	 * Is demo installer preview filter?
+	 * @return bool
+	 */
+	function tg_demo_installer_preview() {
+		if ( tg_demo_installer_enabled() && isset( $_GET['browse'] ) ) {
+			return 'preview' === $_GET['browse'] ? true : false;
+		}
+
+		return false;
+	}
+}
+
 /**
  * Clear data before demo import AJAX action.
  *
@@ -346,4 +383,75 @@ function tg_set_wc_pages( $demo_id ) {
 
 	// We no longer need WC setup wizard redirect.
 	delete_transient( '_wc_activation_redirect' );
+}
+
+/**
+ * Prints the JavaScript templates for install admin notices.
+ *
+ * Template takes one argument with four values:
+ *
+ *     param {object} data {
+ *         Arguments for admin notice.
+ *
+ *         @type string id        ID of the notice.
+ *         @type string className Class names for the notice.
+ *         @type string message   The notice's message.
+ *         @type string type      The type of update the notice is for. Either 'plugin' or 'theme'.
+ *     }
+ *
+ * @since 1.4.0
+ */
+function tg_print_admin_notice_templates() {
+	?>
+	<script id="tmpl-wp-installs-admin-notice" type="text/html">
+		<div <# if ( data.id ) { #>id="{{ data.id }}"<# } #> class="notice {{ data.className }}"><p>{{{ data.message }}}</p></div>
+	</script>
+	<script id="tmpl-wp-bulk-installs-admin-notice" type="text/html">
+		<div id="{{ data.id }}" class="{{ data.className }} notice <# if ( data.errors ) { #>notice-error<# } else { #>notice-success<# } #>">
+			<p>
+				<# if ( data.successes ) { #>
+					<# if ( 1 === data.successes ) { #>
+						<# if ( 'plugin' === data.type ) { #>
+							<?php
+							/* translators: %s: Number of plugins */
+							printf( __( '%s plugin successfully installed.' ), '{{ data.successes }}' );
+							?>
+						<# } #>
+					<# } else { #>
+						<# if ( 'plugin' === data.type ) { #>
+							<?php
+							/* translators: %s: Number of plugins */
+							printf( __( '%s plugins successfully installed.' ), '{{ data.successes }}' );
+							?>
+						<# } #>
+					<# } #>
+				<# } #>
+				<# if ( data.errors ) { #>
+					<button class="button-link bulk-action-errors-collapsed" aria-expanded="false">
+						<# if ( 1 === data.errors ) { #>
+							<?php
+							/* translators: %s: Number of failed installs */
+							printf( __( '%s install failed.' ), '{{ data.errors }}' );
+							?>
+						<# } else { #>
+							<?php
+							/* translators: %s: Number of failed installs */
+							printf( __( '%s installs failed.' ), '{{ data.errors }}' );
+							?>
+						<# } #>
+						<span class="screen-reader-text"><?php _e( 'Show more details' ); ?></span>
+						<span class="toggle-indicator" aria-hidden="true"></span>
+					</button>
+				<# } #>
+			</p>
+			<# if ( data.errors ) { #>
+				<ul class="bulk-action-errors hidden">
+					<# _.each( data.errorMessages, function( errorMessage ) { #>
+						<li>{{ errorMessage }}</li>
+					<# } ); #>
+				</ul>
+			<# } #>
+		</div>
+	</script>
+	<?php
 }

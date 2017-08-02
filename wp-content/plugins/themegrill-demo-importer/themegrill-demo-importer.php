@@ -3,7 +3,7 @@
  * Plugin Name: ThemeGrill Demo Importer
  * Plugin URI: https://themegrill.com/demo-importer/
  * Description: Import your demo content, widgets and theme settings with one click for ThemeGrill official themes.
- * Version: 1.3.4
+ * Version: 1.4.0
  * Author: ThemeGrill
  * Author URI: https://themegrill.com
  * License: GPLv3 or later
@@ -26,7 +26,7 @@ final class ThemeGrill_Demo_Importer {
 	 * Plugin version.
 	 * @var string
 	 */
-	public $version = '1.3.4';
+	public $version = '1.4.0';
 
 	/**
 	 * Instance of this class.
@@ -79,8 +79,8 @@ final class ThemeGrill_Demo_Importer {
 		$upload_dir = wp_upload_dir();
 
 		$this->define( 'TGDM_PLUGIN_FILE', __FILE__ );
-		$this->define( 'TGDM_ABSPATH', dirname( __FILE__ ) . '/' );
-		$this->define( 'TGDM_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+		$this->define( 'TGDM_ABSPATH', dirname( TGDM_PLUGIN_FILE ) . '/' );
+		$this->define( 'TGDM_PLUGIN_BASENAME', plugin_basename( TGDM_PLUGIN_FILE ) );
 		$this->define( 'TGDM_VERSION', $this->version );
 		$this->define( 'TGDM_DEMO_DIR', $upload_dir['basedir'] . '/tg-demo-pack/' );
 		$this->define( 'TGDM_DEMO_URL', $upload_dir['baseurl'] . '/tg-demo-pack/' );
@@ -106,12 +106,13 @@ final class ThemeGrill_Demo_Importer {
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
 		// Register activation hook.
-		register_activation_hook( __FILE__, array( $this, 'install' ) );
+		register_activation_hook( TGDM_PLUGIN_FILE, array( $this, 'install' ) );
 
 		// Check with ThemeGrill theme is installed.
 		if ( in_array( get_option( 'template' ), $this->get_core_supported_themes() ) ) {
 			$this->includes();
 
+			add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
 			add_filter( 'plugin_action_links_' . TGDM_PLUGIN_BASENAME, array( $this, 'plugin_action_links' ) );
 			add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
 		} else {
@@ -124,12 +125,12 @@ final class ThemeGrill_Demo_Importer {
 	 * @return array
 	 */
 	private function get_core_supported_themes() {
-		$core_themes = array( 'spacious', 'colormag', 'flash', 'estore', 'ample', 'accelerate', 'colornews', 'foodhunt', 'fitclub', 'radiate', 'freedom', 'himalayas', 'esteem', 'envince', 'suffice', 'explore' );
+		$core_themes = array( 'spacious', 'colormag', 'flash', 'estore', 'ample', 'accelerate', 'colornews', 'foodhunt', 'fitclub', 'radiate', 'freedom', 'himalayas', 'esteem', 'envince', 'suffice', 'explore', 'masonic' );
 
 		// Check for core themes pro version :)
-		$pro_themes  = array_diff( $core_themes, array( 'explore', 'masonic' ) );
+		$pro_themes = array_diff( $core_themes, array( 'explore', 'masonic' ) );
 		if ( ! empty( $pro_themes ) ) {
-			$pro_themes = preg_filter( '/$/', '-pro', $pro_themes );
+			$pro_themes = preg_replace( '/$/', '-pro', $pro_themes );
 		}
 
 		return array_merge( $core_themes, $pro_themes );
@@ -140,7 +141,7 @@ final class ThemeGrill_Demo_Importer {
 	 */
 	private function includes() {
 		include_once( TGDM_ABSPATH . 'includes/class-demo-importer.php' );
-		include_once( TGDM_ABSPATH . 'includes/functions-demo-update.php' );
+		include_once( TGDM_ABSPATH . 'includes/functions-demo-importer.php' );
 
 		// Include valid demo packages config.
 		if ( false === strpos( get_option( 'template' ), '-pro' ) ) {
@@ -153,6 +154,13 @@ final class ThemeGrill_Demo_Importer {
 				}
 			}
 		}
+	}
+
+	/**
+	 * Template Functions - This makes them pluggable by plugins and themes.
+	 */
+	public function include_template_functions() {
+		include_once( TGDM_ABSPATH . 'includes/functions-demo-template.php' );
 	}
 
 	/**
@@ -198,7 +206,7 @@ final class ThemeGrill_Demo_Importer {
 		$locale = apply_filters( 'plugin_locale', get_locale(), 'themegrill-demo-importer' );
 
 		load_textdomain( 'themegrill-demo-importer', WP_LANG_DIR . '/themegrill-demo-importer/themegrill-demo-importer-' . $locale . '.mo' );
-		load_plugin_textdomain( 'themegrill-demo-importer', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'themegrill-demo-importer', false, plugin_basename( dirname( TGDM_PLUGIN_FILE ) ) . '/languages' );
 	}
 
 	/**
@@ -206,7 +214,7 @@ final class ThemeGrill_Demo_Importer {
 	 * @return string
 	 */
 	public function plugin_url() {
-		return untrailingslashit( plugins_url( '/', __FILE__ ) );
+		return untrailingslashit( plugins_url( '/', TGDM_PLUGIN_FILE ) );
 	}
 
 	/**
@@ -214,7 +222,7 @@ final class ThemeGrill_Demo_Importer {
 	 * @return string
 	 */
 	public function plugin_path() {
-		return untrailingslashit( plugin_dir_path( __FILE__ ) );
+		return untrailingslashit( plugin_dir_path( TGDM_PLUGIN_FILE ) );
 	}
 
 	/**
