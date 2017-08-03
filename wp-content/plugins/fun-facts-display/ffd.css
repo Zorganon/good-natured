@@ -1,3 +1,8 @@
-#funfacts {
- font-style: italic; 
+/*
+Name: funfacts-styles
+*/
+
+#funfact {
+ font-style: italic;
+ text-align: right;
 }

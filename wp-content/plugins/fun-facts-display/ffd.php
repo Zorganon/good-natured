@@ -27,7 +27,7 @@ function get_fun_facts() {
 
 function show_fun_fact() {
   $funfact = get_fun_facts();
-  echo "<p id='funfact'> $funfact </p>";
+  echo "<p id=funfact> $funfact </p>";
   
 }
 
