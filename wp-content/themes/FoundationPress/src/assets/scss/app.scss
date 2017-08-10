@@ -56,7 +56,9 @@
 /*
   My custom styles:
   Add your scss files below to structure your project styles
+  
 */
+
 
 // Glboal
 @import "global/_accessibility";
@@ -80,4 +82,76 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
-@import "templates/demosite"; // This template is used for the demosite. Feel free to remove.
+@import "templates/recipes";
+@import "templates/about";
+@import "templates/ingredients";
+
+
+$standardfont: 'Roboto', sans-serif;
+
+$logofont: 'Raleway', sans-serif;
+
+//site-wide styles
+
+
+body {
+  background-color: $light-background-color;
+}
+
+.nav-bar {
+  background-color: $dark-background-color;
+}
+
+//funfacts
+.funfact-container {
+  font-family: $standardfont;
+  color: white;
+  float: right;
+} 
+
+
+//info blocks
+.home-info-block{
+  
+}
+
+.home-info-block__image {
+  
+}
+
+.home-info-block__info-square {
+  
+}
+
+.home-info-block__info-square__title{}
+
+.home-info-block__info-square__bullet{}
+
+.home-info-block__info-square__view-more{}
+
+//recipe posts section
+.recipe-posts-wheel__title {
+  color: $titlecolor;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.5;  
+}
+
+.recipe-posts-wheel-tile {
+  
+}
+
+.recipe-posts-wheel-tile__image {
+  height: 399px;
+  width: 360px;
+}
+
+.recipe-posts-wheel-tile__title {
+	height: 32px;
+	width: 315.46px;
+	color: #0C0033;
+	font-family: Roboto;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+}

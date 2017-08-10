@@ -100,6 +100,14 @@ $global-prototype-breakpoints: false;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
+$standardfont: 'Roboto', sans-serif;
+$logofont: 'Raleway', sans-serif;
+$dark-nav-color: #2C3840;
+$light-background-color: #00AAAF;
+$dark-background-color: #407375;
+$title-color: #0C0033;
+
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
