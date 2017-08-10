@@ -16,6 +16,8 @@
 
 		<div class="site-branding__title">
 				<h1 class="site-branding__title__text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><b>good</b><i>natured</i><b>nutrition</b></a></h1>
+				<div class="funfact-container"></div>
 		</div>
+		
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->

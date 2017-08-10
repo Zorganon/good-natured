@@ -23,11 +23,15 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding__title">
+			<h1 class="site-branding__title__text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><b>good</b><i>natured</i><b>nutrition</b></a></h1>
+			<div class="funfact-container"><?php show_fun_fact() ?></div>
+		</div>
 		
 		<image class="banner-logo" src=<?php get_template_directory_uri()?>/assets/images/banner-logo.png ></image>
 

@@ -19,8 +19,9 @@ function get_fun_facts() {
  // get_results returns a numerically indexed array of row objects
   $results = $wpdb->get_results( 'SELECT * FROM wp_posts WHERE post_type = "funfact" ', OBJECT );
   // choose a random member of results array
-  $randomfunfactkey = array_rand($results, 1);
-  $funfactObject = $results[$randomfunfactkey];
+  //$randomfunfactkey = array_rand($results, 1);
+  //$funfactObject = $results[$randomfunfactkey];
+  $funfactObject = $results[array_rand($results, 1)];
   $funfactString = apply_filters( 'the_content', $funfactObject->post_content );
   return $funfactString;
 }
@@ -31,9 +32,4 @@ function show_fun_fact() {
   
 }
 
-add_action( 'wp_head', 'show_fun_fact' );
-
-function fun_fact_css() {
-  wp_enqueue_style( 'funfacts', 'ffd.css', false);
-}
-add_action( 'wp_enqueue_scripts', 'fun_fact_css');
+//add_action( 'wp_head', 'show_fun_fact' );
