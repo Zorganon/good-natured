@@ -6,17 +6,17 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-//@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-grid;
+@include foundation-flex-grid;
 
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
-// @include foundation-range-input;
+@include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
-@include foundation-badge;
+//@include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
@@ -24,7 +24,7 @@
 @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
-@include foundation-drilldown-menu;
+//@include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-responsive-embed;
@@ -33,19 +33,19 @@
 @include foundation-off-canvas;
 @include foundation-orbit;
 @include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
+//@include foundation-progress-bar;
+//@include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
 @include foundation-switch;
-@include foundation-table;
+//@include foundation-table;
 @include foundation-tabs;
 @include foundation-thumbnail;
 @include foundation-title-bar;
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-// @include foundation-float-classes;
+@include foundation-float-classes;
 @include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
@@ -71,6 +71,7 @@
 @import "modules/content";
 @import "modules/footer";
 @import "modules/editor-style";
+@import "modules/header";
 
 // Components
 @import "components/buttons";
@@ -93,65 +94,6 @@ $logofont: 'Raleway', sans-serif;
 
 //site-wide styles
 
-
-body {
-  background-color: $light-background-color;
-}
-
-.nav-bar {
-  background-color: $dark-background-color;
-}
-
-//funfacts
-.funfact-container {
-  font-family: $standardfont;
-  color: white;
-  float: right;
-} 
-
-
-//info blocks
-.home-info-block{
-  
-}
-
-.home-info-block__image {
-  
-}
-
-.home-info-block__info-square {
-  
-}
-
-.home-info-block__info-square__title{}
-
-.home-info-block__info-square__bullet{}
-
-.home-info-block__info-square__view-more{}
-
-//recipe posts section
-.recipe-posts-wheel__title {
-  color: $titlecolor;
-  font-size: 20px;
-  line-height: 32px;
-  opacity: 0.5;  
-}
-
-.recipe-posts-wheel-tile {
-  
-}
-
-.recipe-posts-wheel-tile__image {
-  height: 399px;
-  width: 360px;
-}
-
-.recipe-posts-wheel-tile__title {
-	height: 32px;
-	width: 315.46px;
-	color: #0C0033;
-	font-family: Roboto;
-	font-size: 20px;
-	line-height: 32px;
-	text-align: center;
+.body-content-container{
+  background-color: white;
 }

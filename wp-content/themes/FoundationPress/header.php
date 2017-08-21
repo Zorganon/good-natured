@@ -14,9 +14,10 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<?php wp_head(); ?>
 	</head>
-	<body class="container">
+	<body>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -25,40 +26,34 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header class="site-header" role="banner">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
-			<!--
-			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
-				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</span>
+	<header class="full-width site-header" role="banner">
+		
+		<div class="desktop-title-bar title-bar">
+			<div class="desktop-title-bar__logo float-left">
+				<image src="wp-content/themes/FoundationPress/src/assets/images/logo.png"></image>
 			</div>
-			-->
+			<div class="desktop-title-bar__funfact float-right" data-funfact="">
+				<p>is this on the page?</p>
+			</div>
 		</div>
-		<p> DOES THIS EVEN SHOWUP?</p>
-
-		<nav class="site-navigation top-bar nav-bar" role="navigation">
-			<div class="site-navigation__bar">
-				<a class="site-navigation__button button primary" href="#">HOME</a>
-				<a class="site-navigation__button button primary" href="#">ABOUT</a>
-				<a class="site-navigation__button button primary" href="#">RECIPES</a>
-				<a class="site-navigation__button button primary" href="#">LEARN</a>
-				<a class="site-navigation__button button primary" href="#">NEWS</a>
-				<a class="site-navigation__button button primary" href="#">CONTACT</a>
-			</div>
-				
-			<div class="site-desktop-title top-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
-
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
+		<div class="grid-container top-bar">
+			<nav class="site-navigation desktop-top-bar nav-bar" role="navigation">
+					<div class="site-navigation__bar">
+						<a class="site-navigation__button button large" href="#">HOME</a>
+						<a class="site-navigation__button button large" href="#">ABOUT</a>
+						<a class="site-navigation__button button large" href="#">RECIPES</a>
+						<a class="site-navigation__button button large" href="#">LEARN</a>
+						<a class="site-navigation__button button large" href="#">NEWS</a>
+						<a class="site-navigation__button button large" href="#">CONTACT</a>
+					</div>
+					
+	
+					<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+					<?php endif; ?>
+				</div>
+			</nav>
+		</div>
 		
 	</header>
 

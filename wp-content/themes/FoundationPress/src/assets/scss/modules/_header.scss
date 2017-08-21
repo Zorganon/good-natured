@@ -1,0 +1,14 @@
+.desktop-title-bar {
+  height: 122px;
+  color: $light-bg-color;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktop-title-bar__logo{
+  float: left;
+}
+
+.desktop-title-bar__funfact{
+  float: right;
+}

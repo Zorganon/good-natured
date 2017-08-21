@@ -75,9 +75,11 @@
 }
 
 .site-navigation__bar{
-  background-color: $dark-background-color;
+  background-color: $dark-bg-color;
 }
 
 .site-navigation__button {
-  
+  background-color: $dark-bg-color;
+  padding-left: 5px;
+  padding-right: 5px;
 }

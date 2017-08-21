@@ -53,3 +53,60 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+
+
+
+function recipe_slider_loop() {
+  global $post;
+  // arguments, adjust as needed
+  $args = array(
+  'post_type' => 'recipe',
+  'posts_per_page' => -1,
+  'post_status' => 'publish',
+  'paged' => get_query_var( 'paged' ),
+  );
+  // Use $loop, a custom variable we made up, so it doesn't overwrite anything
+  $loop = new WP_Query( $args );
+  // have_posts() is a wrapper function for $wp_query->have_posts(). Since we
+  // don't want to use $wp_query, use our custom variable instead.
+  if ( $loop->have_posts() ) : 
+    echo '<div class="recipe-image-slider">'; //adding in my containing div and Slick target
+    while ( $loop->have_posts() ) : $loop->the_post(); 
+      echo '<a href="' . get_the_permalink() . '"><div>'; //add in the link to the post
+      the_post_thumbnail( 'thumbnail' );//add in the featured image at a specific size
+      echo '<h5>' . get_the_title() . '</h5></div></a>';//add in the title of the post
+    endwhile;
+    echo '</div>';
+  endif;
+  // We only need to reset the $post variable. If we overwrote $wp_query,
+  // we'd need to use wp_reset_query() which does both.
+  wp_reset_postdata();
+}
+
+function news_slider_loop() {
+  global $post;
+  // arguments, adjust as needed
+  $args = array(
+  'post_type' => 'post',
+  'posts_per_page' => -1,
+  'post_status' => 'publish',
+  'paged' => get_query_var( 'paged' ),
+  );
+  // Use $loop, a custom variable we made up, so it doesn't overwrite anything
+  $loop = new WP_Query( $args );
+  // have_posts() is a wrapper function for $wp_query->have_posts(). Since we
+  // don't want to use $wp_query, use our custom variable instead.
+  if ( $loop->have_posts() ) : 
+    echo '<div class="news-image-slider">'; //adding in my containing div and Slick target
+    while ( $loop->have_posts() ) : $loop->the_post(); 
+      echo '<a href="' . get_the_permalink() . '"><div>'; //add in the link to the post
+      the_post_thumbnail( 'thumbnail' );//add in the featured image at a specific size
+      echo '<h5>' . get_the_title() . '</h5></div></a>';//add in the title of the post
+    endwhile;
+    echo '</div>';
+  endif;
+  // We only need to reset the $post variable. If we overwrote $wp_query,
+  // we'd need to use wp_reset_query() which does both.
+  wp_reset_postdata();
+}
+
