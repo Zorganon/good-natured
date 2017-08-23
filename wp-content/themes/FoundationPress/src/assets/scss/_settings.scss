@@ -77,16 +77,16 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
+$light-gray: #E7E7E7;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #0C0033;
 $white: #fefefe;
-$light-bg-color: #00AAAF;
-$dark-bg-color: #407375;
+$light-blue: #00AAAF;
+$pale-green: #CCD159;
 $light-font-color: #0C0033;
 $dark-font-color: #0C0033;
-$body-background: $light-bg-color;
+$body-background: $light-blue;
 $body-font-color: $dark-gray;
 $body-font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-antialiased: true;
@@ -820,7 +820,7 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $light-bg-color;
+$titlebar-background: $light-blue;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -847,7 +847,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0rem;
-$topbar-background: $dark-bg-color;
+$topbar-background: $light-blue;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

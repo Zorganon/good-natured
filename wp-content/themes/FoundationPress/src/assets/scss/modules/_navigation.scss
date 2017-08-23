@@ -75,11 +75,19 @@
 }
 
 .site-navigation__bar{
-  background-color: $dark-bg-color;
+  background-color: $light-blue;
 }
 
 .site-navigation__button {
-  background-color: $dark-bg-color;
+  background-color: $light-blue;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.site-navigation__button {
+  color: $white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
 }

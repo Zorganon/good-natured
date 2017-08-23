@@ -97,3 +97,23 @@ $logofont: 'Raleway', sans-serif;
 .body-content-container{
   background-color: white;
 }
+
+
+//section title
+
+.section-title-bar__title {
+  font-family: Roboto;
+  color: $black;
+  opacity: 0.5;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.section-title-bar__more {
+	opacity: 0.5;
+	color: $black;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: right;
+}
