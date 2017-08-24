@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="body-content-container">
 	
 	<div class="front-hero-slider">
-		
+		<p>I'm on the front page!</p>
 	</div>
 	<div class="divider"></div>
 	<!-- this is the recipe slider section -->

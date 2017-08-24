@@ -29,31 +29,41 @@
 	<header class="full-width site-header" role="banner">
 		
 		<div class="desktop-title-bar title-bar">
-			<div class="desktop-title-bar__logo float-left">
+			<div class="desktop-title-bar__logo">
 				<image src="wp-content/themes/FoundationPress/src/assets/images/logo.png"></image>
 			</div>
-			<div class="desktop-title-bar__funfact float-right" data-funfact="">
+			<div class="desktop-title-bar__funfact" data-funfact="">
 				<p>is this on the page?</p>
 			</div>
 		</div>
-		<div class="grid-container top-bar">
-			<nav class="site-navigation desktop-top-bar nav-bar" role="navigation">
-					<div class="site-navigation__bar">
-						<a class="site-navigation__button button large" href="#">HOME</a>
-						<a class="site-navigation__button button large" href="#">ABOUT</a>
-						<a class="site-navigation__button button large" href="#">RECIPES</a>
-						<a class="site-navigation__button button large" href="#">LEARN</a>
-						<a class="site-navigation__button button large" href="#">NEWS</a>
-						<a class="site-navigation__button button large" href="#">CONTACT</a>
+		<nav class="nav-container top-bar desktop-top-bar nav-bar" role="navigation">
+				<div class="site-navigation__bar grid-container">
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">HOME</a>
 					</div>
-					
-	
-					<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-					<?php endif; ?>
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">ABOUT</a>
+					</div>
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">RECIPES</a>
+					</div>
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">LEARN</a>
+					</div>
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">NEWS</a>
+					</div>
+					<div class="columns medium-2">
+						<a class="site-navigation__button button large column medium-2" href="#">CONTACT</a>
+					</div>
 				</div>
-			</nav>
-		</div>
+				
+
+				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+				<?php endif; ?>
+			</div>
+		</nav>
 		
 	</header>
 
