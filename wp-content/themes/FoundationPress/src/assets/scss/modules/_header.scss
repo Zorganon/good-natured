@@ -1,7 +1,6 @@
 .desktop-title-bar {
   height: 122px;
-  width: 80%;
-  color: $light-blue;
+  color: white;
 }
 
 .desktop-title-bar__logo{
@@ -10,5 +9,9 @@
 
 .desktop-title-bar__funfact{
   float: right;
+  text-align: right;
+  color: white;
+  max-height: 100%;
+  max-width: 100%;
 }
 

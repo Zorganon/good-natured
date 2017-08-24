@@ -74,14 +74,17 @@
   float:right;
 }
 
+//custom styles
+
 .site-navigation__bar{
   background-color: $light-blue;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-navigation__button {
   background-color: $light-blue;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .site-navigation__button {

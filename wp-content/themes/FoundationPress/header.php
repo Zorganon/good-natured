@@ -26,35 +26,38 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header class="full-width site-header" role="banner">
-		
-		<div class="desktop-title-bar title-bar">
-			<div class="desktop-title-bar__logo">
-				<image src="wp-content/themes/FoundationPress/src/assets/images/logo.png"></image>
+	<header class="full-width site-header grid-container" role="banner">
+		<div class="desktop-title-bar title-bar grid-x">
+			<div class="cell small-12 medium-6">
+				<div class="desktop-title-bar__logo">
+					<image src="wp-content/themes/FoundationPress/src/assets/images/logo.png"></image>
+				</div>
 			</div>
-			<div class="desktop-title-bar__funfact" data-funfact="">
-				<p>is this on the page?</p>
+			<div class="cell hide-for-small-only medium-3 medium-offset-3">
+				<div class="desktop-title-bar__funfact">
+					<?php show_fun_fact(); ?>
+				</div>
 			</div>
 		</div>
-		<nav class="nav-container top-bar desktop-top-bar nav-bar" role="navigation">
-				<div class="site-navigation__bar grid-container">
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">HOME</a>
+		<nav class="nav-container site-navigation top-bar desktop-top-bar nav-bar" role="navigation">
+				<div class="site-navigation__bar grid-x">
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="/front.php">HOME</a>
 					</div>
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">ABOUT</a>
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="#">ABOUT</a>
 					</div>
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">RECIPES</a>
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="#">RECIPES</a>
 					</div>
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">LEARN</a>
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="#">LEARN</a>
 					</div>
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">NEWS</a>
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="#">NEWS</a>
 					</div>
-					<div class="columns medium-2">
-						<a class="site-navigation__button button large column medium-2" href="#">CONTACT</a>
+					<div class="cell medium-2">
+						<a class="site-navigation__button button large" href="#">CONTACT</a>
 					</div>
 				</div>
 				
