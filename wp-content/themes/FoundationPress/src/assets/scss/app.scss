@@ -81,7 +81,7 @@
 @import "components/links";
 
 // Templates
-@import "templates/front";
+@import "templates/front-page";
 @import "templates/kitchen-sink";
 @import "templates/recipes";
 @import "templates/about";
@@ -93,15 +93,25 @@ $standardfont: 'Roboto', sans-serif;
 $logofont: 'Raleway', sans-serif;
 
 //site-wide styles
+.page-container {
+  background-color: $light-blue;
+}
 
 .body-content-container{
   background-color: white;
+  width: 80%;
 }
 
+.scroll-down-divider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 //section title
 
-.section-title-bar__title {
+.section-title-text {
   font-family: Roboto;
   color: $black;
   opacity: 0.5;
@@ -109,7 +119,7 @@ $logofont: 'Raleway', sans-serif;
   line-height: 32px;
 }
 
-.section-title-bar__more {
+.section-more-text {
 	opacity: 0.5;
 	color: $black;
 	font-family: Roboto;
