@@ -5,4 +5,5 @@ Name: funfacts-styles
 #funfact {
  font-style: italic;
  text-align: right;
+ float: right;
 }

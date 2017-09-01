@@ -33,7 +33,7 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <p>this is the end of the footer</p>
 <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+    document.write("<script async src='http://HOST:8081/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
 //]]></script>
 </body>
 </html>

@@ -13,16 +13,20 @@ get_header(); ?>
 		<div class="front-hero-slider-container hero-container centered-content">
 			<image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 		</div>
-		<div class="divider scroll-down-divider">
-			<image src="wp-content/themes/FoundationPress/src/assets/images/scroll-down.png" class="centered-content"></image>
+		<div class="divider-container">
+			<div class="scroll-down-divider">
+				<image src="wp-content/themes/FoundationPress/src/assets/images/scroll-down.png" class="centered-content"></image>
+			</div>
 		</div>
 		<!-- this is the recipe slider section -->
 		<section class="recipe-slider">
-			<div class="recipe-slider__title section-title-text float-left">
-				<p>RECIPES & NUTRITION</p>
-			</div>
-			<div class="section-more-text float-right">
-				<a href="/recipes">SEE ALL</p>
+			<div class="recipe-slider__topbar">
+				<div class="recipe-slider__title section-title-text float-left">
+					RECIPES & NUTRITION
+				</div>
+				<div class="section-more-text float-right">
+					<a href="/recipes">SEE ALL</a>
+				</div>
 			</div>
 			<div class="recipe-slider__slider">
 				<!-- inserts class recipe-image-slider -->
