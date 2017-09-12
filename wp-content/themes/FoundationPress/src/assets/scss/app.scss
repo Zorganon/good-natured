@@ -96,11 +96,6 @@ $logofont: 'Raleway', sans-serif;
 
 //site-wide styles
 
-.centered-content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .page-container {
   background-color: $light-blue;
 }
@@ -108,6 +103,8 @@ $logofont: 'Raleway', sans-serif;
 .body-content-container{
   background-color: white;
   max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scroll-down-divider {

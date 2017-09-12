@@ -31,7 +31,7 @@ get_header(); ?>
 			<div class="recipe-slider__slider">
 				<!-- inserts class recipe-image-slider -->
 				<!-- placeholder for recipe_slider_loop()  -->
-				<div style='width: 80%; height: 540px; background-color: white;'></div>
+				<div></div>
 			</div>
 		</section>
 		
