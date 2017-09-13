@@ -30,7 +30,7 @@
 		<div class="desktop-title-bar title-bar grid-x">
 			<div class="cell small-12 medium-6">
 				<div class="desktop-title-bar__logo">
-					<image src="wp-content/themes/FoundationPress/src/assets/images/logo.png"></image>
+					<image src="wp-content/themes/FoundationPress/src/assets/images/logo_fullsize.png"></image>
 				</div>
 			</div>
 			<div class="cell hide-for-small-only medium-3 medium-offset-3">
