@@ -18,22 +18,7 @@ get_header(); ?>
 				<image src="wp-content/themes/FoundationPress/src/assets/images/scroll-down.png" class="centered-content"></image>
 			</div>
 		</div>
-		<!-- this is the recipe slider section -->
-		<section class="recipe-slider">
-			<div class="recipe-slider__topbar flex-container align-justify">
-				<div class="recipe-slider__title section-title-text">
-					RECIPES & NUTRITION
-				</div>
-				<div class="recipe-slider__more-text section-more-text">
-					<a href="/recipes">SEE ALL</a>
-				</div>
-			</div>
-			<div class="recipe-slider__slider">
 				<!-- inserts class recipe-image-slider -->
-				<!-- placeholder for recipe_slider_loop()  -->
-				<div></div>
-			</div>
-		</section>
 		
 		<div class="divider"></div>
 		

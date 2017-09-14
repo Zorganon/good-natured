@@ -32,8 +32,5 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <p>this is the end of the footer</p>
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:8081/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
-//]]></script>
 </body>
 </html>

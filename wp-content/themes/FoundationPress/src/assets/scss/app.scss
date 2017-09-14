@@ -6,8 +6,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-//@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-grid;
+@include foundation-flex-grid;
 
 @include foundation-xy-grid-classes;
 @include foundation-typography;
@@ -84,11 +84,10 @@
 @import "templates/kitchen-sink";
 
 //pages
-@import "../../../src/assets/scss/templates/front-page";
 @import "templates/front-page";
-@import "../../../src/assets/scss/templates/recipes";
-@import "../../../src/assets/scss/templates/about";
-@import "../../../src/assets/scss/templates/ingredients";
+@import "templates/recipes";
+@import "templates/about";
+@import "templates/ingredients";
 
 $standardfont: 'Roboto', sans-serif;
 
@@ -101,7 +100,7 @@ $logofont: 'Raleway', sans-serif;
 }
 
 .body-content-container{
-  background-color: white;
+  background-color: $white;
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;

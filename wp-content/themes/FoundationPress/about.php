@@ -20,11 +20,11 @@ get_header(); ?>
 		</div>
 		<!-- this is the recipe slider section -->
 		<section class="recipe-slider">
-			<div class="recipe-slider__topbar flex-container align-justify">
-				<div class="recipe-slider__title section-title-text">
+			<div class="recipe-slider__topbar">
+				<div class="recipe-slider__title section-title-text float-left">
 					RECIPES & NUTRITION
 				</div>
-				<div class="recipe-slider__more-text section-more-text">
+				<div class="section-more-text float-right">
 					<a href="/recipes">SEE ALL</a>
 				</div>
 			</div>

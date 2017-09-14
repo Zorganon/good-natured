@@ -42,7 +42,7 @@
 		<nav class="nav-container site-navigation top-bar desktop-top-bar nav-bar" role="navigation">
 				<div class="site-navigation__bar grid-x">
 					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="/front.php">HOME</a>
+						<a class="site-navigation__button button large" href="/front-page.php">HOME</a>
 					</div>
 					<div class="cell medium-2">
 						<a class="site-navigation__button button large" href="#">ABOUT</a>
