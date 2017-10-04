@@ -27,7 +27,7 @@ function loadConfig() {
 
 // Enter URL of your local server here
 // Example: 'http://localhost:8888'
-var URL = '';
+var URL = 'http://localhost:8080';
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
@@ -136,3 +136,4 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
 }
+

@@ -34,9 +34,7 @@
 				</div>
 			</div>
 			<div class="cell hide-for-small-only medium-3 medium-offset-3">
-				<div class="desktop-title-bar__funfact">
-					<?php show_fun_fact(); ?>
-				</div>
+				<a type='button' class="button large" href="#"></a>
 			</div>
 		</div>
 		<nav class="nav-container site-navigation top-bar desktop-top-bar nav-bar" role="navigation">
