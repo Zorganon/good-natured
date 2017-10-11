@@ -9,19 +9,17 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 import './lib/demosite';
-
+var $jq = jQuery.noConflict();
 $(document).foundation();
 
-$(document).ready(function(){
-  $('.hero-slider').slick();
+$jq(document).ready(function(){
   
-  $('.recipe-image-slider').slick({
+  $jq('.recipe-slider__slider').slick({
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
           infinite: true,
           dots: true
         }
@@ -30,26 +28,23 @@ $(document).ready(function(){
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
         }
       },
       {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
         }
       }
     ]
   });
   
-  $('.news-image-slider').slick({
+  $jq('.blog-slider__slider').slick({
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
           infinite: true,
           dots: true
         }
@@ -58,14 +53,12 @@ $(document).ready(function(){
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
         }
       },
       {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
         }
       }
     ]

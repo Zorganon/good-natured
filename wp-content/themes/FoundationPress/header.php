@@ -14,7 +14,8 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="wp-content/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="wp-content/slick/slick-theme.css"/>
 		<?php wp_head(); ?>
 	</head>
 	<body>

@@ -55,7 +55,11 @@ get_header(); ?>
 			</div>
 		</div>
 <!-- end of blog section -->
-
+		<div class="recipe-slider__slider">
+			<div><p>Test slide 1</p></div>
+			<div><p>Test Slide 2</p></div>
+			<div><p>Test Slide 3</p></div>
+		</div>
 <!-- Blog slider section -->
 
 		<div class="blog-slider-container">
@@ -72,23 +76,6 @@ get_header(); ?>
 			</div>
 			
 		</div>
-		<!-- this is the Billboard facts section -->
-		<section class="billboard-info-card-container">
-			<!-- pull info-card template -->
-			<?php get_template_part( 'info-card' ); ?>
-		</section>
-		
-		<divider></divider>
-		
-		<section class="news-blog-container">
-			<div class="news-blog__title">
-				
-			</div>
-			<div class="news-blog__slider">
-				<!-- inserts class news-image-slider -->
-				<!-- php news_slider_loop() -->
-			</div>
-		</section>
 		
 		
 		<?php do_action( 'foundationpress_after_content' ); ?>
