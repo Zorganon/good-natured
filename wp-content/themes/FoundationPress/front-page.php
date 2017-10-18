@@ -20,30 +20,37 @@ get_header(); ?>
 <!-- end hero slider -->		
 		<div class="divider"></div>
 <!-- About Jan info Card -->
-		<div class="about-infocard-container">
-			<div class="about-infocard__top-border"></div>
-			<div class="about-infocard__image">
-				<image></image>
+		<div class="about-infocard-container row">
+			<div class="about-infocard__image small-4 columns">
+				<image src="wp-content/themes/FoundationPress/src/assets/images/about-info-image.png"></image>
 			</div>
-			<div class="about-infocard__title"></div>
-			<div class="about-infocard__content"></div>
-			<div class="about-infocard__button"></div>
-			<div class="about-infocard__bottom-border"></div>
+			<div class="about-infocard__content-box small-8 columns">
+				<div class="about-infocard__title">I'm Janet Bailey</div>
+				<div class="about-infocard__content"><p>I’m a firm believer in the old adage “you are what you eat”.  I have a degree in Anatomy and Physiology, have taught Human Biology and have a Diploma in Nutritional Therapy.</p></div>
+				<div class="about-infocard__button">MORE ABOUT JANET</div>
+			</div>
 		</div>
 <!-- end of About infoCard -->
 		<div class="divider"></div>
 		
 <!-- random infoCard section -->
 
-		<div class="infocard-1-container grid-container">
-			<div class="infocard-1__content container">
-				<div class="infocard-1__header"></div>
-				<div class="infocard-1__bullets"></div>
-				<div class="infocard-1__button"></div>
+		<div class="infocard-1-container row">
+			<div class="infocard-1__content-container columns small-12 medium-4">
+				<div class="infocard-1__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
+				<div class="infocard-1__bullets">
+					<p>Analyze dietary habits and address nutritional gaps</p>
+					<p>Create menu plans full of delicious, whole foods tailored to individual health needs</p>
+					<p>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</p>
+				</div>
+				<div class="infocard-1__button button button-primary">
+					<a  href="/about">LEARN MORE</a>
+				</div>
 			</div>
-			<div class="infocard-1__image-container">
-				<div class="infocard-1__image-1"></div>
-				<div class="infocard-1__image-2"></div>
+			<div class="infocard-1__image-container columns small-12 medium-4">
+				<div class="infocard-1__image">
+					<image src="wp-content/themes/FoundationPress/src/assets/images/infocard1.png"></image>
+				</div>
 			</div>
 		</div>
 <!-- end of first infoCard section -->
