@@ -39,9 +39,11 @@ get_header(); ?>
 			<div class="infocard-1__content-container columns small-12 medium-4">
 				<div class="infocard-1__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
 				<div class="infocard-1__bullets">
-					<p>Analyze dietary habits and address nutritional gaps</p>
-					<p>Create menu plans full of delicious, whole foods tailored to individual health needs</p>
-					<p>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</p>
+					<ul>
+						<li>Analyze dietary habits and address nutritional gaps</li>
+						<li>Create menu plans full of delicious, whole foods tailored to individual health needs</li>
+						<li>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</li>
+					</ul>
 				</div>
 				<div class="infocard-1__button button button-primary">
 					<a  href="/about">LEARN MORE</a>

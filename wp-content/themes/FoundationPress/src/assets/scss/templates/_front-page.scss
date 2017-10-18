@@ -54,6 +54,10 @@
     font-size: 16px;
 }
 
+.infocard-1-container{
+    max-width: 87%;
+}
+
 .infocard-1__header{
     color: #2F5658;
     font-family: Average;
@@ -63,8 +67,14 @@
 
 .infocard-1__bullets{
     color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
+    opacity: 50%;
     
 }
 .infocard-1__button{
-    
+    opacity: 50%;
+    color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
 }
