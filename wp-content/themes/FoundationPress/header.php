@@ -27,36 +27,33 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header class="full-width site-header grid-container" role="banner">
-		<div class="desktop-title-bar title-bar grid-x">
-			<div class="cell small-12 medium-6">
+	<header class="full-width site-header" role="banner">
+		<div class="desktop-title-bar title-bar row">
+			<div class="column small-12 medium-6">
 				<div class="desktop-title-bar__logo">
 					<image src="wp-content/themes/FoundationPress/src/assets/images/logo_fullsize.png"></image>
 				</div>
 			</div>
-			<div class="cell hide-for-small-only medium-3 medium-offset-3">
+			<div class=" hide-for-small-only medium-3 medium-offset-3">
 				<a type='button' class="button large" href="#"></a>
 			</div>
 		</div>
 		<nav class="nav-container site-navigation top-bar desktop-top-bar nav-bar" role="navigation">
-				<div class="site-navigation__bar grid-x">
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="/front-page.php">HOME</a>
+				<div class="site-navigation__bar row">
+					<div class="column small-2">
+						<a class="site-navigation__button button large" href="/home">HOME</a>
 					</div>
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="#">ABOUT</a>
+					<div class="column small-2">
+						<a class="site-navigation__button button large" href="/about">ABOUT</a>
 					</div>
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="#">RECIPES</a>
+					<div class="column small-2">
+						<a class="site-navigation__button button large" href="/recipes">RECIPES</a>
 					</div>
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="#">LEARN</a>
+					<div class="column small-2">
+						<a class="site-navigation__button button large" href="/news">NEWS</a>
 					</div>
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="#">NEWS</a>
-					</div>
-					<div class="cell medium-2">
-						<a class="site-navigation__button button large" href="#">CONTACT</a>
+					<div class="column small-2">
+						<a class="site-navigation__button button large" href="/contact">CONTACT</a>
 					</div>
 				</div>
 				

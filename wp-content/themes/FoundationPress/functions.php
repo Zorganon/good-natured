@@ -116,12 +116,13 @@ function show_price_tile( $postid ) {
   global $wpdb;
   //get_results returns a numerically indexed array of row objects
   $serviceObject = $wpdb->get_results( 'SELECT * FROM wp_posts WHERE post_id = $postid', OBJECT );
-  
-  $servicePrice = apply_filters( 'the_price', $serviceObject->post_price );
-  $serviceName = apply_filters( 'the_title', $serviceObject->post_title );
+  $field_slug = "wpcf-price";
+  $servicePrice = get_post_meta($serviceObject->ID, $field_slug, true);
   $serviceContent = apply_filters( 'the_content', $serviceObject->post_content );
   
-  echo "<div class='price-tile__service'>$serviceName</div>";
-  echo "<p class='price-tile__price'> $servicePrice </p>";
-  echo "<p class='price-tile__text'> $serviceContent </p>";
+  echo "<div class='price-tile__service'>" . $serviceObject->the_title . "</div>";
+  echo "<p class='price-tile__price'>" . $servicePrice . "</p>";
+  echo "<p class='price-tile__text'>" . $serviceObject->the_content . "</p>";
+  wp_reset_postdata();
 }
+
