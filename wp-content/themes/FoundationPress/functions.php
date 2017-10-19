@@ -110,3 +110,18 @@ function news_slider_loop() {
   wp_reset_postdata();
 }
 
+
+// function for pulling prices to display on the about page
+function show_price_tile( $postid ) {
+  global $wpdb;
+  //get_results returns a numerically indexed array of row objects
+  $serviceObject = $wpdb->get_results( 'SELECT * FROM wp_posts WHERE post_id = $postid', OBJECT );
+  
+  $servicePrice = apply_filters( 'the_price', $serviceObject->post_price );
+  $serviceName = apply_filters( 'the_title', $serviceObject->post_title );
+  $serviceContent = apply_filters( 'the_content', $serviceObject->post_content );
+  
+  echo "<div class='price-tile__service'>$serviceName</div>";
+  echo "<p class='price-tile__price'> $servicePrice </p>";
+  echo "<p class='price-tile__text'> $serviceContent </p>";
+}

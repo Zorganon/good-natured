@@ -52,26 +52,18 @@ get_header(); ?>
 	  	</div>
 	  </div>
 <!---- Price Tiles ---->
-	  <div class="price-tile__container">
-	  	<div class="price-tile">
-	  		<div class="price-tile__service">FREE PHONE</div>
-	  		<div class="price-tile__price"></div>
-	  		<div class="price-tile__text">Unsure? Your initial phone consultation is <free></free></div>
+	  <div class="price-tile-container row">
+	  	<div class="price-tile-1 column small-6 medium-3">
+	  		<?php show_price_tile( 4 ); ?>
 	  	</div>
-	  	<div class="price-tile">
-	  		<div class="price-tile__service">CONSULTATION</div>
-	  		<div class="price-tile__price"></div>
-	  		<div class="price-tile__text">One and a half hours</div>
+	  	<div class="price-tile column small-6 medium-3">
+	  		<?php show_price_tile( 6 ); ?>
 	  	</div>
-	  	<div class="price-tile">
-	  		<div class="price-tile__service">FOLLOW UP</div>
-	  		<div class="price-tile__price"></div>
-	  		<div class="price-tile__text">Half an hour</div>
+	  	<div class="price-tile column small-6 medium-3">
+	  		<?php show_price_tile( 7 ); ?>
 	  	</div>
-	  	<div class="price-tile">
-	  		<div class="price-tile__service">FOLLOW UP</div>
-	  		<div class="price-tile__price"></div>
-	  		<div class="price-tile__text">One Hour</div>
+	  	<div class="price-tile column small-6 medium-3">
+	  		<?php show_price_tile( 8 ); ?>
 	  	</div>
 	  </div>
 <!---- featured blog article? --->
@@ -84,7 +76,20 @@ get_header(); ?>
 		</div>
 		
 <!--- nutritional Therapy blurb ---->
-	<div class=""
+	<div class="nutritional-therapy-blurb-container">
+		<div class="nutritional-therapy-blurb__title"></div>
+		<div class="nutritional-therapy-blurb__benefits row">
+			<ul class="column small-12 medium-6">
+				<li>Weight Management</li>
+				<li>Energy Levels</li>
+				<li>Stress Management</li>
+			</ul>
+			<ul class="column small-12 medium-6">
+				<li>Food Cravings</li>
+				<li>Skin Conditions</li>
+				<li>Digestive Disorders</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <?php get_footer();
