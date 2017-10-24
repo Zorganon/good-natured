@@ -29,4 +29,7 @@ get_header(); ?>
 	  </div>
 	  
   </div>
+  
+	<?php do_action( 'foundationpress_after_content' ); ?>
 </div>
+<?php get_footer();

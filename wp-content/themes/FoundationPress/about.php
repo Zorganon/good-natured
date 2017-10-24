@@ -11,11 +11,11 @@ get_header(); ?>
 	    
 	  </div>
 	  <div class="blurb-divider">
-	    
+	    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
 	  </div>
 	  <div class="about-janet-container">
 	    <div class="about-janet__text-box">
-	    	<div class="about-janet__title"></div>
+	    	<div class="about-janet__title">About Janet</div>
 	    	<div class="about-janet__title-underscore"></div>
 	    	<div class="about-janet__text">
 	    		<p>I have had a life long interest in healthy eating, was vegetarian for a long period, and now look to using fresh local whole foods as the basis of my diet.</p>
@@ -24,7 +24,9 @@ get_header(); ?>
 					<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
 	    	</div>
 	    </div>
-	    <div class="about-janet__image"></div>
+	    <div class="about-janet__image">
+	    	<image src="wp-content/themes/FoundationPress/aboutjanet.png"></image>
+	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
 	  <div class="unsure-blurb-box">

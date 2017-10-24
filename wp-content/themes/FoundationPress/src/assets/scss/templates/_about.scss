@@ -1,8 +1,13 @@
 .about-hero-img{
   
 }
-.about-blurb-divider{
-  
+.about-blurb-divider p{
+  opacity: 50%;
+  font-family: Average, serif;
+  font-size: 33px;
+  line-height: 54px;
+  text-align: center;
+  color: #0C0033;
 }
 .about-janet-container{
   
@@ -11,12 +16,17 @@
   
 }
 .about-janet__title{
-  
+  color: #2F5658;
+  font-size: 35px;
+  line-height: 42px;
 }
 .about-janet__title-underscore{
   
 }
-.about-janet__text{
+.about-janet__text p{
+    color: #0C0033;
+    font-size: 17px;
+    font-family: Average, serif;
   
 }
 .about-janet__image{

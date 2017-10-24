@@ -27,7 +27,7 @@ get_header(); ?>
 			<div class="about-infocard__content-box small-8 columns">
 				<div class="about-infocard__title">I'm Janet Bailey</div>
 				<div class="about-infocard__content"><p>I’m a firm believer in the old adage “you are what you eat”.  I have a degree in Anatomy and Physiology, have taught Human Biology and have a Diploma in Nutritional Therapy.</p></div>
-				<div class="about-infocard__button">MORE ABOUT JANET</div>
+				<a class="about-infocard__button button" href="/about">MORE ABOUT JANET</a>
 			</div>
 		</div>
 <!-- end of About infoCard -->
@@ -45,8 +45,8 @@ get_header(); ?>
 						<li>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</li>
 					</ul>
 				</div>
-				<div class="infocard-1__button button button-primary">
-					<a  href="/about">LEARN MORE</a>
+				<div class="infocard-1__button">
+					<a class="button" href="/about">LEARN MORE</a>
 				</div>
 			</div>
 			<div class="infocard-1__image-container columns small-12 medium-4">
@@ -59,19 +59,20 @@ get_header(); ?>
 
 <!-- blog excerpt section -->
 		<div class="blog-sample-container">
-			<div class="blog-sample__box">
-				<?php get_template_part( 'blog-excerpt-post' ); ?>
+			<div class="blog-sample__box-wrapper">
+				<div class="blog-sample__box">
+					<?php get_template_part( 'blog-excerpt-post' ); ?>
+				</div>
 			</div>
 		</div>
 <!-- end of blog section -->
-		<div class="recipe-slider__slider">
-			<div><p>Test slide 1</p></div>
-			<div><p>Test Slide 2</p></div>
-			<div><p>Test Slide 3</p></div>
-		</div>
+
 <!-- Blog slider section -->
 
 		<div class="blog-slider-container">
+			<div class="blog-slider__more-button">
+				<button class="button" href="/news">News and Views</button>
+			</div>
 			<div class="blog-slider__wrapper">
 				<?php get_template_part( 'blog-slider' ); ?>
 			</div>
