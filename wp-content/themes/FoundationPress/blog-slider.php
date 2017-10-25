@@ -1,26 +1,19 @@
 <div class="blog-slider__slider">
-	<?php 
-	  $args = array(
-      'post_type'=>'post'
-    );
+	<?php $args = array('post_type'=>'post');
 
-    $blog=new WP_Query($args);
+    $loop = new WP_Query($args);
 
-    while ($blog->have_posts()) : $blog->the_post(); 
+    while ($loop->have_posts()) : $loop->the_post(); 
 	?>
     <div class="blog-slider__post-tile">
       <div class="blog-slider__post-img">
-        <?php the_post_thumbnail( 'medium-large' ); ?>
+        <?php echo the_post_thumbnail( 'medium-large' ); ?>
       </div>
-      
       <div class="blog-slider__post-tile__title">
         <p>
-          <?php
-            echo the_title();
-          ?>
+          <?php echo the_title(); ?>
         </p>
       </div>
-      
     </div>
   <?php 
     endwhile;

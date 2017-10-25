@@ -9,6 +9,8 @@ get_header(); ?>
 	<div class="body-content-container">
 	  <div class="r-seeall-button"></div>
 	  <div class="recipe-post-blurb-container">
+	  	<?php if( $recipes ): ?>
+	  	<?php foreach( $recipes as $recipe); ?>
 	    <div class="recipe-post__title"><?php insert title ?></div>
 	    <div class="recipe-post__tags-list"><?php insert tags ?></div>
 	    <div class="recipe-post-blurb__row row">

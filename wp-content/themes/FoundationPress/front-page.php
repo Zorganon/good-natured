@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="page-container">
 	<div class="body-content-container">
 <!-- Hero Slider -->
-		<div class="front-hero-slider-container hero-container centered-content">
+		<div class="front-hero-slider-container hero-container">
 			<image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 		</div>
 		<div class="divider-container flex-container align-center">
@@ -61,7 +61,7 @@ get_header(); ?>
 		<div class="blog-sample-container">
 			<div class="blog-sample__box-wrapper">
 				<div class="blog-sample__box">
-					<?php get_template_part( 'blog-excerpt-post' ); ?>
+					<?php get_template_part( 'blog-excerpt' ); ?>
 				</div>
 			</div>
 		</div>
@@ -70,45 +70,23 @@ get_header(); ?>
 <!-- Blog slider section -->
 
 		<div class="blog-slider-container">
-			<div class="blog-slider__more-button">
-				<button class="button" href="/news">News and Views</button>
-			</div>
 			<div class="blog-slider__wrapper">
 				<?php get_template_part( 'blog-slider' ); ?>
 			</div>
+			<a class="blog-slider__more-button button" href="/news">News and Views</a>
 		</div>
 
 <!-- recipe slider section -->
 		
 		<div class="recipe-slider-container">
 			<div class="recipe-slider__wrapper">
-				<?php get_template_part( 'recipe-slider' ); ?>
+				<?php get_template_part( 'recipe', 'slider' ); ?>
 			</div>
+			<a class="recipe-slider__more-button button" href="/recipes">View Recipes</a>
 			
 		</div>
 		
-		
 		<?php do_action( 'foundationpress_after_content' ); ?>
-		
-		<divider></divider>
-	
-		<!-- this is the recipe slider section -->
-		<section class="recipe-slider">
-			<div class="recipe-slider__topbar flex-container align-justify">
-				<div class="recipe-slider__title section-title-text">
-					RECIPES & NUTRITION
-				</div>
-				<div class="recipe-slider__more-text section-more-text">
-					<a href="/recipes">SEE ALL</a>
-				</div>
-			</div>
-				<!-- inserts class recipe-image-slider -->
-			<?php get_template_part( 'recipe-slider' ); ?>
-				<!-- placeholder for recipe_slider_loop()  -->
-		</section>
-		
-	
-	<p>this is the end of the page template</p>
 	</div>
 </div>
 <?php get_footer();
