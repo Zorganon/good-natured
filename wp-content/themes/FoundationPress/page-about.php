@@ -8,24 +8,24 @@ get_header(); ?>
 <div class="page-container">
 	<div class="body-content-container">
 	  <div class="about-hero-img">
-	    <image></image>
+	    <image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 	  </div>
-	  <div class="blurb-divider">
+	  <div class="about-blurb-divider">
 	    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
 	  </div>
-	  <div class="about-janet-container">
-	    <div class="about-janet__text-box">
+	  <div class="about-janet-container row">
+	    <div class="about-janet__text-box column small-12 medium-6">
 	    	<div class="about-janet__title">About Janet</div>
 	    	<div class="about-janet__title-underscore"></div>
 	    	<div class="about-janet__text">
 	    		<p>I have had a life long interest in healthy eating, was vegetarian for a long period, and now look to using fresh local whole foods as the basis of my diet.</p>
-					<p>I live and work in Crediton, Devon, and am a therapist at Crediton Complimentary Health Centre.  My clients visit me from Exeter, Okehampton, and surrounding towns and villages.</p>
-					<p>I have strong links with local food suppliers, through the Farmers’ Markets in Crediton and Exeter, and through my association with Linscombe Farm, an award winning organic vegetable farm.</p>
-					<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
+				<p>I live and work in Crediton, Devon, and am a therapist at Crediton Complimentary Health Centre.  My clients visit me from Exeter, Okehampton, and surrounding towns and villages.</p>
+				<p>I have strong links with local food suppliers, through the Farmers’ Markets in Crediton and Exeter, and through my association with Linscombe Farm, an award winning organic vegetable farm.</p>
+				<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
 	    	</div>
 	    </div>
-	    <div class="about-janet__image">
-	    	<image src="wp-content/themes/FoundationPress/aboutjanet.png"></image>
+	    <div class="about-janet__image column small-12 medium-6">
+	    	<img src="wp-content/themes/FoundationPress/src/assets/images/aboutjanet.png"></img>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
