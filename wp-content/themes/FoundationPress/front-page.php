@@ -9,7 +9,7 @@ get_header(); ?>
 	<div class="body-content-container">
 <!-- Hero Slider -->
 		<div class="front-hero-slider-container hero-container">
-			<image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
+			
 		</div>
 		<div class="divider-container flex-container align-center">
 			<div class="scroll-down-divider">
@@ -57,23 +57,23 @@ get_header(); ?>
 		</div>
 <!-- end of first infoCard section -->
 
-<!-- blog excerpt section -->
-		<div class="blog-sample-container">
-			<div class="blog-sample__box-wrapper">
-				<div class="blog-sample__box">
-					<?php get_template_part( 'blog-excerpt' ); ?>
+<!-- news excerpt section -->
+		<div class="news-sample-container">
+			<div class="news-sample__box-wrapper">
+				<div class="news-sample__box">
+					<?php get_template_part( 'news-excerpt' ); ?>
 				</div>
 			</div>
 		</div>
-<!-- end of blog section -->
+<!-- end of news section -->
 
-<!-- Blog slider section -->
+<!-- news slider section -->
 
-		<div class="blog-slider-container">
-			<div class="blog-slider__wrapper">
-				<?php get_template_part( 'blog-slider' ); ?>
+		<div class="news-slider-container">
+			<div class="news-slider__wrapper">
+				<?php get_template_part( 'news-slider' ); ?>
 			</div>
-			<a class="blog-slider__more-button button" href="/news">News and Views</a>
+			<a class="news-slider__more-button button" href="/news">News and Views</a>
 		</div>
 
 <!-- recipe slider section -->

@@ -30,16 +30,12 @@ get_header(); ?>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
 	  <div class="unsure-blurb-box">
-	    <div class="unsure-blurb__divider">
-	      <image></image>
-	    </div>
+	    <div class="unsure-blurb__divider"></div>
 	    <div class="unsure-blurb__text">
-	      <p>For those clients who are uncertain if Nutritional Therapy is for them, I offer a free 20 minute phone consultation.</p>
-				<p>Should we jointly decide that Nutritional Therapy is a good approach for you to try, then we will arrange a consultation.  Prior to the consultation, you will be sent a questionnaire  which includes your medical history and a three day food diary to be returned to me at least three days in advance of the consultation. This enables me to build a picture of your health history and consider how I can help you achieve your goals. It also ensures you get more value from our consultation time as much of the analysis is carried out in advance.</p>
+	     	<p>For those clients who are uncertain if Nutritional Therapy is for them, I offer a free 20 minute phone consultation.</p>
+			<p>Should we jointly decide that Nutritional Therapy is a good approach for you to try, then we will arrange a consultation.  Prior to the consultation, you will be sent a questionnaire  which includes your medical history and a three day food diary to be returned to me at least three days in advance of the consultation. This enables me to build a picture of your health history and consider how I can help you achieve your goals. It also ensures you get more value from our consultation time as much of the analysis is carried out in advance.</p>
 	    </div>
-	    <div class="unsure-blurb__divider">
-	      <image></image>
-	    </div>
+	    <div class="unsure-blurb__divider"></div>
 	  </div>
 <!---- Nutrition Consultations Text Section -->	  
 	  <div class="nutrition-consultations__box">
@@ -59,7 +55,7 @@ get_header(); ?>
 	  		$loop = new WP_Query($args);
 	  		while ($loop->have_posts()) : $loop->the_post();
 	  	?>
-	  	<div class="price-tile column small-6 medium-3">
+	  	<div class="price-tile column small-12 medium-3">
 	  		<div class="price-tile__title">
 	  			<?php echo the_title(); ?>
 	  		</div>	
@@ -72,15 +68,15 @@ get_header(); ?>
   		</div>
 	  </div>  <?php endwhile; wp_reset_postdata(); ?>
 	  
-<!---- featured blog article? --->
+<!---- featured news article? --->
 		<div class="featured-article-container">
-			
+			<?php get_template_part( 'news-excerpt'); ?>
 		</div>
 		
 <!--- nutritional Therapy blurb ---->
-	<div class="nutritional-therapy-blurb-container">
-		<div class="nutritional-therapy-blurb__title"></div>
-		<div class="nutritional-therapy-blurb__benefits row">
+	<div class="therapy-benefits-blurb-container">
+		<div class="therapy-benefits-blurb__title"></div>
+		<div class="therapy-benefits-blurb__benefits row">
 			<ul class="column small-12 medium-6">
 				<li>Weight Management</li>
 				<li>Energy Levels</li>
@@ -91,6 +87,22 @@ get_header(); ?>
 				<li>Skin Conditions</li>
 				<li>Digestive Disorders</li>
 			</ul>
+		</div>
+	</div>
+	<div class="about-nutritional-therapy-container">
+		<div class="about-nutritional-therapy__title">About Nutritional Therapy</div>
+		<div class="generic-wrapper row">
+			<div class="about-nutritional-therapy__text column small-12 medium-9">
+				<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
+				<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
+		Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
+				<p>Nutritional Therapy looks at each individual as a unique person. One-size-fits-all is certainly NOT part of how it works.  A full personal case history helps the Therapist work out what might be the underlying causes of symptoms, and then the client and therapist together devise a plan that the client feels they can work with.</p>
+				<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
+				<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
+			</div>
+			<div class="about-nutritional-therapy__image column small-12 medium-3">
+				<image></image>
+			</div>
 		</div>
 	</div>
 </div>

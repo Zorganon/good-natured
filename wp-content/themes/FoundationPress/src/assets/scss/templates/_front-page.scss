@@ -7,13 +7,19 @@
 
 .hero-container {
     width: 100%;
+        /* The image used */
+    background-image: url("wp-content/themes/FoundationPress/src/assets/images/heroimg.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .recipe-slider {
-    max-width: 80%;
-}
-
-.recipe-slider__topbar {
     max-width: 80%;
 }
 
@@ -84,4 +90,34 @@
     color: #0C0033;
     font-family: Average;
     font-size: 16px;
+}
+
+.news-sample-container{
+    
+}
+.news-sample__box-wrapper{
+    
+}
+.news-sample__box{
+    
+}
+.news-sample__meta{
+    opacity: 0.5;
+    color: #0C0033;
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+.news-sample__title{
+    color: #2F5658;
+    font-family: Average;
+    font-size: 35px;
+    line-height: 42px;
+}
+.news-sample__text{
+    font-size: 17px;
+    line-height: 32px;
+    color: #0C0033;
+    opacity: 0.5;
+    font-family: Average;
 }

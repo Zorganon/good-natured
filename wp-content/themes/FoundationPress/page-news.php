@@ -3,8 +3,6 @@
 Template Name: Front
 */
 get_header(); ?>
-<wonka></wonka>
-
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <div class="page-container">
@@ -44,7 +42,6 @@ get_header(); ?>
 				
 			</div>
 			<div class="news-blog__slider">
-				<!-- inserts class news-image-slider -->
 				<!-- php news_slider_loop() -->
 			</div>
 		</section>

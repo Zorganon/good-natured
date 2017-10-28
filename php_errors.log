@@ -43,3 +43,34 @@
 [10-Aug-2017 15:45:13 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
 [10-Aug-2017 15:45:13 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
 [10-Aug-2017 15:45:13 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Oct-2017 01:00:03 UTC] PHP Fatal error:  Call to undefined function is_user_logged_in() in /home/ubuntu/workspace/wp-includes/class-wp-query.php on line 2377
+[27-Oct-2017 01:00:03 UTC] PHP Stack trace:
+[27-Oct-2017 01:00:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Oct-2017 01:00:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Oct-2017 01:00:03 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Oct-2017 01:00:03 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Oct-2017 01:00:03 UTC] PHP   5. include_once() /home/ubuntu/workspace/wp-settings.php:303
+[27-Oct-2017 01:00:03 UTC] PHP   6. WP_Query->__construct() /home/ubuntu/workspace/wp-content/plugins/fun-facts-display/ffd.php:39
+[27-Oct-2017 01:00:03 UTC] PHP   7. WP_Query->query() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3357
+[27-Oct-2017 01:00:03 UTC] PHP   8. WP_Query->get_posts() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3248
+[27-Oct-2017 01:02:04 UTC] PHP Fatal error:  Call to undefined function is_user_logged_in() in /home/ubuntu/workspace/wp-includes/class-wp-query.php on line 2377
+[27-Oct-2017 01:02:04 UTC] PHP Stack trace:
+[27-Oct-2017 01:02:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Oct-2017 01:02:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Oct-2017 01:02:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Oct-2017 01:02:04 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Oct-2017 01:02:04 UTC] PHP   5. include_once() /home/ubuntu/workspace/wp-settings.php:303
+[27-Oct-2017 01:02:04 UTC] PHP   6. WP_Query->__construct() /home/ubuntu/workspace/wp-content/plugins/fun-facts-display/ffd.php:39
+[27-Oct-2017 01:02:04 UTC] PHP   7. WP_Query->query() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3357
+[27-Oct-2017 01:02:04 UTC] PHP   8. WP_Query->get_posts() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3248
+[27-Oct-2017 01:02:56 UTC] PHP Fatal error:  Call to undefined function is_user_logged_in() in /home/ubuntu/workspace/wp-includes/class-wp-query.php on line 2377
+[27-Oct-2017 01:02:56 UTC] PHP Stack trace:
+[27-Oct-2017 01:02:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/theme-editor.php:0
+[27-Oct-2017 01:02:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/theme-editor.php:10
+[27-Oct-2017 01:02:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[27-Oct-2017 01:02:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Oct-2017 01:02:56 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Oct-2017 01:02:56 UTC] PHP   6. include_once() /home/ubuntu/workspace/wp-settings.php:303
+[27-Oct-2017 01:02:56 UTC] PHP   7. WP_Query->__construct() /home/ubuntu/workspace/wp-content/plugins/fun-facts-display/ffd.php:39
+[27-Oct-2017 01:02:56 UTC] PHP   8. WP_Query->query() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3357
+[27-Oct-2017 01:02:56 UTC] PHP   9. WP_Query->get_posts() /home/ubuntu/workspace/wp-includes/class-wp-query.php:3248

@@ -30,3 +30,4 @@ function show_fun_fact() {
 }
 
 //add_action( 'wp_head', 'show_fun_fact' );
+?>
