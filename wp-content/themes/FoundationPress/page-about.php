@@ -11,8 +11,11 @@ get_header(); ?>
 	    <image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 	  </div>
 	  <div class="about-blurb-divider">
+	  	<div class="about-blurb-divider__border"></div>
 	    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
+	    <div class="about-blurb-divider__border"></div>
 	  </div>
+	  
 	  <div class="about-janet-container row">
 	    <div class="about-janet__text-box column small-12 medium-6">
 	    	<div class="about-janet__title">About Janet</div>
@@ -74,34 +77,38 @@ get_header(); ?>
 		</div>
 		
 <!--- nutritional Therapy blurb ---->
-	<div class="therapy-benefits-blurb-container">
-		<div class="therapy-benefits-blurb__title"></div>
-		<div class="therapy-benefits-blurb__benefits row">
-			<ul class="column small-12 medium-6">
-				<li>Weight Management</li>
-				<li>Energy Levels</li>
-				<li>Stress Management</li>
-			</ul>
-			<ul class="column small-12 medium-6">
-				<li>Food Cravings</li>
-				<li>Skin Conditions</li>
-				<li>Digestive Disorders</li>
-			</ul>
-		</div>
-	</div>
-	<div class="about-nutritional-therapy-container">
-		<div class="about-nutritional-therapy__title">About Nutritional Therapy</div>
-		<div class="generic-wrapper row">
-			<div class="about-nutritional-therapy__text column small-12 medium-9">
-				<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
-				<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
-		Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
-				<p>Nutritional Therapy looks at each individual as a unique person. One-size-fits-all is certainly NOT part of how it works.  A full personal case history helps the Therapist work out what might be the underlying causes of symptoms, and then the client and therapist together devise a plan that the client feels they can work with.</p>
-				<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
-				<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
+		<div class="therapy-benefits-blurb-container">
+			<div class="therapy-benefits-blurb__text">
+				<p>There are many conditions recognised as requiring unique nutritional recommendations to rebalance the body.</p>
+				<p>Nutritional Therapy is generally considered to have a positive impact on the following:</p>
 			</div>
-			<div class="about-nutritional-therapy__image column small-12 medium-3">
-				<image></image>
+			<div class="therapy-benefits-blurb__benefits row">
+				<ul class="column small-12 medium-6">
+					<li>Weight Management</li>
+					<li>Energy Levels</li>
+					<li>Stress Management</li>
+				</ul>
+				<ul class="column small-12 medium-6">
+					<li>Food Cravings</li>
+					<li>Skin Conditions</li>
+					<li>Digestive Disorders</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about-nutritional-therapy-container">
+			<div class="about-nutritional-therapy__title">About Nutritional Therapy</div>
+			<div class="generic-wrapper row">
+				<div class="about-nutritional-therapy__text column small-12 medium-9">
+					<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
+					<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
+			Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
+					<p>Nutritional Therapy looks at each individual as a unique person. One-size-fits-all is certainly NOT part of how it works.  A full personal case history helps the Therapist work out what might be the underlying causes of symptoms, and then the client and therapist together devise a plan that the client feels they can work with.</p>
+					<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
+					<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
+				</div>
+				<div class="about-nutritional-therapy__image column small-12 medium-3">
+					<image></image>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,6 +1,18 @@
 .about-hero-img{
   
 }
+.about-blurb-divider{
+  max-width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-blurb-divider__border{
+	box-sizing: border-box;
+	height: 4px;
+	width: 1150px;
+	border: 4px solid #CCD159;
+}
 .about-blurb-divider p{
   opacity: 50%;
   font-family: Average, serif;
@@ -96,11 +108,20 @@
 }
 
 .featured-article-container{
-    
+  background-color: white;
 }
 
 .nutritional-therapy-blurb-container{
     max-width: 87%;
+}
+
+.therapy-benefits-blurb__text p{
+	opacity: 0.5;
+	color: #0C0033;
+	font-family: Average;
+	font-size: 28px;
+	line-height: 36px;
+	text-align: center;
 }
 
 .about-nutritional-therapy__title{
