@@ -141,3 +141,131 @@ $logofont: 'Raleway', sans-serif;
 	line-height: 24px;
 	text-align: right;
 }
+
+// Front PAge Styles ----------------------------------
+// Page header
+
+.centered-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.front-hero-container {
+    width: 100%;
+        /* The image used */
+    background-image: url("wp-content/themes/FoundationPress/src/assets/images/heroimg.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recipe-slider {
+    max-width: 80%;
+}
+
+.about-infocard-container{
+    max-width: 87%;
+    border-style: dashed;
+    border-top: 4px #CCD159;
+    border-bottom: 4px #CCD159;
+    border-left: none;
+    border-right: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0px 80px 0px 80px;
+}
+.about-infocard__image{
+    
+}
+.about-infocard__top-border{
+    
+}
+.about-infocard__bottom-border{
+    
+}
+.about-infocard__title{
+    font-family: 'Gloss and Bloom';
+    font-size: 48px;
+    color: #2F5658;
+    text-align: center;
+    
+}
+.about-infocard__content p{
+    color: #0C0033;
+    font-family: Average;
+    font-size: 20px;
+    opacity: 50%;
+    text-align: center;
+    
+}
+.about-infocard__button{
+    color: #0C0033;
+    font-family: Average;
+    opacity: 50%;
+    text-align: center;
+    border: solid 1px #407375;
+    font-size: 16px;
+}
+
+.infocard-1-container{
+    max-width: 87%;
+}
+
+.infocard-1__header{
+    color: #2F5658;
+    font-family: Average;
+    font-size: 35px;
+    text-align: left;
+}
+
+.infocard-1__bullets{
+    color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
+    opacity: 50%;
+    
+}
+.infocard-1__button{
+    opacity: 50%;
+    color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
+}
+
+.news-sample-container{
+    
+}
+.news-sample__box-wrapper{
+    
+}
+.news-sample__box{
+    
+}
+.news-sample__meta{
+    opacity: 0.5;
+    color: #0C0033;
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+.news-sample__title{
+    color: #2F5658;
+    font-family: Average;
+    font-size: 35px;
+    line-height: 42px;
+}
+.news-sample__text{
+    font-size: 17px;
+    line-height: 32px;
+    color: #0C0033;
+    opacity: 0.5;
+    font-family: Average;
+}
+
+
+//End front page Styles=-------------------------------

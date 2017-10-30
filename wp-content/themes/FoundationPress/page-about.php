@@ -12,7 +12,7 @@ get_header(); ?>
 	  </div>
 	  <div class="about-blurb-divider">
 	  	<div class="about-blurb-divider__border"></div>
-	    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
+		    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
 	    <div class="about-blurb-divider__border"></div>
 	  </div>
 	  
@@ -22,13 +22,13 @@ get_header(); ?>
 	    	<div class="about-janet__title-underscore"></div>
 	    	<div class="about-janet__text">
 	    		<p>I have had a life long interest in healthy eating, was vegetarian for a long period, and now look to using fresh local whole foods as the basis of my diet.</p>
-				<p>I live and work in Crediton, Devon, and am a therapist at Crediton Complimentary Health Centre.  My clients visit me from Exeter, Okehampton, and surrounding towns and villages.</p>
-				<p>I have strong links with local food suppliers, through the Farmers’ Markets in Crediton and Exeter, and through my association with Linscombe Farm, an award winning organic vegetable farm.</p>
-				<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
+					<p>I live and work in Crediton, Devon, and am a therapist at Crediton Complimentary Health Centre.  My clients visit me from Exeter, Okehampton, and surrounding towns and villages.</p>
+					<p>I have strong links with local food suppliers, through the Farmers’ Markets in Crediton and Exeter, and through my association with Linscombe Farm, an award winning organic vegetable farm.</p>
+					<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<img src="wp-content/themes/FoundationPress/src/assets/images/aboutjanet.png"></img>
+	    	<image src="wp-content/themes/FoundationPress/src/assets/images/aboutjanet.png"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
@@ -36,7 +36,7 @@ get_header(); ?>
 	    <div class="unsure-blurb__divider"></div>
 	    <div class="unsure-blurb__text">
 	     	<p>For those clients who are uncertain if Nutritional Therapy is for them, I offer a free 20 minute phone consultation.</p>
-			<p>Should we jointly decide that Nutritional Therapy is a good approach for you to try, then we will arrange a consultation.  Prior to the consultation, you will be sent a questionnaire  which includes your medical history and a three day food diary to be returned to me at least three days in advance of the consultation. This enables me to build a picture of your health history and consider how I can help you achieve your goals. It also ensures you get more value from our consultation time as much of the analysis is carried out in advance.</p>
+				<p>Should we jointly decide that Nutritional Therapy is a good approach for you to try, then we will arrange a consultation.  Prior to the consultation, you will be sent a questionnaire  which includes your medical history and a three day food diary to be returned to me at least three days in advance of the consultation. This enables me to build a picture of your health history and consider how I can help you achieve your goals. It also ensures you get more value from our consultation time as much of the analysis is carried out in advance.</p>
 	    </div>
 	    <div class="unsure-blurb__divider"></div>
 	  </div>

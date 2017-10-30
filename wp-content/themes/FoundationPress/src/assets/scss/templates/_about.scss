@@ -21,12 +21,7 @@
   text-align: center;
   color: #0C0033;
 }
-.about-janet-container{
-  
-}
-.about-janet__text-box{
-  
-}
+
 .about-janet__title{
   color: #2F5658;
   font-size: 35px;
@@ -59,7 +54,6 @@
   text-align: center;
   font-family: Average, serif;
   font-size: 24px;
-  
 }
 
 
@@ -73,11 +67,17 @@
   
 }
 .nutrition-consultations__text-title{
-  
+	color: #2F5658;
+	font-family: Average;
+	font-size: 35px;
+	line-height: 42px;
 }
 .nutrition-consultations__text{
-  
-}
+	color: #0C0033;
+	font-family: Average;
+	font-size: 17px;
+	line-height: 32px;
+} 
 
 .price-tile-container{
   width: 100%;

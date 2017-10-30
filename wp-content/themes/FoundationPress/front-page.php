@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="page-container">
 	<div class="body-content-container">
 <!-- Hero Slider -->
-		<div class="front-hero-slider-container hero-container">
+		<div class="front-hero-container">
 			
 		</div>
 		<div class="divider-container flex-container align-center">
