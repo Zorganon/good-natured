@@ -98,7 +98,7 @@ $logofont: 'Raleway', sans-serif;
 //site-wide styles
 
 .page-container {
-  background-color: $light-blue;
+  background-color: $white;
 }
 
 .body-content-container{
@@ -142,5 +142,309 @@ $logofont: 'Raleway', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: right;
+}
+
+// HEADER
+.desktop-title-bar {
+  height: 122px;
+  color: #2F5658;
+  background-color: $white;
+}
+
+.desktop-title-bar__logo{
+  float: left;
+  max-height: 100%;
+  
+}
+
+.title-bar_button {
+  color: #black;
+  
+}
+
+.header-consultations{
+  border: 1px solid #407375;
+  
+}
+
+.header-consultations a{
+	opacity: 0.5;
+	color: #0C0033;
+	font-family: Montserrat, sans;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	background: transparent;
+}
+// FOOTER
+
+
+//  FRONT PAGE
+// Page header
+
+.centered-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.front-hero__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;   
+}
+
+
+.recipe-slider {
+    max-width: 80%;
+}
+.about-infocard-container{
+    max-width: 87%;
+    border-style: dashed;
+    border-top: 4px #CCD159;
+    border-bottom: 4px #CCD159;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0px 80px 0px 80px;
+}
+.about-infocard__image{
+    
+}
+.about-infocard__title{
+    font-family: 'Gloss and Bloom', cursive;
+    font-size: 48px;
+    color: #2F5658;
+    text-align: center;
+    
+}
+.about-infocard__content p{
+    color: #0C0033;
+    font-family: Average;
+    font-size: 20px;
+    opacity: 50%;
+    text-align: center;
+    
+}
+.about-infocard__button{
+    color: #0C0033;
+    font-family: Average;
+    opacity: 50%;
+    text-align: center;
+    border: solid 1px #407375;
+    font-size: 16px;
+}
+
+.infocard-1-container{
+    max-width: 87%;
+}
+
+.infocard-1__header{
+    color: #2F5658;
+    font-family: Average;
+    font-size: 35px;
+    text-align: left;
+}
+
+.infocard-1__bullets{
+    color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
+    opacity: 50%;
+    
+}
+.infocard-1__button{
+    opacity: 50%;
+    color: #0C0033;
+    font-family: Average;
+    font-size: 16px;
+}
+
+.news-sample-container{
+    
+}
+.news-sample__box-wrapper{
+    
+}
+.news-sample__box{
+    
+}
+.news-sample__meta{
+    opacity: 0.5;
+    color: #0C0033;
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+.news-sample__title{
+    color: #2F5658;
+    font-family: Average;
+    font-size: 35px;
+    line-height: 42px;
+}
+.news-sample__text{
+    font-size: 17px;
+    line-height: 32px;
+    color: #0C0033;
+    opacity: 0.5;
+    font-family: Average;
+}
+
+
+
+//  ABOUT PAGE
+.about-hero-img{
+  
+}
+.about-blurb-divider{
+  max-width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-blurb-divider__border{
+	box-sizing: border-box;
+	height: 4px;
+	width: 1150px;
+	border: 4px dashed #CCD159;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-blurb-divider p{
+  opacity: 50%;
+  font-family: Average, serif;
+  font-size: 33px;
+  line-height: 54px;
+  text-align: center;
+  color: #0C0033;
+}
+
+.about-janet__title{
+  color: #2F5658;
+  font-size: 35px;
+  line-height: 42px;
+}
+.about-janet__title-underscore{
+  
+}
+.about-janet__text p{
+    color: #0C0033;
+    font-size: 17px;
+    font-family: Average, serif;
+  
+}
+.about-janet__image{
+  
+}
+
+.unsure-blurb-box{
+  padding: 100px;
+  
+}
+.unsure-blurb__divider{
+  border-color: #2F5658;
+  border-width: 5px;
+  width: 30px;
+}
+.unsure-blurb__text{
+  color: #0C0033;
+  text-align: center;
+  font-family: Average, serif;
+  font-size: 24px;
+}
+
+
+.nutrition-consultations__box{
+  
+}
+.nutrition-consultations__image{
+  
+}
+.nutrition-consultations__textbox{
+  
+}
+.nutrition-consultations__text-title{
+	color: #2F5658;
+	font-family: Average;
+	font-size: 35px;
+	line-height: 42px;
+}
+.nutrition-consultations__text{
+	color: #0C0033;
+	font-family: Average;
+	font-size: 17px;
+	line-height: 32px;
+} 
+
+.price-tile-container{
+  width: 100%;
+  height: 700px;
+}
+
+.price-tile__price{
+  color: #CECECE;
+  font-family: Clarendon;
+  font-size: 100px;
+  line-height: 97px;
+	text-align: center;
+}
+.price-tile__title{
+  color: #0C0033;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-family: Montserrat;
+}
+.price-tile__description{
+	color: #0C0033;
+	font-family: Clarendon;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: center;
+}
+
+.featured-article-container{
+  background-color: white;
+}
+
+.nutritional-therapy-blurb-container{
+    max-width: 87%;
+}
+
+.therapy-benefits-blurb__text p{
+	opacity: 0.5;
+	color: #0C0033;
+	font-family: Average;
+	font-size: 28px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.about-nutritional-therapy__title{
+	color: #2F5658;
+	font-family: Average;
+	font-size: 35px;
+	line-height: 42px;
+}
+
+
+// RECIPES PAGES
+
+
+// NEWS PAGES
+
+.news-post__title{
+	color: #2F5658;
+	font-family: Average;
+	font-size: 48px;
+	line-height: 64px;
+}
+
+.news-post__content{
+	color: #0C0033;
+	font-family: Average;
+	font-size: 17px;
+	line-height: 32px;
 }
 

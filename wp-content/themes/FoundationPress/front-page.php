@@ -35,22 +35,22 @@ get_header(); ?>
 		
 <!-- random infoCard section -->
 
-		<div class="infocard-1-container row">
-			<div class="infocard-1__content-container columns small-12 medium-4">
-				<div class="infocard-1__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
-				<div class="infocard-1__bullets">
+		<div class="impact-container row">
+			<div class="impact__content-container columns small-12 medium-4">
+				<div class="impact__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
+				<div class="impact__bullets">
 					<ul>
 						<li>Analyze dietary habits and address nutritional gaps</li>
 						<li>Create menu plans full of delicious, whole foods tailored to individual health needs</li>
 						<li>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</li>
 					</ul>
 				</div>
-				<div class="infocard-1__button">
+				<div class="impact__button">
 					<a class="button" href="/about">LEARN MORE</a>
 				</div>
 			</div>
-			<div class="infocard-1__image-container columns small-12 medium-4">
-				<div class="infocard-1__image">
+			<div class="impact__image-container columns small-12 medium-4">
+				<div class="impact__image">
 					<image src="wp-content/themes/FoundationPress/src/assets/images/infocard1.png"></image>
 				</div>
 			</div>

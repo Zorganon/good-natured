@@ -16,6 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="wp-content/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="wp-content/slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_theme_uri() ?>/style.css"/>
 		<?php wp_head(); ?>
 	</head>
 	<body>
@@ -31,11 +32,11 @@
 		<div class="desktop-title-bar title-bar row">
 			<div class="column small-12 medium-6">
 				<div class="desktop-title-bar__logo">
-					<image src="wp-content/themes/FoundationPress/src/assets/images/logo_fullsize.png"></image>
+					<image src="wp-content/uploads/2017/10/gnnlogo.png"></image>
 				</div>
 			</div>
-			<div class=" hide-for-small-only medium-3 medium-offset-3">
-				<a type='button' class="button large" href="#"></a>
+			<div class="header-consultations hide-for-small-only medium-3 medium-offset-3">
+				<a type='button' class="button large" href="/about">CONSULTATIONS AVAILABLE</a>
 			</div>
 		</div>
 		<nav class="nav-container site-navigation top-bar desktop-top-bar nav-bar" role="navigation">

@@ -15,15 +15,13 @@
 .recipe-slider {
     max-width: 80%;
 }
-
-
 .about-infocard-container{
     max-width: 87%;
     border-style: dashed;
     border-top: 4px #CCD159;
     border-bottom: 4px #CCD159;
-    border-left: none;
-    border-right: none;
+    border-left: 0;
+    border-right: 0;
     padding-top: 80px;
     padding-bottom: 80px;
     margin: 0px 80px 0px 80px;
@@ -31,14 +29,8 @@
 .about-infocard__image{
     
 }
-.about-infocard__top-border{
-    
-}
-.about-infocard__bottom-border{
-    
-}
 .about-infocard__title{
-    font-family: 'Gloss and Bloom';
+    font-family: 'Gloss and Bloom', cursive;
     font-size: 48px;
     color: #2F5658;
     text-align: center;

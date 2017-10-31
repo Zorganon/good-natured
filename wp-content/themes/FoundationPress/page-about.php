@@ -9,7 +9,7 @@ get_header(); ?>
 	<div class="body-content-container">
 <!-- hero image -->
 	  <div class="about-hero-img">
-	    <image src="wp-content/themes/uploads/about-hero.png"></image>
+	    <image src="wp-content/uploads/about-hero.png"></image>
 	  </div>
 	<!-- -->
 	<!--- about blurb -->
@@ -31,7 +31,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="wp-content/themes/FoundationPress/src/assets/images/aboutjanet.png"></image>
+	    	<image src="wp-content/uploads/2017/10/janet.png"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
