@@ -11,7 +11,9 @@
 	box-sizing: border-box;
 	height: 4px;
 	width: 1150px;
-	border: 4px solid #CCD159;
+	border: 4px dashed #CCD159;
+	margin-left: auto;
+	margin-right: auto;
 }
 .about-blurb-divider p{
   opacity: 50%;

@@ -9,7 +9,7 @@ get_header(); ?>
 	<div class="body-content-container">
 <!-- Hero Slider -->
 		<div class="front-hero-container">
-			
+			<image class="front-hero__image" src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 		</div>
 		<div class="divider-container flex-container align-center">
 			<div class="scroll-down-divider">

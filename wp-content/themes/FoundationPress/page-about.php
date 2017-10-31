@@ -7,9 +7,12 @@ get_header(); ?>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <div class="page-container">
 	<div class="body-content-container">
+<!-- hero image -->
 	  <div class="about-hero-img">
-	    <image src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
+	    <image src="wp-content/themes/uploads/about-hero.png"></image>
 	  </div>
+	<!-- -->
+	<!--- about blurb -->
 	  <div class="about-blurb-divider">
 	  	<div class="about-blurb-divider__border"></div>
 		    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
@@ -47,30 +50,33 @@ get_header(); ?>
 	  		<div class="nutrition-consultations__text-title"></div>
 	  		<div class="nutrition-consultations__text">
 	  			<p>Consultations takes place in Crediton, and last for one and a half hours. This costs £45. I practice from the Crediton Complementary Health Centre on the High Street. I also consult from my home, just on the outskirts of Crediton.</p>
-				<p>You will go away with a written outline of menu plans, food choices, and any suggested supplements and life style factors. Further information in the form of “handouts” will be given to you where this might be helpful reference, plus reference to other web sites or information sources. This will all be tailored to the needs of each individual client. You will then have the information you need to help you make healthy choices, and plenty of ideas to get you started!</p>
-				<p>Follow up consultations are not always needed – it depends on many factors. Follow ups can be by phone, skype or face to face consultation, charged at £20 for a half hour slot, or £40 for an hour.</p>
+					<p>You will go away with a written outline of menu plans, food choices, and any suggested supplements and life style factors. Further information in the form of “handouts” will be given to you where this might be helpful reference, plus reference to other web sites or information sources. This will all be tailored to the needs of each individual client. You will then have the information you need to help you make healthy choices, and plenty of ideas to get you started!</p>
+					<p>Follow up consultations are not always needed – it depends on many factors. Follow ups can be by phone, skype or face to face consultation, charged at £20 for a half hour slot, or £40 for an hour.</p>
 	  		</div>
 	  	</div>
 	  </div>
 <!---- Price Tiles ---->
 	  <div class="price-tile-container row">
 	  	<?php $args = array('post_type'=>'service');
-	  		$loop = new WP_Query($args);
-	  		while ($loop->have_posts()) : $loop->the_post();
+	  		$sloop = new WP_Query($args);
+	  		while ($sloop->have_posts()) : $sloop->the_post();
 	  	?>
 	  	<div class="price-tile column small-12 medium-3">
 	  		<div class="price-tile__title">
 	  			<?php echo the_title(); ?>
 	  		</div>	
 	  		<div class="price-tile__price">
-	  			<?php echo get_post_meta( the_ID(), 'price', true ); ?>
+	  			£<?php $current_post_id = get_the_ID();
+	  				$key = 'wpcf-price';
+	  				$price = get_post_meta( $current_post_id, $key, true );
+	  				echo $price; ?>
 	  		</div>
 	  		<div class="price-tile__description">
 	  			<?php echo the_content(); ?>
 	  		</div>
   		</div>
-	  </div>  <?php endwhile; wp_reset_postdata(); ?>
-	  
+		  <?php endwhile; wp_reset_postdata(); ?>
+	  </div>  
 <!---- featured news article? --->
 		<div class="featured-article-container">
 			<?php get_template_part( 'news-excerpt'); ?>

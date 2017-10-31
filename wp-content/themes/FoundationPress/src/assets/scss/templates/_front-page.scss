@@ -5,23 +5,17 @@
     margin-right: auto;
 }
 
-.front-hero-container {
-    width: 100%;
-        /* The image used */
-    background-image: url("wp-content/themes/FoundationPress/src/assets/images/heroimg.png");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.front-hero__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;   
 }
+
 
 .recipe-slider {
     max-width: 80%;
 }
+
 
 .about-infocard-container{
     max-width: 87%;
