@@ -356,23 +356,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  padding: 50px 30px 50px 30px;
+  align-content: baseline;
+  max-width: 60%;
+  padding: 50px 50px 50px 100px;
   flex-basis: 50%;
 }
 .about-janet__title{
   color: #2F5658;
+  font-family: serif;
   font-size: 35px;
   line-height: 42px;
+  margin-bottom: 1.5rem;
+}
+.about-janet__text{
+  margin: 1rem;
+  max-width: 70%;
 }
 .about-janet__text p{
-    color: #0C0033;
-    font-size: 17px;
-    font-family: Average, serif;
-    max-width: 70%;
+  color: #0C0033;
+  font-size: 17px;
+  font-family: Average, serif;
 }
 .about-janet__image{
   flex-basis: 50%;
+  display: flex;
+}
+.aboimage{
+  float: right;
 }
 .unsure-blurb-box{
   margin: 100px auto 100px auto;
@@ -467,8 +477,7 @@
 .therapy-benefits__container{
   height: 50rem;
   max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 70px auto 70px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -507,23 +516,37 @@
 }
 
 .nut-therapy-section{
-  
+  padding: 50px 0 50px 0;
+  background-color: #E7E7E7;
 }
 .nut-therapy__wrapper{
   margin: 1.5rem;
   display: flex;
-  flex-direction: columns;
+  justify-content: space-around;
 }
 .nut-therapy__text-wrapper{
- flex-basis: 66%; 
+  flex-basis: 60%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .nut-therapy__title{
-  
+	color: #2F5658;
+	font-family: Average;
+	font-size: 35px;
+	line-height: 42px;
 }
 .nut-therapy__text{
-  
+	color: #0C0033;
+	font-family: Average;
+	font-size: 17px;
+	line-height: 32px;
 }
-.nut-therapy__image{
+.nut-therapy__image-box{
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   
 }
 /*****************       RECIPE STYLES      ****************/

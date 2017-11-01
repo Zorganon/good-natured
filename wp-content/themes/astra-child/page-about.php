@@ -21,6 +21,7 @@ get_header(); ?>
 	  <div class="about-janet-container row">
 	    <div class="about-janet__text-box column small-12 medium-6">
 	    	<div class="about-janet__title">About Janet</div>
+	    	<div class="short-underscore"></div>
 	    	<div class="about-janet__title-underscore"></div>
 	    	<div class="about-janet__text">
 	    		<p>I have had a life long interest in healthy eating, was vegetarian for a long period, and now look to using fresh local whole foods as the basis of my diet.</p>
@@ -30,7 +31,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
+	    	<image class="aboimage" src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
@@ -91,6 +92,7 @@ get_header(); ?>
 			<div class="nut-therapy__wrapper">
 				<div class="nut-therapy__text-wrapper">
 					<div class="nut-therapy__title">About Nutritional Therapy</div>
+					<div class="short-underscore"></div>
 					<div class="nut-therapy__text column small-12 medium-9">
 						<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
 						<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
@@ -99,13 +101,13 @@ get_header(); ?>
 						<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
 						<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
 					</div>
-					<div class="nut-therapy__image-box column small-12 medium-3">
-						<div class="nut-therapy__image1">
-							<image src=""></image>
-						</div>
-						<div class="nut-therapy__image2">
-							<image src=""></image>
-						</div>
+				</div>
+				<div class="nut-therapy__image-box column small-12 medium-3">
+					<div class="nut-therapy__image1">
+						<image src="<?php echo real_upload_url(); ?>/nuts1.png"></image>
+					</div>
+					<div class="nut-therapy__image2">
+						<image src="<?php echo real_upload_url(); ?>/nuts2.png"></image>
 					</div>
 				</div>
 			</div>
