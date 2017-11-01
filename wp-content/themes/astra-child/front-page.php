@@ -61,15 +61,11 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-<!-- end of first infoCard section -->
+<!-- end of impact  section -->
 
 <!-- news excerpt section -->
-		<div class="news-sample-container">
-			<div class="news-sample__box-wrapper">
-				<div class="news-sample__box">
-					<?php get_template_part( 'news-excerpt' ); ?>
-				</div>
-			</div>
+		<div class="news-excerpt__wrapper">
+			<?php get_template_part( 'news-excerpt' ); ?>
 		</div>
 <!-- end of news section -->
 
