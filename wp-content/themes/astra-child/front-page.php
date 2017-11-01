@@ -10,23 +10,27 @@ get_header(); ?>
 		<div class="front-hero-container">
 			<image class="front-hero__image" src="wp-content/themes/FoundationPress/src/assets/images/heroimg.png"></image>
 		</div>
-		<div class="divider-container flex-container align-center">
+<!-- end hero slider -->		
+		<div class="divider-container">
 			<div class="scroll-down-divider">
 				<image src="wp-content/themes/FoundationPress/src/assets/images/scroll-down.png" class="centered-content"></image>
 			</div>
 		</div>
 		
-<!-- end hero slider -->		
-		<div class="divider"></div>
 <!-- About Jan info Card -->
-		<div class="about-infocard-container row">
-			<div class="about-infocard__image small-4 columns">
-				<image src="wp-content/themes/FoundationPress/src/assets/images/about-info-image.png"></image>
-			</div>
-			<div class="about-infocard__content-box small-8 columns">
-				<div class="about-infocard__title">I'm Janet Bailey</div>
-				<div class="about-infocard__content"><p>I’m a firm believer in the old adage “you are what you eat”.  I have a degree in Anatomy and Physiology, have taught Human Biology and have a Diploma in Nutritional Therapy.</p></div>
-				<a class="about-infocard__button button" href="/about">MORE ABOUT JANET</a>
+		<div class="frontpage-infocard__wrapper">
+			<div class="frontpage-infocard-container flex-container">
+				<div class="frontpage-infocard__image-box flex-item">
+					<image class="frontpage-infocard__image" src="wp-content/themes/FoundationPress/src/assets/images/about-info-image.png"></image>
+				</div>
+				<div class="frontpage-infocard__content-box flex-item flex-container">
+					<div class="frontpage-infocard__title">I'm Janet Bailey</div>
+					<div class="frontpage-infocard__subtitle">Devon-based Nutritional Therapist</div>
+					<div class="frontpage-infocard__text">
+						<p>I’m a firm believer in the old adage “you are what you eat”.  I have a degree in Anatomy and Physiology, have taught Human Biology and have a Diploma in Nutritional Therapy.</p>
+					</div>
+					<a class="frontpage-infocard__button button" href="/about">MORE ABOUT JANET</a>
+				</div>
 			</div>
 		</div>
 <!-- end of About infoCard -->
