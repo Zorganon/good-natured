@@ -8,13 +8,13 @@ get_header(); ?>
 	<div class="body-content-container">
 <!-- hero image -->
 	  <div class="about-hero-img__wrapper">
-	    <image class="about-hero-image" src="about-hero.png"></image>
+	    <image class="about-hero-image" src="<?php echo real_upload_url();?>/2017/10/about-hero.png"></image>
 	  </div>
 	<!-- -->
 	<!--- about blurb -->
 	  <div class="about-blurb-divider">
 	  	<div class="about-blurb-divider__border"></div>
-		    <p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
+	    <div class="about-blurb"><p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p></div>
 	    <div class="about-blurb-divider__border"></div>
 	  </div>
 	  
@@ -30,7 +30,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="<?php echo get_real_upload_url(); ?>/2017/10/janet.png"></image>
+	    	<image src="<?php echo real_upload_url(); ?>/2017/10/janet.jpg"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  

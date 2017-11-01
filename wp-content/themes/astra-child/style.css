@@ -315,29 +315,49 @@
 /*********************************************************/
 /************         ABOUT PAGE STYLES       ************/
 /*********************************************************/
+.about-hero-img__wrapper{
+  min-height: 95vh;
+}
+.about-hero-image{
+  width: 100%;
+}
 .about-blurb-divider{
   max-width: 80%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50vh;
 }
-
 .about-blurb-divider__border{
-	box-sizing: border-box;
-	height: 4px;
-	width: 1150px;
-	border: 4px dashed #CCD159;
+	height: 1px;
+	width: 70vw;
+	border: 2px dashed #CCD159;
 	margin-left: auto;
 	margin-right: auto;
 }
-.about-blurb-divider p{
+.about-blurb p{
   opacity: 0.5;
   font-family: Average, serif;
-  font-size: 33px;
-  line-height: 54px;
+  font-size: 2rem;
+  line-height: 3.3rem;
   text-align: center;
   color: #0C0033;
 }
-
+.about-janet-container{
+  display: flex;
+  justify-content: center;
+  background-color: #E7E7E7;
+}
+.about-janet__text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 50px 30px 50px 30px;
+  min-width: 50%;
+}
 .about-janet__title{
   color: #2F5658;
   font-size: 35px;
@@ -347,9 +367,12 @@
     color: #0C0033;
     font-size: 17px;
     font-family: Average, serif;
-  
+    max-width: 70%;
 }
-
+.about-janet__image{
+  min-width: 50%;
+  align-self: flex-end;
+}
 .unsure-blurb-box{
   padding: 100px;
   
@@ -378,10 +401,11 @@
 	line-height: 32px;
 } 
 
-.price-tile-container{
+.price-tile-wrapper{
   width: 100%;
   height: 700px;
 }
+.price-tile__container{}
 
 .price-tile__price{
   color: #CECECE;
