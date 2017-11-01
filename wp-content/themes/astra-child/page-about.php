@@ -44,7 +44,9 @@ get_header(); ?>
 	  </div>
 <!---- Nutrition Consultations Text Section -->	  
 	  <div class="nutrition-consultations__wrapper">
-	  	<image src="<?php echo real_upload_url();?>/2017/10/veges.jpg" class="nutrition-consultations__image"></image>
+	  	<div class="nutrition-consultations__image-wrapper">
+		  	<image src="<?php echo real_upload_url(); ?>/2017/10/tomatos.jpg" class="nutrition-consultations__image"></image>
+	  	</div>
 	  	<div class="nutrition-consultations__textbox">
 	  		<div class="nutrition-consultations__text-title">NUTRITION CONSULTATIONS</div>
 	  		<div class="nutrition-consultations__underscore"></div>
@@ -56,38 +58,39 @@ get_header(); ?>
 	  	</div>
 	  </div>
 <!---- Price Tiles ---->
-	  <div class="price-tile-wrapper">
-			<?php get_template_part( 'service', 'tile'); ?>
-	  </div>
+		<?php get_template_part( 'service', 'tile'); ?>
 	  <?php wp_reset_postdata(); ?>
 <!---- featured news article? --->
-		<div class="featured-article-container">
+		<div class="news-excerpt__wrapper">
 			<?php get_template_part( 'news', 'excerpt'); ?>
 		</div>
 		
-<!--- nutritional Therapy blurb ---->
-		<div class="therapy-benefits-blurb-container">
-			<div class="therapy-benefits-blurb__text">
+<!----------- nutritional Therapy blurb ----------------------------->
+		<div class="therapy-benefits__container">
+			<div class="short-underscore"></div>
+			<div class="therapy-benefits__text">
 				<p>There are many conditions recognised as requiring unique nutritional recommendations to rebalance the body.</p>
 				<p>Nutritional Therapy is generally considered to have a positive impact on the following:</p>
 			</div>
-			<div class="therapy-benefits-blurb__benefits row">
-				<ul class="column small-12 medium-6">
+			<div class="therapy-benefits__bullets row">
+				<ul class="bullet-list column small-12 medium-6">
 					<li>Weight Management</li>
 					<li>Energy Levels</li>
 					<li>Stress Management</li>
 				</ul>
-				<ul class="column small-12 medium-6">
+				<ul class="bullet-list column small-12 medium-6">
 					<li>Food Cravings</li>
 					<li>Skin Conditions</li>
 					<li>Digestive Disorders</li>
 				</ul>
 			</div>
+			<div class="short-underscore"></div>
 		</div>
-		<div class="about-nutritional-therapy-container">
-			<div class="about-nutritional-therapy__title">About Nutritional Therapy</div>
-			<div class="generic-wrapper row">
-				<div class="about-nutritional-therapy__text column small-12 medium-9">
+<!------------------------------------------------------------------->		
+		<div class="nut-therapy__container">
+			<div class="nut-therapy__title">About Nutritional Therapy</div>
+			<div class="nut-therapy__text-wrapper">
+				<div class="nut-therapy__text column small-12 medium-9">
 					<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
 					<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
 			Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
@@ -95,7 +98,7 @@ get_header(); ?>
 					<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
 					<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
 				</div>
-				<div class="about-nutritional-therapy__image column small-12 medium-3">
+				<div class="nut-therapy__image column small-12 medium-3">
 				</div>
 			</div>
 		</div>

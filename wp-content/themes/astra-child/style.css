@@ -14,6 +14,7 @@
 
 /************          SITE WIDE STYLES        ***************/
 
+
 .page-container {
   background-color: white;
 }
@@ -393,20 +394,25 @@
 .nutrition-consultations__wrapper{
   min-height: 90vh;
   display: flex;
+  justify-content: center;
+  background-color: #E7E7E7;
+}
+.nutrition-consultations__image-wrapper{
+  width: 50%;
+  flex-basis: 50%;
 }
 .nutrition-consultations__image{
-  min-width: 50%;
-  max-height: 100%;
-  flex-basis: 1;
+  max-width: 100%;
+  height: 700px;
 }
 .nutrition-consultations__textbox{
-  flex-basis: 1;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
-  padding: 50px 30px 50px 30px;
-  min-width: 50%;
+  /*padding: 50px 30px 50px 30px;*/
+  width: 50%;
 }
 .nutrition-consultations__text-title{
 	color: #2F5658;
@@ -426,13 +432,12 @@
     max-width: 70%;
 } 
 
-.price-tile-wrapper{
-  width: 80%;
-  min-height: 70vh;
+.price-tile__container{
+  height: 300px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.price-tile__container{}
 
 .price-tile__price{
   color: #CECECE;
@@ -456,24 +461,42 @@
 	line-height: 32px;
 	text-align: center;
 }
-
-.featured-article-container{
-  background-color: white;
+/*-----------therapy section --> */
+.therapy-benefits__container{
+  height: 50rem;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.nutritional-therapy-blurb-container{
-    max-width: 87%;
-}
-
-.therapy-benefits-blurb__text p{
+.therapy-benefits__text{
 	opacity: 0.5;
 	color: #0C0033;
 	font-family: Average;
-	font-size: 28px;
-	line-height: 36px;
+	font-size: 1.5rem;
+	line-height: 2rem;
 	text-align: center;
 }
+.therapy-benefits__bullets{
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
 
+.short-underscore{
+  height: 1px;
+  width: 3rem;
+  border: 3px solid #2F5658;
+}
+.bullet-list li{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #0C0033;
+  margin: .8rem;
+}
 .about-nutritional-therapy__title{
 	color: #2F5658;
 	font-family: Average;
