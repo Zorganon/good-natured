@@ -43,10 +43,11 @@ get_header(); ?>
 	    <div class="unsure-blurb__divider"></div>
 	  </div>
 <!---- Nutrition Consultations Text Section -->	  
-	  <div class="nutrition-consultations__box">
-	  	<div class="nutrition-consultations__image"></div>
+	  <div class="nutrition-consultations__wrapper">
+	  	<image src="<?php echo real_upload_url();?>/2017/10/veges.jpg" class="nutrition-consultations__image"></image>
 	  	<div class="nutrition-consultations__textbox">
-	  		<div class="nutrition-consultations__text-title"></div>
+	  		<div class="nutrition-consultations__text-title">NUTRITION CONSULTATIONS</div>
+	  		<div class="nutrition-consultations__underscore"></div>
 	  		<div class="nutrition-consultations__text">
 	  			<p>Consultations takes place in Crediton, and last for one and a half hours. This costs £45. I practice from the Crediton Complementary Health Centre on the High Street. I also consult from my home, just on the outskirts of Crediton.</p>
 					<p>You will go away with a written outline of menu plans, food choices, and any suggested supplements and life style factors. Further information in the form of “handouts” will be given to you where this might be helpful reference, plus reference to other web sites or information sources. This will all be tailored to the needs of each individual client. You will then have the information you need to help you make healthy choices, and plenty of ideas to get you started!</p>
@@ -56,7 +57,7 @@ get_header(); ?>
 	  </div>
 <!---- Price Tiles ---->
 	  <div class="price-tile-wrapper">
-
+			<?php get_template_part( 'service', 'tile'); ?>
 	  </div>
 	  <?php wp_reset_postdata(); ?>
 <!---- featured news article? --->

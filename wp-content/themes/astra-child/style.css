@@ -347,7 +347,8 @@
 }
 .about-janet-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  
   background-color: #E7E7E7;
 }
 .about-janet__text-box{
@@ -371,16 +372,17 @@
 }
 .about-janet__image{
   min-width: 50%;
-  align-self: flex-end;
 }
 .unsure-blurb-box{
   padding: 100px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .unsure-blurb__divider{
-  border-color: #2F5658;
-  border-width: 5px;
-  width: 30px;
+  height: 1px;
+  width: 3rem;
+  border: 3px solid #2F5658;
 }
 .unsure-blurb__text{
   color: #0C0033;
@@ -388,22 +390,47 @@
   font-family: Average, serif;
   font-size: 24px;
 }
+.nutrition-consultations__wrapper{
+  min-height: 90vh;
+  display: flex;
+}
+.nutrition-consultations__image{
+  min-width: 50%;
+  max-height: 100%;
+  flex-basis: 1;
+}
+.nutrition-consultations__textbox{
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  padding: 50px 30px 50px 30px;
+  min-width: 50%;
+}
 .nutrition-consultations__text-title{
 	color: #2F5658;
 	font-family: Average;
 	font-size: 35px;
 	line-height: 42px;
 }
+.nutrition-consultations__underscore{
+  height: 1px;
+  width: 3rem;
+  border: 3px solid #2F5658;
+}
 .nutrition-consultations__text{
-	color: #0C0033;
-	font-family: Average;
-	font-size: 17px;
-	line-height: 32px;
+    color: #0C0033;
+    font-size: 17px;
+    font-family: Average, serif;
+    max-width: 70%;
 } 
 
 .price-tile-wrapper{
-  width: 100%;
-  height: 700px;
+  width: 80%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-around;
 }
 .price-tile__container{}
 
