@@ -57,7 +57,7 @@ get_header(); ?>
 			</div>
 			<div class="impact__image-container columns small-12 medium-4">
 				<div class="impact__image">
-					<image src="<?php echo get_stylesheet_directory_uri(); ?>/infocard1.png"></image>
+					<image src="<?php echo real_upload_uri(); ?>/infocard1.png"></image>
 				</div>
 			</div>
 		</div>

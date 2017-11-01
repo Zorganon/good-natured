@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="body-content-container">
 <!-- hero image -->
 	  <div class="about-hero-img__wrapper">
-	    <image class="about-hero-image" src="<?php echo real_upload_url();?>/2017/10/about-hero.png"></image>
+	    <image class="about-hero-image" src="<?php echo real_upload_url();?>/about-hero.png"></image>
 	  </div>
 	<!-- -->
 	<!--- about blurb -->
@@ -30,7 +30,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="<?php echo real_upload_url(); ?>/2017/10/janet.jpg"></image>
+	    	<image src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
@@ -45,7 +45,7 @@ get_header(); ?>
 <!---- Nutrition Consultations Text Section -->	  
 	  <div class="nutrition-consultations__wrapper">
 	  	<div class="nutrition-consultations__image-wrapper">
-		  	<image src="<?php echo real_upload_url(); ?>/2017/10/tomatos.jpg" class="nutrition-consultations__image"></image>
+		  	<image src="<?php echo real_upload_url(); ?>/tomatos.jpg" class="nutrition-consultations__image"></image>
 	  	</div>
 	  	<div class="nutrition-consultations__textbox">
 	  		<div class="nutrition-consultations__text-title">NUTRITION CONSULTATIONS</div>
@@ -87,18 +87,26 @@ get_header(); ?>
 			<div class="short-underscore"></div>
 		</div>
 <!------------------------------------------------------------------->		
-		<div class="nut-therapy__container">
-			<div class="nut-therapy__title">About Nutritional Therapy</div>
-			<div class="nut-therapy__text-wrapper">
-				<div class="nut-therapy__text column small-12 medium-9">
-					<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
-					<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
-			Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
-					<p>Nutritional Therapy looks at each individual as a unique person. One-size-fits-all is certainly NOT part of how it works.  A full personal case history helps the Therapist work out what might be the underlying causes of symptoms, and then the client and therapist together devise a plan that the client feels they can work with.</p>
-					<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
-					<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
-				</div>
-				<div class="nut-therapy__image column small-12 medium-3">
+		<div class="nut-therapy-section">
+			<div class="nut-therapy__wrapper">
+				<div class="nut-therapy__text-wrapper">
+					<div class="nut-therapy__title">About Nutritional Therapy</div>
+					<div class="nut-therapy__text column small-12 medium-9">
+						<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
+						<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
+				Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
+						<p>Nutritional Therapy looks at each individual as a unique person. One-size-fits-all is certainly NOT part of how it works.  A full personal case history helps the Therapist work out what might be the underlying causes of symptoms, and then the client and therapist together devise a plan that the client feels they can work with.</p>
+						<p>Nutritional Therapy is a very gentle, holistic approach to health and well being. Many clients are astounded at the difference a few simple changes to their food can make.</p>
+						<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
+					</div>
+					<div class="nut-therapy__image-box column small-12 medium-3">
+						<div class="nut-therapy__image1">
+							<image src=""></image>
+						</div>
+						<div class="nut-therapy__image2">
+							<image src=""></image>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
