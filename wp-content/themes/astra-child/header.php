@@ -16,7 +16,7 @@
 <?php astra_head_top(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="wp-content/themes/astra-child/style.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"/>
 
 <?php astra_head_bottom(); ?>
 <?php wp_head(); ?>
@@ -35,14 +35,14 @@
 
 	<div id="content" class="site-content">
 
-		<div class="obsolete-ast-container">
+		<div class="ast-container">
 
 		<?php astra_content_top(); ?>
 		
 	<header class="full-width site-header" role="banner">
 		<div class="desktop-title-bar title-bar flex-container">
 			<div class="desktop-title-bar__logo flex-item">
-				<image src="wp-content/uploads/2017/10/gnnlogo.png"></image>
+				<image src="<?php echo get_uploads_dir(); ?>/10/30/gnnlogo.png"></image>
 			</div>
 			<div class="header-consultations flex-item">
 				<a type='button' class="button" href="/about">CONSULTATIONS AVAILABLE</a>

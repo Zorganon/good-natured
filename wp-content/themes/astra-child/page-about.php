@@ -7,8 +7,8 @@ get_header(); ?>
 <div class="page-container">
 	<div class="body-content-container">
 <!-- hero image -->
-	  <div class="about-hero-img">
-	    <image src="wp-content/uploads/2017/10/about-hero.png"></image>
+	  <div class="about-hero-img__wrapper">
+	    <image class="about-hero-image" src="about-hero.png"></image>
 	  </div>
 	<!-- -->
 	<!--- about blurb -->
@@ -30,7 +30,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="wp-content/uploads/2017/10/janet.png"></image>
+	    	<image src="<?php echo get_uploads_dir(); ?>/2017/10/janet.png"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
@@ -55,30 +55,13 @@ get_header(); ?>
 	  	</div>
 	  </div>
 <!---- Price Tiles ---->
-	  <div class="price-tile-container row">
-	  	<?php $args = array('post_type'=>'service');
-	  		$sloop = new WP_Query($args);
-	  		while ($sloop->have_posts()) : $sloop->the_post();
-	  	?>
-	  	<div class="price-tile column small-12 medium-3">
-	  		<div class="price-tile__title">
-	  			<?php echo the_title(); ?>
-	  		</div>	
-	  		<div class="price-tile__price">
-	  			£<?php $current_post_id = get_the_ID();
-	  				$key = 'wpcf-price';
-	  				$price = get_post_meta( $current_post_id, $key, true );
-	  				echo $price; ?>
-	  		</div>
-	  		<div class="price-tile__description">
-	  			<?php echo the_content(); ?>
-	  		</div>
-  		</div>
-		  <?php endwhile; wp_reset_postdata(); ?>
-	  </div>  
+	  <div class="price-tile-wrapper">
+
+	  </div>
+	  <?php wp_reset_postdata(); ?>
 <!---- featured news article? --->
 		<div class="featured-article-container">
-			<?php get_template_part( 'news-excerpt'); ?>
+			<?php get_template_part( 'news', 'excerpt'); ?>
 		</div>
 		
 <!--- nutritional Therapy blurb ---->
@@ -112,7 +95,6 @@ get_header(); ?>
 					<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
 				</div>
 				<div class="about-nutritional-therapy__image column small-12 medium-3">
-					<image></image>
 				</div>
 			</div>
 		</div>

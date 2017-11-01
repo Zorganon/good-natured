@@ -65,29 +65,9 @@ get_header(); ?>
 
 <!-- news excerpt section -->
 		<div class="news-excerpt__wrapper">
-			<?php get_template_part( 'news-excerpt' ); ?>
-		</div>
-<!-- end of news section -->
-
-<!-- news slider section -->
-
-		<div class="news-slider-container">
-			<div class="news-slider__wrapper">
-				<?php get_template_part( 'news-slider' ); ?>
-			</div>
-			<a class="news-slider__more-button button" href="/news">News and Views</a>
+			<?php get_template_part( 'news', 'excerpt' ); ?>
 		</div>
 
-<!-- recipe slider section -->
-		
-		<div class="recipe-slider-container">
-			<div class="recipe-slider__wrapper">
-				<?php get_template_part( 'recipe', 'slider' ); ?>
-			</div>
-			<a class="recipe-slider__more-button button" href="/recipes">View Recipes</a>
-			
-		</div>
-		
 	</div>
 </div>
-<?php get_footer();
+<?php get_footer(); ?>
