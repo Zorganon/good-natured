@@ -29,7 +29,7 @@ get_header(); ?>
 					<div class="frontpage-infocard__text">
 						<p>I’m a firm believer in the old adage “you are what you eat”.  I have a degree in Anatomy and Physiology, have taught Human Biology and have a Diploma in Nutritional Therapy.</p>
 					</div>
-					<a class="frontpage-infocard__button button" href="/about">MORE ABOUT JANET</a>
+					<a type="button" class="frontpage-infocard__button button" href="/about">MORE ABOUT JANET</a>
 				</div>
 			</div>
 		</div>
@@ -38,19 +38,22 @@ get_header(); ?>
 		
 <!-- random infoCard section -->
 
-		<div class="impact-container row">
-			<div class="impact__content-container columns small-12 medium-4">
-				<div class="impact__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
-				<div class="impact__bullets">
-					<ul>
-						<li>Analyze dietary habits and address nutritional gaps</li>
-						<li>Create menu plans full of delicious, whole foods tailored to individual health needs</li>
-						<li>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</li>
-					</ul>
-				</div>
-				<div class="impact__button">
-					<a class="button" href="/about">LEARN MORE</a>
-				</div>
+		<div class="impact-container flex-container">
+			<div class="impact-text__container columns small-12 medium-4">
+				<div class="impact-text__wrapper">
+					<div class="impact__header">Food can have a profound impact, improving sleep, energy levels, productivity, weight etc</div>
+					<div class="impact__header-underscore"></div>
+					<div class="impact__bullets">
+						<ul>
+							<li>Analyze dietary habits and address nutritional gaps</li>
+							<li>Create menu plans full of delicious, whole foods tailored to individual health needs</li>
+							<li>Identify the personal triggers that lead to making mindless food choices, such as emotions or social pressures</li>
+						</ul>
+					</div>
+					<div class="impact__button">
+						<a type="button" class="button" href="/about">LEARN MORE</a>
+					</div>
+				</div>	
 			</div>
 			<div class="impact__image-container columns small-12 medium-4">
 				<div class="impact__image">
