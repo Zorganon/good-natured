@@ -35,14 +35,14 @@
 
 	<div id="content" class="site-content">
 
-		<div class="ast-container">
+		<div class="obsolete-ast-container">
 
 		<?php astra_content_top(); ?>
 		
 	<header class="full-width site-header" role="banner">
 		<div class="desktop-title-bar title-bar flex-container">
 			<div class="desktop-title-bar__logo flex-item">
-				<image src="<?php echo get_uploads_dir(); ?>/10/30/gnnlogo.png"></image>
+				<image src="<?php echo real_upload_url(); ?>/2017/10/gnnlogo.png"></image>
 			</div>
 			<div class="header-consultations flex-item">
 				<a type='button' class="button" href="/about">CONSULTATIONS AVAILABLE</a>

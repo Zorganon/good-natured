@@ -30,7 +30,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image src="<?php echo get_uploads_dir(); ?>/2017/10/janet.png"></image>
+	    	<image src="<?php echo get_real_upload_url(); ?>/2017/10/janet.png"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
