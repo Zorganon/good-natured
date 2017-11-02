@@ -4,7 +4,6 @@ Template Name: Front
 */
 get_header(); ?>
 
-<?php do_action( 'foundationpress_before_content' ); ?>
 <div class="page-container">
 	<div class="body-content-container">
 		

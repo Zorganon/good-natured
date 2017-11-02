@@ -16,6 +16,8 @@
 <?php astra_head_top(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Average|Montserrat" rel="stylesheet">
+<link href="http://<?php echo get_stylesheet_directory_uri(); ?>/assets/fonts/Gloss_And_Bloom.ttf"/>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"/>
 
 <?php astra_head_bottom(); ?>
@@ -42,10 +44,10 @@
 	<header class="full-width site-header" role="banner">
 		<div class="desktop-title-bar title-bar flex-container">
 			<div class="desktop-title-bar__logo flex-item">
-				<image src="<?php echo real_upload_url(); ?>/2017/10/gnnlogo.png"></image>
+				<image src="<?php echo real_upload_url(); ?>/gnnlogo.png"></image>
 			</div>
 			<div class="header-consultations flex-item">
-				<a type='button' class="button" href="/about">CONSULTATIONS AVAILABLE</a>
+				<a type='button' class="header-consultations__button button" href="/about">CONSULTATIONS AVAILABLE</a>
 			</div>
 		</div>
 	</header>

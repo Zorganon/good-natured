@@ -31,26 +31,26 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image column small-12 medium-6">
-	    	<image class="aboimage" src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
+	    	<image src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
 	  <div class="unsure-blurb-box">
-	    <div class="unsure-blurb__divider"></div>
+	    <div class="short-underscore"></div>
 	    <div class="unsure-blurb__text">
 	     	<p>For those clients who are uncertain if Nutritional Therapy is for them, I offer a free 20 minute phone consultation.</p>
 				<p>Should we jointly decide that Nutritional Therapy is a good approach for you to try, then we will arrange a consultation.  Prior to the consultation, you will be sent a questionnaire  which includes your medical history and a three day food diary to be returned to me at least three days in advance of the consultation. This enables me to build a picture of your health history and consider how I can help you achieve your goals. It also ensures you get more value from our consultation time as much of the analysis is carried out in advance.</p>
 	    </div>
-	    <div class="unsure-blurb__divider"></div>
+	    <div class="short-underscore"></div>
 	  </div>
 <!---- Nutrition Consultations Text Section -->	  
 	  <div class="nutrition-consultations__wrapper">
 	  	<div class="nutrition-consultations__image-wrapper">
-		  	<image src="<?php echo real_upload_url(); ?>/tomatos.jpg" class="nutrition-consultations__image"></image>
+	  		<image class="nutrition-consultations__image" src="<?php echo real_upload_url(); ?>/veges.jpg"></image>
 	  	</div>
 	  	<div class="nutrition-consultations__textbox">
 	  		<div class="nutrition-consultations__text-title">NUTRITION CONSULTATIONS</div>
-	  		<div class="nutrition-consultations__underscore"></div>
+	  		<div class="long-underscore"></div>
 	  		<div class="nutrition-consultations__text">
 	  			<p>Consultations takes place in Crediton, and last for one and a half hours. This costs £45. I practice from the Crediton Complementary Health Centre on the High Street. I also consult from my home, just on the outskirts of Crediton.</p>
 					<p>You will go away with a written outline of menu plans, food choices, and any suggested supplements and life style factors. Further information in the form of “handouts” will be given to you where this might be helpful reference, plus reference to other web sites or information sources. This will all be tailored to the needs of each individual client. You will then have the information you need to help you make healthy choices, and plenty of ideas to get you started!</p>
@@ -59,11 +59,11 @@ get_header(); ?>
 	  	</div>
 	  </div>
 <!---- Price Tiles ---->
-		<?php get_template_part( 'service', 'tile'); ?>
+		<?php get_template_part( 'template-parts/service', 'tile'); ?>
 	  <?php wp_reset_postdata(); ?>
 <!---- featured news article? --->
 		<div class="news-excerpt__wrapper">
-			<?php get_template_part( 'news', 'excerpt'); ?>
+			<?php get_template_part( 'template-parts/news', 'excerpt'); ?>
 		</div>
 		
 <!----------- nutritional Therapy blurb ----------------------------->
@@ -92,7 +92,7 @@ get_header(); ?>
 			<div class="nut-therapy__wrapper">
 				<div class="nut-therapy__text-wrapper">
 					<div class="nut-therapy__title">About Nutritional Therapy</div>
-					<div class="short-underscore"></div>
+					<div class="long-underscore"></div>
 					<div class="nut-therapy__text column small-12 medium-9">
 						<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
 						<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.

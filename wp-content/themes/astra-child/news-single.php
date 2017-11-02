@@ -10,12 +10,6 @@
 
 get_header(); ?>
 
-<?php if ( astra_page_layout() == 'left-sidebar' ) : ?>
-
-	<?php get_sidebar(); ?>
-
-<?php endif ?>
-
 	<div id="primary" <?php astra_primary_class(); ?>>
 
 		<?php astra_primary_content_top(); ?>
@@ -27,7 +21,7 @@ get_header(); ?>
 			the_post();
 ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/news', 'post' ); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

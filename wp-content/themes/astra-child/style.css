@@ -14,8 +14,12 @@
 
 /************          SITE WIDE STYLES        ***************/
 
+@font-face {
+  font-family: glossandbloom;
+  src: url(wp-content/themes/astra-child/assets/fonts/Gloss_And_Bloom.ttf);
+}
 
-.page-container {
+.page-container{
   background-color: white;
 }
 
@@ -69,10 +73,10 @@
   display: flex;
 }
 
-.header-consultations a{
+.header-consultations__button{
 	opacity: 0.5;
 	color: #0C0033;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: center;
@@ -98,17 +102,18 @@
 .site-navigation__button{
   margin: auto;
   display: flex;
+  max-height: 100%;
 }
 .site-navigation__button a{
   box-sizing: border-box;
   margin: auto;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.5rem;
 }
-
+/************************************************************/
 /************          FRONT PAGE STYLES         ************/
-
+/************************************************************/
 
 .front-hero__image {
     margin-left: auto;
@@ -119,7 +124,7 @@
 .divider-container{
   display: flex;
   justify-content: center;
-  height: 10rem;
+  height: 20rem;
 }
 .scroll-down-divider{
   padding: 5px;
@@ -129,7 +134,11 @@
 .frontpage-infocard__wrapper{
   display: flex;
 }
-
+.frontpage-infocard__border{
+  height: 1px;
+  border: 2px dashed #CCD159;
+  margin: 3rem;
+}
 .frontpage-infocard-container{
     margin: auto;
     max-width: 87%;
@@ -156,7 +165,7 @@
   
 }
 .frontpage-infocard__title{
-  font-family: 'Gloss and Bloom', cursive;
+  font-family: 'glossandbloom', cursive;
   font-size: 3rem;
   color: #2F5658;
   text-align: center;
@@ -303,7 +312,7 @@
   margin: auto;
   opacity: 0.5;
   color: #0C0033;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5em;
@@ -381,51 +390,44 @@
   flex-basis: 50%;
   display: flex;
 }
-.aboimage{
-  float: right;
-}
+
 .unsure-blurb-box{
   margin: 100px auto 100px auto;
   max-width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: baseline;
-}
-.unsure-blurb__divider{
-  height: 1px;
-  width: 3rem;
-  border: 3px solid #2F5658;
 }
 .unsure-blurb__text{
   color: #0C0033;
   text-align: center;
   font-family: Average, serif;
   font-size: 24px;
+  margin-top: 1.75em;
 }
+
 .nutrition-consultations__wrapper{
-  min-height: 90vh;
   display: flex;
-  justify-content: center;
   background-color: #E7E7E7;
 }
 .nutrition-consultations__image-wrapper{
   flex-basis: 50%;
-  
+  height: 100%;
+  width: 50%;
 }
 .nutrition-consultations__image{
-  max-width: 100%;
-  height: 700px;
+  width: 50vw;
+  height: 790px;
 }
 .nutrition-consultations__textbox{
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
-  /*padding: 50px 30px 50px 30px;*/
-  width: 50%;
+  padding: 50px 30px 50px 30px;
 }
 .nutrition-consultations__text-title{
 	color: #2F5658;
@@ -433,9 +435,9 @@
 	font-size: 2rem;
 	line-height: 2.6rem;
 }
-.nutrition-consultations__underscore{
+.long-underscore{
   height: 1px;
-  width: 3rem;
+  width: 3em;
   border: 3px solid #2F5658;
 }
 .nutrition-consultations__text{
@@ -463,7 +465,7 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
 }
 .price-tile__description{
 	color: #0C0033;
@@ -487,8 +489,8 @@
 	opacity: 0.5;
 	color: #0C0033;
 	font-family: Average;
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 2rem;
+	line-height: 2.5rem;
 	text-align: center;
 }
 .therapy-benefits__bullets{
@@ -503,8 +505,8 @@
   border: 3px solid #2F5658;
 }
 .bullet-list li{
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #0C0033;
   margin: .8rem;
 }
@@ -560,7 +562,7 @@
 }
 .recipe-post__tags{
   color: #CCD159;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
