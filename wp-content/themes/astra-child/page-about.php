@@ -13,9 +13,9 @@ get_header(); ?>
 	<!-- -->
 	<!--- about blurb -->
 	  <div class="about-blurb-divider">
-	  	<div class="about-blurb-divider__border"></div>
+	  	<div class="green-dashed-divider"></div>
 	    <div class="about-blurb"><p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p></div>
-	    <div class="about-blurb-divider__border"></div>
+	    <div class="green-dashed-divider"></div>
 	  </div>
 	  
 	  <div class="about-janet-container row">

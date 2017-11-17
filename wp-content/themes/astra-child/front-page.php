@@ -16,8 +16,8 @@ get_header(); ?>
 				<image src="<?php echo get_stylesheet_directory_uri(); ?>/scroll-down.png" class="centered-content"></image>
 			</div>
 		</div>
-		
 <!-- About Jan info Card -->
+		<div class="green-dashed-divider"></div>
 		<div class="frontpage-infocard__wrapper">
 			<div class="frontpage-infocard-container flex-container">
 				<div class="frontpage-infocard__image-box flex-item">
@@ -34,7 +34,7 @@ get_header(); ?>
 			</div>
 		</div>
 <!-- end of About infoCard -->
-		<div class="divider"></div>
+		<div class="green-dashed-divider"></div>
 		
 <!-- random infoCard section -->
 
@@ -67,7 +67,9 @@ get_header(); ?>
 		<div class="news-excerpt__wrapper">
 			<?php get_template_part( 'template-parts/news', 'excerpt' ); ?>
 		</div>
-
+		<div class="fp-news-slider">
+			<?php get_template_part( 'template-parts/news', 'slider' ); ?>
+		</div>
 	</div>
 </div>
 <?php get_footer(); ?>

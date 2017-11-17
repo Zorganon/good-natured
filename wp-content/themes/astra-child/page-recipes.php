@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: News
+Template Name: recipe
 */
 get_header(); ?>
 
@@ -10,17 +10,17 @@ get_header(); ?>
 		<div class="divider"></div>
 		<div class="post-page-grid">
 			<div class="post-page-grid-wrapper">
-			<?php $args = array('post_type'=>'post');
+			<?php $args = array('post_type'=>'recipe');
 		
-		    $nloop = new WP_Query($args);
+		    $rloop = new WP_Query($args);
 		
-		    while ($nloop->have_posts()) : $nloop->the_post(); 
+		    while ($rloop->have_posts()) : $rloop->the_post(); 
 			?>
 		    <div class="post__tile">
-		      <div class="news-post__img">
+		      <div class="recipe-post__img">
 		        <?php echo the_post_thumbnail( 'medium-large' ); ?>
 		      </div>
-		      <div class="news-post__title">
+		      <div class="recipe-post__title">
 		          <?php echo the_title(); ?>
 		      </div>
 		    </div>

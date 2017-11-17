@@ -16,12 +16,35 @@
 
 	<?php astra_entry_top(); ?>
 
-	<div <?php astra_blog_layout_class( 'news-layout-1' ); ?>>
-	
 		<div class="entry-content clear" itemprop="text">
 	
-			<?php the_content(); ?>
-	
+			<div class="button news-header__button" type="button" href="/news">ALL NEWS</div>
+			
+			<div class="news-post-title"><?php the_title(); ?></div>
+			
+			<div class="news-post-meta"></div>
+			
+			<div class="green-dashed-divider"></div>
+			
+			<div class="news-post-content__wrapper">
+			
+				<div class="news-post-content__content">
+			
+					<?php the_content(); ?>
+			
+				</div>
+				
+			</div>
+			<?php 
+			/* the loop's current post is saved in a backup variable prior to running slider which starts another loop */
+			$backup = $post; ?>
+			<div class="news-post-more-bar">
+				<div class="news-post-more__text">MORE LIKE THIS</div>
+			</div>
+			<div class="news-post-slider__wrapper">
+				<?php get_template_part( 'news-slider'); ?>
+			</div>
+			<?php $post = $backup; ?>
 			<?php
 				astra_edit_post_link(
 	

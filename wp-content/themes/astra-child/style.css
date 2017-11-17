@@ -48,6 +48,15 @@
     margin-right: auto;
 }
 
+.green-dashed-divider{
+  border-style: dashed;
+  border-color: #CCD159;
+  border-width: 2px;
+  width: 80%;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /************         HEADER AND NAVIGATION STYLES      ****************/
 .site-header{
   background-color: #E7E7E7;
@@ -340,13 +349,7 @@
   align-items: center;
   min-height: 50vh;
 }
-.about-blurb-divider__border{
-	height: 1px;
-	width: 70vw;
-	border: 2px dashed #CCD159;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 .about-blurb p{
   opacity: 0.5;
   font-family: Average, serif;
@@ -475,6 +478,7 @@
 	line-height: 32px;
 	text-align: center;
 }
+
 /*-----------therapy section --> */
 .therapy-benefits__container{
   height: 50rem;
@@ -567,20 +571,115 @@
   font-weight: 500;
   line-height: 24px;
 }
+/****************************************************************/
+/*****************      NEWS Post STYLES         ****************/
+/****************************************************************/
 
 
-/*****************      NEWS STYLES         ****************/
-.news-post__title{
+.news-post-title{
 	color: #2F5658;
-	font-family: Average;
+	font-family: 'Average';
 	font-size: 48px;
 	line-height: 64px;
 }
 
-.news-post__content{
+.news-post-meta{
+	opacity: 0.5;
+	color: #0C0033;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.news-post-content__wrapper{
 	color: #0C0033;
 	font-family: Average;
 	font-size: 17px;
 	line-height: 32px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.news-post-content__content{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news-slider__slider{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.news-slider__post-tile{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.news-slider__post-img{
+  
+}
+.news-slider__post-title{
+  color: #0C0033;
+  font-family: Average;
+  font-size: 2rem;
+  line-height: 2.6rem;	
+  text-align: center;
+  max-width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+.news-slider__post-title-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/**********************************/
+/*******  posts pages *************/
+/**********************************/
+.post-page-grid{
+  margin: 10vh;
+}
+.post-page-grid-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.post__tile{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.blue-line {
+  height: 5px;
+  width: 100%;
+  background-color: #2F5658;
+}
+/***********************/
+/**** News main page ***/
+/***********************/
+
+.news-post__title{
+  
+}
+.news-post__img{
+  
+}
+/**************************/
+/**** Recipes main page ***/
+/**************************/
+
+
+.news-post__title{
+  
+}
+.news-post__img{
+  
+}
