@@ -5,12 +5,12 @@
 
     while ($loop->have_posts()) : $loop->the_post(); 
 	?>
-    <div class="news-slider__post-tile">
+    <div class="post-tile__tile">
       <a href="<?php echo get_permalink(); ?>">
-        <div class="news-slider__post-img">
+        <div class="post-tile__img">
           <?php echo the_post_thumbnail( 'medium-large' ); ?>
         </div>
-        <div class="news-slider__post-title">
+        <div class="post-tile__title">
             <?php echo the_title(); ?>
         </div>
         <div class="blue-line"></div>

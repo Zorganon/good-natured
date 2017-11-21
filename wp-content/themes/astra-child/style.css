@@ -92,7 +92,7 @@
 	background-color: transparent;
 	margin: auto;
 	max-height: 80%;
-	max-width: 100%;
+	width: 18.8rem;
 }
 
 .nav-container{
@@ -267,7 +267,7 @@
   flex-basis: 0;
 }
 
-/* news excerpt */
+/**************************** news excerpt *********************/
 
 .news-excerpt__wrapper{
   display: flex;
@@ -284,7 +284,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  max-width: 55%;
+  width: 55%;
 }
 .news-excerpt__title{
   color: #2F5658;
@@ -309,6 +309,7 @@
   font-family: Average, serif;
   margin: 1rem 3rem 1rem 3rem;
 }
+
 .news-excerpt__button-wrapper{
   display: flex;
   justify-content: center;
@@ -578,6 +579,12 @@
   max-width: 5rem;
 }
 
+.page-content-wrapper{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .news-post-title{
 	color: #2F5658;
 	font-family: 'Average';
@@ -640,24 +647,43 @@
   justify-content: space-around;
   align-items: center;
 }
+
 /**********************************/
 /*******  posts pages *************/
 /**********************************/
+
 .post-page-grid{
   margin: 10vh;
 }
-.post-page-grid-wrapper{
+.post-page-grid-content{
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-.post__tile{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;
   margin: auto;
+}
+.post-tile__tile{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+.post-tile__title{
+	color: #0C0033;
+	font-family: Average;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
+	text-align: center;  
+}
+.post-tile__img{
+  height: 308px;
+  width: 385px;
+  overflow: hidden;
+}
+
+.post-tile__img wp-post-image{
+  height: auto;
+  width: 100%;
 }
 .blue-line {
   height: 5px;
@@ -668,20 +694,6 @@
 /**** News main page ***/
 /***********************/
 
-.news-post__title{
-  
-}
-.news-post__img{
-  
-}
 /**************************/
 /**** Recipes main page ***/
 /**************************/
-
-
-.news-post__title{
-  
-}
-.news-post__img{
-  
-}
