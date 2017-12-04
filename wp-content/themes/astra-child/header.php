@@ -52,24 +52,12 @@
 		</div>
 	</header>
 	<nav class="nav-container nav-bar" role="navigation">
-			<div class="site-navigation__bar flex-container">
-				<div class="site-navigation__button">
-					<a type="button" class="button large" href="/home">HOME</a>
-				</div>
-				<div class="site-navigation__button flex-item">
-					<a class="button large" href="/about">ABOUT</a>
-				</div>
-				<div class="site-navigation__button flex-item">
-					<a type="button" class="button large" href="/recipes">RECIPES</a>
-				</div>
-				<div class="site-navigation__button flex-item">
-					<a type="button" class="button large" href="/news">NEWS</a>
-				</div>
-				<div class="site-navigation__button flex-item">
-					<a type="button" class="button large" href="/contact">CONTACT</a>
-				</div>
-			</div>
-			
+		<div class="site-navigation__bar flex-container">
+			<a type="button" class="button large site-navigation__button" href="/home">HOME</a>
+			<a type="button" class="button large site-navigation__button" href="/about">ABOUT</a>
+			<a type="button" class="button large site-navigation__button" href="/recipes">RECIPES</a>
+			<a type="button" class="button large site-navigation__button" href="/news">NEWS</a>
+			<a type="button" class="button large site-navigation__button" href="/contact">CONTACT</a>
 		</div>
 	</nav>
 		
