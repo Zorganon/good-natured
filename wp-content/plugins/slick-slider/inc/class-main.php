@@ -241,25 +241,25 @@ class Slick_Slider_Main {
 	 * @since 0.1
 	 * 
 	 * @link http://php.net/manual/de/function.array-diff-assoc.php#111675
-	 * @param array $array1 The array to compare from.
-	 * @param array $array2 An array to compare against.
-	 * @return array        Array containing all the values from $array1 that are not present in $array2.
+	 * @param array $array_1 The array to compare from.
+	 * @param array $array_2 An array to compare against.
+	 * @return array        Array containing all the values from $array_1 that are not present in $array_2.
 	 */
-	public static function array_diff_assoc_recursive( $array1, $array2 ) { 
+	public static function array_diff_assoc_recursive( $array_1, $array_2 ) { 
 
-		foreach( $array1 as $key => $value ) {
+		foreach( $array_1 as $key => $value ) {
 			if ( is_array( $value ) ) {
-				if ( ! isset( $array2[$key] ) ) {
+				if ( ! isset( $array_2[ $key ] ) ) {
 					$difference[ $key ] = $value;
-				} elseif ( ! is_array( $array2[ $key ] ) ) {
+				} elseif ( ! is_array( $array_2[ $key ] ) ) {
 					$difference[ $key ] = $value;
 				} else  {
-					$new_diff = self::array_diff_assoc_recursive( $value, $array2[ $key ] );
+					$new_diff = self::array_diff_assoc_recursive( $value, $array_2[ $key ] );
 					if ( $new_diff != false ) {
 						$difference[ $key ] = $new_diff;
 					}
 				}
-			} elseif ( ! isset( $array2[ $key ] ) || $array2[ $key ] != $value ) {
+			} elseif ( ! isset( $array_2[ $key ] ) || $array_2[ $key ] != $value ) {
 				$difference[ $key ] = $value;
 			}
 		}
@@ -268,7 +268,7 @@ class Slick_Slider_Main {
 	}
 
 	/**
-	 * Helper function for getting the `.min` suffix for minified files.
+	 * Helper function for getting the `.min` suffix for minified assets.
 	 *
 	 * @since  0.4
 	 * 
@@ -277,6 +277,36 @@ class Slick_Slider_Main {
 	public static function get_asset_suffix() {
 
 		return defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+	}
+
+	/**
+	 * Enable lazy loading of images by replacing image attributes.
+	 *
+	 * @since  0.5.0
+	 *
+	 * @see wp_get_attachment_image()
+	 * @param array        $attr       Attributes for the image markup.
+	 * @param WP_Post      $attachment Image attachment post.
+	 * @param string|array $size       Requested size. Image size or array of width and height values (in that order). Default 'thumbnail'.
+	 * @return array $attr 
+	 */
+	public static function switch_attachment_attr( $attr, $attachment, $size ) {
+
+		$attributes = array(
+			'sizes'  => 'data-sizes',
+			'src'    => 'data-lazy',
+			'srcset' => 'data-srcset',
+		);
+
+		foreach ( $attributes as $key => $attribute ) {
+			if ( isset( $attr[ $key ] ) ) {
+				$attr[ $attribute ] = $attr[ $key ];
+				unset( $attr[ $key] );
+			}
+		}
+
+		return $attr;
 
 	}
 

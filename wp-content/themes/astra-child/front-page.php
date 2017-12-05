@@ -18,6 +18,9 @@ get_header(); ?>
 		</div>
 <!-- About Jan info Card -->
 		<div class="green-dashed-divider"></div>
+		<p>
+			<?php echo "php version is: " . phpversion(); ?>
+		</p>
 		<div class="frontpage-infocard__wrapper">
 			<div class="frontpage-infocard-container flex-container">
 				<div class="frontpage-infocard__image-box flex-item">

@@ -45,7 +45,7 @@ class Slick_Slider_Template {
 		$show_on_gallery_modal = Slick_Slider_Options::get( 'showOnGalleryModal' )['value'];
 		?>
 
-		<script type="text/html" id="tmpl-slick-slider-gallery-settings">
+		<script type="text/html" id="tmpl-slick-slider-settings">
 			<div class="clear"></div>
 			<div class="slick-slider-settings">
 				<hr>
@@ -53,7 +53,11 @@ class Slick_Slider_Template {
 				<div class="slick-slider-toggle-settings">
 					<label class="setting">
 						<span><?php _e( 'Use Slick Slider', 'slick-slider' ); ?></span>
-						<input type="checkbox" data-setting="slick_active">
+						<input
+							type="checkbox"
+							data-setting="slick_active"
+							<# if ( slickSlider.settings.slickActive ) { #> checked="checked" <# } #>
+						>
 					</label>
 				</div>
 				<?php if ( $show_on_gallery_modal ) { ?>
@@ -117,8 +121,9 @@ class Slick_Slider_Template {
 		wp_enqueue_script(
 			'slick-slider-post-gallery',
 			Slick_Slider_Main::plugin_url( "js/slick-slider-post{$assetSuffix}.js" ),
-			array( 'media-editor' ),
-			Slick_Slider_Main::get_plugin_data( 'Version' )
+			array( 'jquery' ),
+			Slick_Slider_Main::get_plugin_data( 'Version' ),
+			true
 		);
 
 	}

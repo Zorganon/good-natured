@@ -4,12 +4,12 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: gallery, slider, image slider, slideshow, carousel, slick, jQuery slider, lightbox
 Requires at least: 4.6
 Tested up to: 4.8
-Stable tag: 0.4.2
+Requires PHP: 5.6
+Stable tag: 0.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Turn your native WordPress galleries into beautiful fully responsive sliders. Adjust the slider to your needs on a per gallery base.
-
 
 == Description ==
 
@@ -41,19 +41,17 @@ Available options (amongst others):
 
 Slick Slider uses the awesome [slick slider](https://kenwheeler.github.io/slick/) written by Ken Wheeler.
 
+== Screenshots ==
 
-== Installation ==
-
-1. Upload the extracted plugin folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly
-2. Activate the plugin through the “Plugins” screen in WordPress
-3. Use the “Settings” -> “Media” screen to configure the default slider options or leave it as it is
-
+1. Media settings. All available options are listed here.
+2. Gallery Media Modal. Only the most important options are visible.
+3. Frontend with slider.
 
 == Frequently Asked Questions ==
 
 = I don’t want all galleries to become sliders! Is this possible? =
 
-Absolutely! On each gallery edit modal there’s a checkbox called “Use Slick Slider”. If you leave this box unchecked your gallery will be a simple … gallery.
+Absolutely! On each gallery Media Modal there’s a checkbox called “Use Slick Slider”. If you leave this box unchecked your gallery will be a simple … gallery.
 
 = Is it possible to place the slider somewhere else, say in a widget? =
 
@@ -74,28 +72,26 @@ Use the plugin [WP Featherlight](https://wordpress.org/plugins/wp-featherlight/)
 
 = Is it possible to add captions? =
 
-They are hidden by default. To activate them use `add_filter( 'slick_slider_show_caption', '__return_true' );`.
+Use the option “Show caption”.
 > Note: The captions aren’t styled. You need to apply some CSS on them (use the class `.slide__caption`).
 
 = Is it possible to use slick’s JS and CSS independently? =
 
 Paste the following lines in your functions.php:
 
-`add_action( 'wp_enqueue_scripts', 'slick_slider_enqueue_assets' );
-function slick_slider_enqueue_assets() {
+`add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_script( 'slick-slider-core' );
 	wp_enqueue_style( 'slick-slider-core-theme' );
-}`
+}, 11 );`
 
 = Is it possible to prevent slick’s JS and CSS to get loaded? = 
 
 Paste the following lines in your functions.php:
 
-`add_action( 'wp_enqueue_scripts', 'slick_slider_deregister_assets', 11 );
-function slick_slider_deregister_assets() {
+`add_action( 'wp_enqueue_scripts', function() {
 	wp_deregister_script( 'slick-slider-core' );
 	wp_deregister_style( 'slick-slider-core' );
-}`
+}, 11 );`
 
 > Note: This will also remove the initiation script and helper CSS from the page (see below).
 
@@ -114,15 +110,15 @@ Use the WordPress core filter [`shortcode_atts_gallery`](http://codex.wordpress.
 
 = Is it possible to adjust the caption’s markup? =
 
-Use the filter `slick_slider_caption_html`. First argument is the caption’s HTML, second is the attachment ID, third is the post ID.
+Use the filter `slick_slider_caption_html`. Parameters: caption HTML, attachment ID, post ID, slider instance.
 
 = Is it possible to adjust the markup for each slide? =
 
-Use the filter `slick_slider_slide_html`. First argument is the slide’s HTML markup, second is the attachment ID, third is the post ID.
+Use the filter `slick_slider_slide_html`. Parameters: slide HTML, attachment ID, post ID, slider instance.
 
 = Is it possible to adjust the markup for the entire slider? =
 
-Use the filter `slick_slider_html`. First argument is the slider’s HTML markup, second is the post ID.
+Use the filter `slick_slider_html`. Parameters: slider HTML, post ID, slider instance.
 
 = Is it possible to enqueue scripts and styles unminified? =
 
@@ -131,16 +127,23 @@ Use the constant [`SCRIPT_DEBUG`](https://codex.wordpress.org/Debugging_in_WordP
 = I want to buy you a beer! =
 
 Thats great, thanks! First of all, you should say thank you to [Ken Wheeler](http://kenwheeler.github.io/) who developed the actual slick slider.
-If you want, you can buy me a beer too. You’ll find the donation link on your plugin page once you have Slick Slider installed and activated.
-
-
-== Screenshots ==
-
-1. Media settings screen. All available options are listed here.
-2. Single gallery screen. Only the most important options are visible.
-3. Frontend with slider.
+If you want, [you can buy me a beer too](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J4347QQ8J3L54).
 
 == Changelog ==
+
+= 0.5.1 (10/04/2017) =
+* Fix: Bug (introduced in 0.5) that caused non Slick galleries following a Slick gallery to not show images
+
+= 0.5 (09/30/2017) =
+* Feature: Updated Slick to v1.8.0
+* Feature: Added new options “appendDots”, “dotsClass”, "focusOnChange", “pauseOnFocus”, “waitForAnimate” and “zIndex”
+* Feature: Added new option “Show caption”, deprecating the `slick_slider_show_caption` filter
+* Feature: Always lazy load images to improve page load time
+* Fix: Bug that hid the Slick Slider settings in the Gallery Media Modal under certain circumstances
+* Misc: Added new actions `slick_slider_before_slider`, `slick_slider_after_slider`, `slick_slider_before_slide` and `slick_slider_after_slide`
+* Misc: Extended filters `slick_slider_caption_html`, `slick_slider_slide_html` and `slick_slider_html`
+* Misc: Changed default value of "focusOnSelect" to `false`
+* Misc: Minor PHP, JavaScript and CSS improvements
 
 = 0.4.2 (01/08/2017) =
 * Fix: Bug (introduced in 0.4) that prevented numeric option values in gallery modal to update
@@ -150,8 +153,8 @@ If you want, you can buy me a beer too. You’ll find the donation link on your 
 * Misc: Several code formatting changes according to the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
 
 = 0.4 (01/03/2017) =
-* Feature: Added support for custom links (see [FAQ section](https://wordpress.org/plugins/slick-slider/faq/))
-* Feature: Added lightbox support (see [FAQ section](https://wordpress.org/plugins/slick-slider/faq/))
+* Feature: Added support for custom links (see [FAQ section](https://wordpress.org/plugins/slick-slider/#faq))
+* Feature: Added lightbox support (see [FAQ section](https://wordpress.org/plugins/slick-slider/#faq))
 * Feature: Added support for [`SCRIPT_DEBUG` constant](https://codex.wordpress.org/Debugging_in_WordPress#SCRIPT_DEBUG)
 
 = 0.3 (10/31/2016) =

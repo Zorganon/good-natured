@@ -66,7 +66,7 @@ class Slick_Slider_Output {
 			'slick-slider-core',
 			Slick_Slider_Main::plugin_url( "bower_components/slick-carousel/slick/slick{$asset_suffix}.js" ),
 			array( 'jquery' ),
-			'1.6.0',
+			'1.8.0',
 			true
 		);
 		
@@ -74,13 +74,13 @@ class Slick_Slider_Output {
 			'slick-slider-core',
 			Slick_Slider_Main::plugin_url( 'bower_components/slick-carousel/slick/slick.css' ),
 			array(),
-			'1.6.0'
+			'1.8.0'
 		);
 		wp_register_style(
 			'slick-slider-core-theme',
 			Slick_Slider_Main::plugin_url( 'bower_components/slick-carousel/slick/slick-theme.css' ),
 			array( 'slick-slider-core' ),
-			'1.6.0'
+			'1.8.0'
 		);
 
 		if ( apply_filters( 'slick_slider_init_slider', true ) ) {
@@ -118,6 +118,7 @@ class Slick_Slider_Output {
 		if ( isset( $atts['slick_active'] ) && 'true' === $atts['slick_active'] ) {
 
 			global $post;
+			self::$slick_instance++;
 
 			$atts = wp_parse_args( $atts, array(
 				'order' => 'ASC',
@@ -127,6 +128,7 @@ class Slick_Slider_Output {
 				'include' => '',
 				'exclude' => '',
 				'link' => '',
+				'slick_instance' => self::$slick_instance,
 			) );
 			$atts = apply_filters( 'shortcode_atts_gallery', $atts, [], 'gallery' );
 
@@ -183,15 +185,35 @@ class Slick_Slider_Output {
 
 			$options = Slick_Slider_Options::prepare_options_for_output( $atts );
 
+			if ( apply_filters( 'slick_slider_show_caption', false ) ) {
+
+				/* translators: Replacement string ("Use %3$s instead."), see https://developer.wordpress.org/reference/functions/_deprecated_function/ */
+				_deprecated_function( 'add_filter( \'slick_slider_show_caption\' )', 0.5, __( 'the new option “Show caption”', 'slick-slider' ) );
+
+				$options['showCaption'] = true;
+			}
+
+			add_filter(
+				'wp_get_attachment_image_attributes',
+				array(
+					'Slick_Slider_Main',
+					'switch_attachment_attr'
+				),
+				10,
+				3
+			);
+
+			do_action( 'slick_slider_before_slider', $atts, $post->ID, self::$slick_instance );
+
 			$output = [];
 			$output[] = '<div class="slick-slider-wrapper">';
 			$output[] = sprintf(
 				'<div class="slick-slider slick-slider--size-%s" id="slick-slider-%s" %s>',
 				sanitize_html_class( $atts['size'] ),
-				++self::$slick_instance,
+				$atts['slick_instance'],
 				! empty( $options )
 					? sprintf(
-						'data-slick=\'%s\'',
+						"data-slick='%s'",
 						json_encode( $options )
 					)
 					: ''
@@ -199,22 +221,13 @@ class Slick_Slider_Output {
 
 			foreach ( $attachments as $id => $attachment ) {
 
+				do_action( 'slick_slider_before_slide', $id, $post->ID, self::$slick_instance );
+
 				$slide = [];
 				$slide[] = sprintf( '<div class="slide" data-attachment-id="%s">', $id );
 				$slide[] = '<div class="slide__inner">';
 
-				$image_src = wp_get_attachment_image_src( $id, $atts['size'] );
-				$meta = wp_prepare_attachment_for_js( $id );
-				$image_tag = isset( $options['lazyLoad'] ) && 'progressive' === $options['lazyLoad']
-					? sprintf(
-						'<img data-lazy="%s" width="%s" height="%s" alt="%s" />',
-						$image_src[0],
-						$image_src[1],
-						$image_src[2],
-						$meta['alt'] ? sanitize_title( $meta['alt'] ) : ''
-					)
-					: wp_get_attachment_image( $id, $atts['size'] );
-
+				$image_tag = wp_get_attachment_image( $id, $atts['size'] );
 
 				if ( class_exists( 'WPGalleryCustomLinks' ) && $link = get_post_meta( $id, '_gallery_link_url', true ) ) {
 					$slide[] = sprintf(
@@ -235,7 +248,8 @@ class Slick_Slider_Output {
 					$slide[] = $image_tag;
 				}
 
-				if ( apply_filters( 'slick_slider_show_caption', false ) ) {
+				if ( isset( $options['showCaption'] ) && $options['showCaption'] ) {
+					$meta = wp_prepare_attachment_for_js( $id );
 					$caption_text = ! empty( $meta['caption'] )
 						? $meta['caption']
 						: ( ! empty( $meta['title'] )
@@ -245,7 +259,7 @@ class Slick_Slider_Output {
 					if ( ! empty( $caption_text ) ) {
 						$caption = [];
 						$caption[] = '<div class="slide__caption">';
-						$caption[] = apply_filters( 'slick_slider_caption_html', $caption_text, $id, $post->ID );
+						$caption[] = apply_filters( 'slick_slider_caption_html', $caption_text, $id, $post->ID, self::$slick_instance );
 						$caption[] = '</div>';
 
 						$slide[] = implode( "\n", $caption );
@@ -255,7 +269,9 @@ class Slick_Slider_Output {
 
 				$slide[] = '</div>';
 				$slide[] = '</div>';
-				$output[] = apply_filters( 'slick_slider_slide_html', implode( "\n", $slide ), $id, $post->ID );
+				$output[] = apply_filters( 'slick_slider_slide_html', implode( "\n", $slide ), $id, $post->ID, self::$slick_instance );
+
+				do_action( 'slick_slider_after_slide', $id, $post->ID, self::$slick_instance );
 
 			}
 
@@ -264,7 +280,18 @@ class Slick_Slider_Output {
 
 			$output = implode( "\n", $output );
 
-			return apply_filters( 'slick_slider_html', $output, $post->ID );
+			do_action( 'slick_slider_after_slider', $atts, $post->ID, self::$slick_instance );
+
+			remove_filter(
+				'wp_get_attachment_image_attributes',
+				array(
+					'Slick_Slider_Main',
+					'switch_attachment_attr'
+				),
+				10
+			);
+
+			return apply_filters( 'slick_slider_html', $output, $post->ID, self::$slick_instance );
 		}
 
 	}

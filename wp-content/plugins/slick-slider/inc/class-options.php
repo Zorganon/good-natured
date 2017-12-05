@@ -275,21 +275,13 @@ class Slick_Slider_Options {
 								);
 								break;
 							case 'integer' :
-								printf(
-									'<input type="text" data-setting="%s" value="%s" />',
-									$array_values['setting'],
-									sprintf(
-										'<# print( slider_defaults.%s.value ) #>',
-										$option
-									)
-								);
-								break;
 							case 'string' :
 								printf(
-									'<input type="text" data-setting="%s" value="%s" />',
+									'<input type="%s" data-setting="%s" value="%s" />',
+									'text',
 									$array_values['setting'],
 									sprintf(
-										'<# print( slider_defaults.%s.value ) #>',
+										'{{ slider_defaults.%s.value }}',
 										$option
 									)
 								);
@@ -304,7 +296,7 @@ class Slick_Slider_Options {
 										'<option value="%s" %s>%s</option>',
 										$value,
 										sprintf(
-											'<# if ( "%s" == slider_defaults.%s.value ) { #> selected="selected" <# } #>',
+											'<# if ( "%s" === slider_defaults.%s.value ) { #> selected="selected" <# } #>',
 											$value,
 											$option
 										),
@@ -318,7 +310,7 @@ class Slick_Slider_Options {
 									'<textarea data-setting="%s">%s</textarea>',
 									$array_values['setting'],
 									sprintf(
-										'<# print( slider_defaults.%s.value ) #>',
+										'{{ slider_defaults.%s.value }}',
 										$option
 									)
 								);
@@ -358,11 +350,19 @@ class Slick_Slider_Options {
 		return array(
 			'showOnGalleryModal' => array(
 				'name' => __( 'Show options on gallery modal', 'slick-slider' ),
-				'desc' => __( 'Show Slick Slider options on single gallery modal', 'slick-slider' ),
+				'desc' => __( 'Show Slick Slider options on single gallery modal.', 'slick-slider' ),
 				'showOnSingleGallery' => false,
 				'setting' => 'showOnGalleryModal',
 				'type' => 'boolean',
 				'value' => true,
+			),
+			'showCaption' => array(
+				'name' => __( 'Show caption', 'slick-slider' ),
+				'desc' => __( 'Show caption below slide image.', 'slick-slider' ),
+				'showOnSingleGallery' => true,
+				'setting' => 'sl_show_caption',
+				'type' => 'boolean',
+				'value' => false,
 			),
 			'accessibility' => array(
 				'name' => __( 'accessibility', 'slick-slider' ),
@@ -417,6 +417,14 @@ class Slick_Slider_Options {
 				'desc' => __( 'Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object).', 'slick-slider' ),
 				'showOnSingleGallery' => false,
 				'setting' => 'sl_appendarrows',
+				'type' => 'string',
+				'value' => '',
+			),
+			'appendDots' => array(
+				'name' => __( 'appendDots', 'slick-slider' ),
+				'desc' => __( 'Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)', 'slick-slider' ),
+				'showOnSingleGallery' => false,
+				'setting' => 'sl_appenddots',
 				'type' => 'string',
 				'value' => '',
 			),
@@ -479,6 +487,14 @@ class Slick_Slider_Options {
 				'type' => 'boolean',
 				'value' => false,
 			),
+			'dotsClass' => array(
+				'name' => __( 'dotsClass', 'slick-slider' ),
+				'desc' => __( 'Class for slide indicator dots container.', 'slick-slider' ),
+				'showOnSingleGallery' => false,
+				'setting' => 'sl_dotsclass',
+				'type' => 'string',
+				'value' => 'slick-dots',
+			),
 			'draggable' => array(
 				'name' => __( 'draggable', 'slick-slider' ),
 				'desc' => __( 'Enable mouse dragging.', 'slick-slider' ),
@@ -495,10 +511,18 @@ class Slick_Slider_Options {
 				'type' => 'boolean',
 				'value' => false,
 			),
+			'focusOnChange' => array(
+				'name' => __( 'focusOnChange', 'slick-slider' ),
+				'desc' => __( 'Puts focus on slide after change.', 'slick-slider' ),
+				'showOnSingleGallery' => false,
+				'setting' => 'sl_focusonchange',
+				'type' => 'boolean',
+				'value' => false,
+			),
 			'focusOnSelect' => array(
 				'name' => __( 'focusOnSelect', 'slick-slider' ),
 				'desc' => __( 'Enable focus on selected element (click).', 'slick-slider' ),
-				'showOnSingleGallery' => true,
+				'showOnSingleGallery' => false,
 				'setting' => 'sl_focusonselect',
 				'type' => 'boolean',
 				'value' => false,
@@ -546,6 +570,7 @@ class Slick_Slider_Options {
 				'type' => 'select',
 				'value' => 'ondemand',
 				'values' => array(
+					'anticipated',
 					'ondemand',
 					'progressive',
 				),
@@ -558,6 +583,14 @@ class Slick_Slider_Options {
 			//	'type' => 'boolean',
 			//	'value' => false,
 			//),
+			'pauseOnFocus' => array(
+				'name' => __( 'pauseOnFocus', 'slick-slider' ),
+				'desc' => __( 'Pause Autoplay On Focus.', 'slick-slider' ),
+				'showOnSingleGallery' => true,
+				'setting' => 'sl_pauseonfocus',
+				'type' => 'boolean',
+				'value' => true,
+			),
 			'pauseOnHover' => array(
 				'name' => __( 'pauseOnHover', 'slick-slider' ),
 				'desc' => __( 'Pause Autoplay On Hover.', 'slick-slider' ),
@@ -729,6 +762,22 @@ class Slick_Slider_Options {
 				'setting' => 'sl_rtl',
 				'type' => 'boolean',
 				'value' => false,
+			),
+			'waitForAnimate' => array(
+				'name' => __( 'waitForAnimate', 'slick-slider' ),
+				'desc' => __( 'Ignores requests to advance the slide while animating.', 'slick-slider' ),
+				'showOnSingleGallery' => false,
+				'setting' => 'sl_waitforanimate',
+				'type' => 'boolean',
+				'value' => true,
+			),
+			'zIndex' => array(
+				'name' => __( 'zIndex', 'slick-slider' ),
+				'desc' => __( 'Set the zIndex values for slides, useful for IE9 and lower.', 'slick-slider' ),
+				'showOnSingleGallery' => false,
+				'setting' => 'sl_zindex',
+				'type' => 'integer',
+				'value' => 1000,
 			),
 		);
 
