@@ -1,3 +1,27 @@
+v1.0.32
+# Fixed: Logo being croped in customizer preview.
+
+v1.0.31
+# New: Filter `astra_enable_page_builder_compatibility` added to disable default page builder compatibility meta settings.
+# Fixed: Some SVG logos being not displayed.
+# Fixed: Thumbnail image not visible on blog page.
+
+v1.0.30
+# Fixed: Regression in v1.0.29 which caused site logo to be full width.
+
+v1.0.29
+# New: Added filters `astra_post_read_more` and `astra_post_read_more_class` to change the custom text and custom class to the read more text for blog posts.
+# Fix: Site SVG logo only visible if site title is enabled in some cases.
+
+v1.0.28
+# Set correct page meta settings on themer layouts if they are empty.
+
+v1.0.27
+# Fix: Two primary menu navigation drop-down icon visible for responsive devices.
+# Fix: Remove empty div for responsive devices if primary menu and custom menu item is disabled.
+# Improvement: Renamed filter `astra_sigle_post_navigation_enabled` to `astra_single_post_navigation_enabled`. The older filter will keep working but it is recommended to change to the new filter.
+# Enhancement: Astra meta box support added to BB Themer for single, 404 and archive page.
+
 v1.0.26
 # Fix: duplicate menu dropdown toggle appearing on mobile devices
 

@@ -67,6 +67,7 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 				$version_array = array(
 					'theme-auto-version' => ASTRA_THEME_VERSION,
 				);
+				$saved_version = ASTRA_THEME_VERSION;
 
 				// Merge customizer options with version.
 				$theme_options = wp_parse_args( $version_array, $customizer_options );
@@ -103,6 +104,11 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 			// Update to older version than 1.0.14 version.
 			if ( version_compare( $saved_version, '1.0.14', '<' ) ) {
 				self::v_1_0_14();
+			}
+
+			// Update astra meta settings for Beaver Themer Backwards Compatibility.
+			if ( version_compare( $saved_version, '1.0.28', '<' ) ) {
+				self::v_1_0_28();
 			}
 
 			// Not have stored?
@@ -359,7 +365,46 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 			update_option( '_astra_pb_compatibility_offset', 1 );
 			update_option( '_astra_pb_compatibility_time', date( 'Y-m-d H:i:s' ) );
 		}
+
+		/**
+		 * Update page meta settings for all the themer layouts which are not already set.
+		 * Default settings to previous versions was `no-sidebar` and `page-builder` through filters.
+		 *
+		 * @since  1.0.28
+		 * @return void
+		 */
+		static public function v_1_0_28() {
+
+			$query = array(
+				'post_type'      => 'fl-theme-layout',
+				'posts_per_page' => '-1',
+				'no_found_rows'  => true,
+				'post_status'    => 'any',
+				'fields'         => 'ids',
+			);
+
+			// Execute the query.
+			$posts = new WP_Query( $query );
+
+			foreach ( $posts->posts as $id ) {
+
+				$sidebar = get_post_meta( $id, 'site-sidebar-layout', true );
+
+				if ( '' == $sidebar ) {
+					update_post_meta( $id, 'site-sidebar-layout', 'no-sidebar' );
+				}
+
+				$content_layout = get_post_meta( $id, 'site-content-layout', true );
+
+				if ( '' == $content_layout ) {
+					update_post_meta( $id, 'site-content-layout', 'page-builder' );
+				}
+			}
+
+		}
+
 	}
+
 }// End if().
 
 /**
