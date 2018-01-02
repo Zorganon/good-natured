@@ -17,13 +17,15 @@ get_header(); ?>
 			    while ($rloop->have_posts()) : $rloop->the_post(); 
 				?>
 			    <div class="post-tile__tile">
-			      <div class="post-tile__img">
-			        <?php echo the_post_thumbnail( 'medium-large' ); ?>
-			      </div>
-			      <div class="post-tile__title">
-			          <?php echo the_title(); ?>
-			      </div>
-			      <div class="blue-line"></div>
+			    	<a href="<?php echo get_permalink(); ?>">	
+				      <div class="post-tile__img">
+				        <?php echo the_post_thumbnail( 'medium-large' ); ?>
+				      </div>
+				      <div class="post-tile__title">
+				          <?php echo the_title(); ?>
+				      </div>
+				      <div class="blue-line"></div>
+			      </a>
 			    </div>
 			<?php 
 		    endwhile;
