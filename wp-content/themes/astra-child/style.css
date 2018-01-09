@@ -560,7 +560,7 @@
 }
 /*****************       RECIPE STYLES      ****************/
 
-.recipe-post-title{
+.recipe-post__title{
   color: #0C0033;
   font-family: Average;
   font-size: 48px;
@@ -574,6 +574,18 @@
   font-weight: 500;
   line-height: 24px;
 }
+.recipe-post-content__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.recipe-post-content__desktop-sidebar{
+  
+}
+.recipe-post-content__content{
+  
+}
+
+
 /****************************************************************/
 /*****************      NEWS Post STYLES         ****************/
 /****************************************************************/

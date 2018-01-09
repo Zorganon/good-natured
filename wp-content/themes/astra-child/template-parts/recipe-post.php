@@ -27,8 +27,18 @@
     <?php the_post_thumbnail('full'); ?>
   </div>
 	<div class="recipe-post-content__wrapper">
-		<h2>Ingredients</h2>
 		<div class="recipe-post-content__content">
+			<div class="ingredients-content">
+				<h2 class="ingredients-content__title">Ingredients</h2>
+				<div class="ingredients-content__list">
+					<?php 
+					$current_post_id = get_the_ID();
+					$key = 'wpcf-ingredients';
+					$ingre = get_post_meta( $current_post_id, $key, true);
+					echo $ingre; ?>
+				</div>
+			</div>
+			
 	
 			<?php the_content(); ?>
 	
