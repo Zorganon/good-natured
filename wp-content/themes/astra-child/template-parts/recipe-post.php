@@ -28,8 +28,8 @@
   </div>
 	<div class="recipe-post-content__wrapper">
 		<div class="recipe-post-content__content">
-			<div class="ingredients-content">
-				<h2 class="ingredients-content__title">Ingredients</h2>
+			<div class="ingredients-content col-sm-12 col-md-4">
+				<div class="ingredients-content__title">Ingredients</div>
 				<div class="ingredients-content__list">
 					<?php 
 					$current_post_id = get_the_ID();
@@ -37,6 +37,9 @@
 					$ingre = get_post_meta( $current_post_id, $key, true);
 					echo $ingre; ?>
 				</div>
+			</div>
+			<div class="recipe-directions col-sm-12 col-md-9">
+				<div class="recipe-directions__title">Directions</div>
 			</div>
 			
 	
@@ -46,16 +49,4 @@
 		
 	</div>
 
-	<?php astra_entry_content_after(); ?>
-
-	<?php
-		wp_link_pages(
-			array(
-				'before'      => '<div class="page-links">' . esc_html( astra_default_strings( 'string-single-page-links-before', false ) ),
-				'after'       => '</div>',
-				'link_before' => '<span class="page-link">',
-				'link_after'  => '</span>',
-			)
-		);
-	?>
 </div>

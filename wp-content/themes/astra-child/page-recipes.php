@@ -16,7 +16,7 @@ get_header(); ?>
 			
 			    while ($rloop->have_posts()) : $rloop->the_post(); 
 				?>
-			    <div class="post-tile__tile">
+			    <div class="post-tile__tile col-sm-12 col-md-4">
 			    	<a href="<?php echo get_permalink(); ?>">	
 				      <div class="post-tile__img">
 				        <?php echo the_post_thumbnail( 'medium-large' ); ?>

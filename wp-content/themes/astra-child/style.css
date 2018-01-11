@@ -574,6 +574,13 @@
   font-weight: 500;
   line-height: 24px;
 }
+
+.recipe-post__featured-image{
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .recipe-post-content__wrapper{
   display: flex;
   flex-direction: column;
@@ -584,7 +591,29 @@
 .recipe-post-content__content{
   
 }
+.ingredients-content__title{
+  height: 36px;
+  width: 352px;
+  color: #0C0033;
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: italic;
+  line-height: 36px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
+.recipe-directions__title{
+  height: 36px;
+  width: 352px;
+  color: #0C0033;
+  font-family: Georgia;
+  font-size: 35px;
+  font-style: italic;
+  line-height: 36px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 /****************************************************************/
 /*****************      NEWS Post STYLES         ****************/
@@ -681,6 +710,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .post-tile__title{
 	color: #0C0033;
@@ -688,6 +719,7 @@
 	font-size: 2.2rem;
 	line-height: 2.6rem;
 	text-align: center;  
+	margin: 1rem;
 }
 .post-tile__img{
   height: 308px;

@@ -15,11 +15,6 @@
 
 get_header(); ?>
 
-<?php if ( astra_page_layout() == 'left-sidebar' ) : ?>
-
-	<?php get_sidebar(); ?>
-
-<?php endif ?>
 
 	<div id="primary" <?php astra_primary_class(); ?>>
 
@@ -51,10 +46,5 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-<?php if ( astra_page_layout() == 'right-sidebar' ) : ?>
-
-	<?php get_sidebar(); ?>
-
-<?php endif ?>
 
 <?php get_footer(); ?>

@@ -57,7 +57,7 @@
 		<div class="site-navigation__bar flex-container">
 			<a type="button" class="button large site-navigation__button" href="/home">HOME</a>
 			<a type="button" class="button large site-navigation__button" href="/about">ABOUT</a>
-			<!--<a type="button" class="button large site-navigation__button" href="/recipes">RECIPES</a>-->
+			<a type="button" class="button large site-navigation__button" href="/recipes">RECIPES</a>
 			<a type="button" class="button large site-navigation__button" href="/news">NEWS</a>
 			<a type="button" class="button large site-navigation__button" href="/contact">CONTACT</a>
 		</div>
