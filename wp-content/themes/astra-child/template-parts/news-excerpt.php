@@ -8,9 +8,9 @@
     <div class="news-excerpt__title"><?php echo the_title(); ?></div>
     <div class="news-excerpt__title-underscore"></div>
     <div class="news-excerpt__text"><?php echo the_excerpt(); ?></div>
-    <div class="news-excerpt__button-wrapper">
-      <a type="button" class="news-excerpt__link" href="<?php echo the_permalink(); ?>">READ MORE</a></div>
-    </div>
+    <a class="news-excerpt__button-wrapper" href="<?php echo esc_url(the_permalink()); ?>">
+      <div class="news-excerpt__link">READ MORE</div>
+    </a>
   <?php 
     endwhile;
     wp_reset_postdata();
