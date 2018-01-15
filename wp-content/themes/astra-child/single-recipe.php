@@ -11,12 +11,10 @@ get_header(); ?>
 
 		<?php astra_primary_content_top(); ?>
 
-		<main id="main" class="site-main" role="main">
-
 		<?php
 		while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/recipe', 'post' ); ?>
+			<?php get_template_part( 'template-parts/content', 'recipe-post' ); ?>
 
 			
 		<?php endwhile; ?>

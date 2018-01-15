@@ -581,29 +581,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-.recipe-post-content__wrapper{
-  display: flex;
-  flex-direction: column;
-}
-.recipe-post-content__desktop-sidebar{
-  
-}
-.recipe-post-content__content{
-  
-}
-.ingredients-content__title{
-  height: 36px;
-  width: 352px;
-  color: #0C0033;
-  font-family: Georgia;
-  font-size: 35px;
-  font-style: italic;
-  line-height: 36px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+.recipe-post__wrapper{
 }
 
-.recipe-directions__title{
+
+.recipe-post__content h1{
   height: 36px;
   width: 352px;
   color: #0C0033;
