@@ -7,10 +7,6 @@
 
 get_header(); ?>
 
-	<div id="primary" <?php astra_primary_class(); ?>>
-
-		<?php astra_primary_content_top(); ?>
-
 		<?php
 		while ( have_posts() ) : the_post(); ?>
 
@@ -19,11 +15,6 @@ get_header(); ?>
 			
 		<?php endwhile; ?>
 
-		</main><!-- #main -->
-
-		<?php astra_primary_content_bottom(); ?>
-
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
 

@@ -581,9 +581,14 @@
   margin-left: auto;
   margin-right: auto;
 }
-.recipe-post__wrapper{
-}
 
+.recipe-post__featured-image{
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe-post__glyph-info{
+  
+}
 
 .recipe-post__content h1{
   height: 36px;
@@ -596,6 +601,8 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+
 
 /****************************************************************/
 /*****************      NEWS Post STYLES         ****************/
