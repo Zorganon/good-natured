@@ -10,13 +10,11 @@
 
 ?>
 
-
-
-
 <div class="page-content-wrapper">
 
-	<a class="button recipe-header__button" type="button" href="/recipes">ALL RECIPES</a>
-	
+	<a class="recipe-header__button" href="/recipes">
+		< ALL RECIPES
+	</a>
 	
 	<div class="recipe-post-meta"></div>
 	
