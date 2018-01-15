@@ -24,7 +24,7 @@
 	<div class="recipe-post__title"><?php the_title(); ?></div>
 	<div class="recipe-post__tags"><?php the_tags(); ?></div>
   <div class="recipe-post__featured-image">
-    <?php the_post_thumbnail('full'); ?>
+    <?php echo the_post_thumbnail('full'); ?>
   </div>
 	<div class="recipe-post__wrapper container">
 		<div class="recipe-post__content">

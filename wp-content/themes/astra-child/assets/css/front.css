@@ -1,0 +1,211 @@
+/************************************************************/
+/************          FRONT PAGE STYLES         ************/
+/************************************************************/
+
+.front-hero__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.divider-container{
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+}
+.scroll-down-divider{
+  padding: 5px;
+  margin: auto;
+}
+
+.frontpage-infocard__wrapper{
+  display: flex;
+}
+.frontpage-infocard__border{
+  height: 1px;
+  border: 2px dashed #CCD159;
+  margin: 3rem;
+}
+.frontpage-infocard-container{
+    margin: auto;
+    max-width: 87%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 66%;
+}
+
+.frontpage-infocard__image-box{
+  flex-grow: 1;
+  display: flex;
+}
+.frontpage-infocard__image{
+  margin: auto;
+  max-width: 100%;
+}
+.frontpage-infocard__content-box{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 66%;
+  align-items: center;
+  
+}
+.frontpage-infocard__title{
+  font-family: 'glossandbloom', cursive;
+  font-size: 3rem;
+  color: #2F5658;
+  text-align: center;
+}
+.frontpage-infocard__subtitle{
+  max-width: 70%;
+  color: #0C0033;
+  font-family: Average;
+  font-size: 1.25rem;
+  opacity: 0.5;
+  text-align: center;
+}
+.frontpage-infocard__text{
+  max-width: 70%;
+}
+.frontpage-infocard__text p{
+  color: #0C0033;
+  font-family: Average;
+  font-size: 1.25rem;
+  opacity: 0.5;
+  text-align: center;
+}
+.frontpage-infocard__button{
+  color: #0C0033;
+  font-family: Average;
+  opacity: 0.5;
+  text-align: center;
+  border: 1px solid #407375;
+  font-size: 1rem;
+  box-sizing: border-box;
+  max-width: 33%;
+  background-color: transparent;
+}
+
+/*   impact card */
+.impact-container{
+  max-width: 70%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 98vh;
+}
+
+.impact-text__container{
+  margin: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.impact-text__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.impact__header{
+  color: #2F5658;
+  font-family: Average;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.impact__header-underscore{
+  height: 1px;
+  width: 100px;
+  border: 3px solid #2F5658;
+  margin: .5rem 0 1.5rem 0;
+}
+.impact__bullets{
+  color: #0C0033;
+  font-family: Average;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.impact__bullets li{
+  margin: .5rem 0 .5rem 0;
+}
+
+.impact__button{
+  opacity: 0.5;
+  color: #0C0033;
+  font-family: Average;
+  font-size: 16px;
+}
+.impact__image-container{
+  margin: 1rem;
+  flex-grow: 1.5;
+  flex-basis: 0;
+}
+
+/**************************** news excerpt *********************/
+
+.news-excerpt__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(http://natural-client-iamorganon.c9users.io/wp-content/uploads/paleo-table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 85vh;
+}
+.news-excerpt__container{
+  align-self: flex-end;
+  margin: 90px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 55%;
+}
+.news-excerpt__title{
+  color: #2F5658;
+  font-family: Average, serif;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin: 3rem 3rem 1rem 3rem;
+  max-width: 60%;
+}
+.news-excerpt__title-underscore{
+  box-sizing: border-box;
+  height: 1px;
+  width: 100px;
+  border: 3px solid #2F5658;  
+  margin: 1rem 3rem 1rem 3rem;
+}
+.news-excerpt__text{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #0C0033;
+  opacity: 0.5;
+  font-family: Average, serif;
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.news-excerpt__button-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  width: 12.5em;
+  height: 3.25em;
+  border: 2px solid #2F5658;  
+}
+.news-excerpt__link{
+  margin: auto;
+  opacity: 0.5;
+  color: #0C0033;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.recipe-slider {
+  max-width: 80%;
+}
