@@ -22,17 +22,22 @@
 	
 	<div class="green-dashed-divider"></div>
 	<div class="recipe-post__title"><?php the_title(); ?></div>
-	<div class="recipe-post__tags"><?php the_tags(); ?></div>
+	<div class="recipe-post__tags-list">
+		<span class="glyphicon glyphicon-tag recipe-tag-glyph" aria-hidden="true"></span>
+		<div class="recipe-post__tags"> 
+			<?php echo get_the_term_list( $post->ID, 'recipe-tags', '', ', ', ''); ?>
+		</div>
+	</div>
   <div class="recipe-post__featured-image">
-    <?php echo the_post_thumbnail('full'); ?>
+    <?php the_post_thumbnail('full'); ?>
   </div>
+	<div class="green-dashed-divider"></div>
 	<div class="recipe-post__wrapper container">
 		<div class="recipe-post__content">
 			<div class="recipe-post__glyph-info">
 				<div class="recipe-post__servings">
-					<span class="glyphicon glyphicon-user" aria-hidden="true"> </span>
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 					<span class="sr-only">Servings: </span>
-					 
 					<?php
 						$current_post_id = get_the_ID();
 						$key = 'wpcf-servings';
@@ -41,7 +46,7 @@
 					?>
 				</div>
 				<div class="recipe-post__time">
-					<span class="glyphicon glyphicon-time" aria-hidden="true"> </span>
+					<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 					<span class="sr-only">Time: </span>
 					<?php
 						$current_post_id = get_the_ID();

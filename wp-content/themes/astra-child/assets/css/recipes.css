@@ -3,16 +3,22 @@
 .recipe-post__title{
   color: #0C0033;
   font-family: Average;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
-  line-height: 64px;
+  line-height: 4rem;
+  margin: 1em;
 }
-.recipe-post__tags{
+.recipe-post__tags-list{
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-post__tags a{
   color: #CCD159;
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .recipe-post__featured-image{
@@ -20,6 +26,8 @@
   justify-content: center;
   max-width: 100%;
   height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .recipe-post__glyph-info{
@@ -40,13 +48,25 @@
 }
 
 .recipe-post__content h1{
-  height: 36px;
-  width: 352px;
   color: #0C0033;
-  font-family: Georgia;
-  font-size: 35px;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
   font-style: italic;
-  line-height: 36px;
+  line-height: 2.2rem;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.recipe-post__content h2{
+	color: #CCD159;
+	font-family: Average, serif;
+	font-size: 2rem;
+	line-height: 3.4rem;
+}
+
+.recipe-post__content p{
+	color: #0C0033;
+	font-family: Average;
+	font-size: 1rem;
+	line-height: 2rem;
 }
