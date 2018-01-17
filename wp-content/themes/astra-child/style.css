@@ -116,15 +116,17 @@ html {
 
 .site-navigation__button{
   box-sizing: border-box;
-  margin: auto;
+  width: 10rem;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.5rem;
 	color: white;
+	text-align: center;
 }
 
 .navbar{
   border-radius: 0;
+  margin: 0;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #fff;

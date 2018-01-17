@@ -13,8 +13,6 @@
 ?>
 			<?php astra_content_bottom(); ?>
 
-			</div> <!-- ast-container -->
-
 		</div><!-- #content -->
 
 		<?php astra_content_after(); ?>

@@ -31,15 +31,7 @@
 <?php astra_body_top(); ?>
 <div id="page" class="hfeed site">
 	
-	<?php astra_header_before(); ?>
-
-	<?php astra_header_after(); ?>
-
-	<?php astra_content_before(); ?>
-
 	<div id="content" class="site-content">
-
-		<div class="obsolete-ast-container">
 
 		<?php astra_content_top(); ?>
 		
