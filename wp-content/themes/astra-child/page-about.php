@@ -4,7 +4,6 @@ Template Name: About
 */
 get_header(); ?>
 
-<div class="page-container">
 	<div class="body-content-container">
 <!-- hero image -->
 	  <div class="about-hero-img__wrapper">
@@ -14,12 +13,14 @@ get_header(); ?>
 	<!--- about blurb -->
 	  <div class="about-blurb-divider">
 	  	<div class="green-dashed-divider"></div>
-	    <div class="about-blurb"><p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p></div>
+	    <div class="about-blurb">
+	    	<p>“I work with my clients to make small changes that drive lasting and powerful results. This can take place through one-to-one consultations or via Skype”</p>
+	    </div>
 	    <div class="green-dashed-divider"></div>
 	  </div>
 	  
-	  <div class="about-janet-container row">
-	    <div class="about-janet__text-box column small-12 medium-6">
+	  <div class="about-janet-container">
+	    <div class="about-janet__text-box">
 	    	<div class="about-janet__title">About Janet</div>
 	    	<div class="short-underscore"></div>
 	    	<div class="about-janet__title-underscore"></div>
@@ -30,7 +31,7 @@ get_header(); ?>
 					<p>My advice can be complimentary to conventional approaches to health, and can also be used as an alternative remedy to help with numerous health and well being issues.</p>
 	    	</div>
 	    </div>
-	    <div class="about-janet__image column small-12 medium-6">
+	    <div class="about-janet__image">
 	    	<image src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
 	    </div>
 	  </div>
@@ -74,12 +75,12 @@ get_header(); ?>
 				<p>Nutritional Therapy is generally considered to have a positive impact on the following:</p>
 			</div>
 			<div class="therapy-benefits__bullets row">
-				<ul class="bullet-list column small-12 medium-6">
+				<ul class="bullet-list">
 					<li>Weight Management</li>
 					<li>Energy Levels</li>
 					<li>Stress Management</li>
 				</ul>
-				<ul class="bullet-list column small-12 medium-6">
+				<ul class="bullet-list">
 					<li>Food Cravings</li>
 					<li>Skin Conditions</li>
 					<li>Digestive Disorders</li>
@@ -93,7 +94,7 @@ get_header(); ?>
 				<div class="nut-therapy__text-wrapper">
 					<div class="nut-therapy__title">About Nutritional Therapy</div>
 					<div class="long-underscore"></div>
-					<div class="nut-therapy__text column small-12 medium-9">
+					<div class="nut-therapy__text">
 						<p>Nutritional Therapy takes a natural approach using diet, lifestyle and where required, nutritional supplements, to assist the body to achieve and maintain optimum health. It encourages the body’s natural healing abilities and by doing so may be of benefit to many common health problems.</p>
 						<p>It looks beyond the symptoms, to establish the root cause of ill health, such as poor digestion, toxicity and food and nutrient imbalances and deficiencies. If these can be identified, an improvement plan can be devised that may help towards reducing or eliminating the symptoms.
 				Often making only a few simple changes to our diets can result in increased energy levels and improved mental and emotional well-being.</p>
@@ -102,7 +103,7 @@ get_header(); ?>
 						<p>There is plenty of evidence to support the use of diet to influence health and well being. Increasingly studies are showing the importance of food and nutrients to reduce ill health and disease, including  heart health, arthritis, MS, IBS, infections and immunity, Alzheimers, diabetes. See my links page for links to studies, and for further information. Whether you want to achieve a specific goal such as weight loss, or to address a more chronic health issue, Jan will work with you to help you achieve your goal. Some of the many health issues she supports include stress, low energy, digestive complaints, female health issues (such as PMS and menopause) and fibromyalgia.</p>
 					</div>
 				</div>
-				<div class="nut-therapy__image-box column small-12 medium-3">
+				<div class="nut-therapy__image-box">
 					<div class="nut-therapy__image1">
 						<image src="<?php echo real_upload_url(); ?>/nuts1.png"></image>
 					</div>
@@ -113,5 +114,4 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</div>
 <?php get_footer(); ?>

@@ -21,9 +21,6 @@
 html {
   font-size: 16px !important;
 }
-.page-container{
-  background-color: white;
-}
 
 .body-content-container{
   background-color: white;
@@ -181,232 +178,16 @@ html {
   background-color: #2F5658;
 }
 /************************************/
-/************************************************************/
-/************          FRONT PAGE STYLES         ************/
-/************************************************************/
 /************************************/
-
-.front-hero__image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.divider-container{
-  display: flex;
-  justify-content: center;
-  height: 20rem;
-}
-.scroll-down-divider{
-  padding: 5px;
-  margin: auto;
-}
-
-.frontpage-infocard__wrapper{
-  display: flex;
-}
-.frontpage-infocard__border{
-  height: 1px;
-  border: 2px dashed #CCD159;
-  margin: 3rem;
-}
-.frontpage-infocard-container{
-    margin: auto;
-    max-width: 87%;
-    display: flex;
-    justify-content: space-between;
-    max-height: 66%;
-}
-
-.frontpage-infocard__image-box{
-  flex-grow: 1;
-  display: flex;
-}
-.frontpage-infocard__image{
-  margin: auto;
-  max-width: 100%;
-}
-.frontpage-infocard__content-box{
-  flex-grow: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 66%;
-  align-items: center;
-  
-}
-.frontpage-infocard__title{
-  font-family: 'glossandbloom', cursive;
-  font-size: 3rem;
-  color: #2F5658;
-  text-align: center;
-}
-.frontpage-infocard__subtitle{
-  max-width: 70%;
-  color: #0C0033;
-  font-family: Average;
-  font-size: 1.25rem;
-  opacity: 0.5;
-  text-align: center;
-}
-.frontpage-infocard__text{
-  max-width: 70%;
-}
-.frontpage-infocard__text p{
-  color: #0C0033;
-  font-family: Average;
-  font-size: 1.25rem;
-  opacity: 0.5;
-  text-align: center;
-}
-.frontpage-infocard__button{
-  color: #0C0033;
-  font-family: Average;
-  opacity: 0.5;
-  text-align: center;
-  border: 1px solid #407375;
-  font-size: 1rem;
-  box-sizing: border-box;
-  max-width: 33%;
-  background-color: transparent;
-}
-
-/*   impact card */
-.impact-container{
-  max-width: 70%;
-  margin: 0 auto 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 98vh;
-}
-
-.impact-text__container{
-  margin: 1rem;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.impact-text__wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: space-between;
-}
-.impact__header{
-  color: #2F5658;
-  font-family: Average;
-  font-size: 2.2rem;
-  line-height: 2.6rem;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-.impact__header-underscore{
-  height: 1px;
-  width: 100px;
-  border: 3px solid #2F5658;
-  margin: .5rem 0 1.5rem 0;
-}
-.impact__bullets{
-  color: #0C0033;
-  font-family: Average;
-  font-size: 16px;
-  opacity: 0.5;
-}
-.impact__bullets li{
-  margin: .5rem 0 .5rem 0;
-}
-
-.impact__button{
-  opacity: 0.5;
-  color: #0C0033;
-  font-family: Average;
-  font-size: 16px;
-}
-.impact__image-container{
-  margin: 1rem;
-  flex-grow: 1.5;
-  flex-basis: 0;
-}
-
-/**************************** news excerpt *********************/
-
-.news-excerpt__wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(http://natural-client-iamorganon.c9users.io/wp-content/uploads/paleo-table.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 85vh;
-}
-.news-excerpt__container{
-  align-self: flex-end;
-  margin: 90px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 55%;
-}
-.news-excerpt__title{
-  color: #2F5658;
-  font-family: Average, serif;
-  font-size: 2rem;
-  line-height: 2.6rem;
-  margin: 3rem 3rem 1rem 3rem;
-  max-width: 60%;
-}
-.news-excerpt__title-underscore{
-  box-sizing: border-box;
-  height: 1px;
-  width: 100px;
-  border: 3px solid #2F5658;  
-  margin: 1rem 3rem 1rem 3rem;
-}
-.news-excerpt__text{
-  font-size: 1rem;
-  line-height: 2rem;
-  color: #0C0033;
-  opacity: 0.5;
-  font-family: Average, serif;
-  margin: 1rem 3rem 1rem 3rem;
-}
-
-.news-excerpt__button-wrapper{
-  display: flex;
-  justify-content: center;
-  margin: 3rem;
-  width: 12.5em;
-  height: 3.25em;
-  border: 2px solid #2F5658;  
-}
-.news-excerpt__link{
-  margin: auto;
-  opacity: 0.5;
-  color: #0C0033;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1.5em;
-}
-
-.recipe-slider {
-  max-width: 80%;
-}
-
-/************************************************************/
-/************************************************************/
-/******************    ABOUT PAGE    ************************/
-/************************************************************/
-/************************************************************/
+/*********************************************************/
+/************         ABOUT PAGE STYLES       ************/
+/*********************************************************/
 .about-hero-img__wrapper{
   min-height: 95vh;
 }
-
 .about-hero-image{
   width: 100%;
 }
-
 .about-blurb-divider{
   max-width: 80%;
   margin: 100px auto 100px auto;
@@ -425,13 +206,12 @@ html {
   text-align: center;
   color: #0C0033;
 }
-
 .about-janet-container{
   display: flex;
   justify-content: space-between;
+  
   background-color: #E7E7E7;
 }
-
 .about-janet__text-box{
   display: flex;
   flex-direction: column;
@@ -441,7 +221,6 @@ html {
   padding: 50px 50px 50px 100px;
   flex-basis: 50%;
 }
-
 .about-janet__title{
   color: #2F5658;
   font-family: serif;
@@ -449,18 +228,15 @@ html {
   line-height: 42px;
   margin-bottom: 1.5rem;
 }
-
 .about-janet__text{
   margin: 1rem;
   max-width: 70%;
 }
-
 .about-janet__text p{
   color: #0C0033;
   font-size: 17px;
   font-family: Average, serif;
 }
-
 .about-janet__image{
   flex-basis: 50%;
   display: flex;
@@ -475,7 +251,6 @@ html {
   justify-content: space-around;
   align-content: baseline;
 }
-
 .unsure-blurb__text{
   color: #0C0033;
   text-align: center;
@@ -488,18 +263,15 @@ html {
   display: flex;
   background-color: #E7E7E7;
 }
-
 .nutrition-consultations__image-wrapper{
   flex-basis: 50%;
   height: 100%;
   width: 50%;
 }
-
 .nutrition-consultations__image{
   width: 50vw;
   height: 790px;
 }
-
 .nutrition-consultations__textbox{
   flex-basis: 50%;
   display: flex;
@@ -508,27 +280,23 @@ html {
   align-content: center;
   padding: 50px 30px 50px 30px;
 }
-
 .nutrition-consultations__text-title{
 	color: #2F5658;
 	font-family: Average;
 	font-size: 2rem;
 	line-height: 2.6rem;
 }
-
 .long-underscore{
   height: 1px;
   width: 3em;
   border: 3px solid #2F5658;
 }
-
 .nutrition-consultations__text{
     color: #0C0033;
     font-size: 17px;
     font-family: Average, serif;
     max-width: 70%;
 } 
-
 .price-tile__container{
   height: 600px;
   display: flex;
@@ -536,7 +304,6 @@ html {
   align-items: center;
   align-content: center;
 }
-
 .price-tile__price{
   color: #CECECE;
   font-family: Clarendon;
@@ -544,7 +311,6 @@ html {
   line-height: 97px;
 	text-align: center;
 }
-
 .price-tile__title{
   color: #0C0033;
   font-size: 18px;
@@ -552,7 +318,6 @@ html {
   text-align: center;
   font-family: 'Montserrat';
 }
-
 .price-tile__description{
 	color: #0C0033;
 	font-family: Clarendon;
@@ -572,7 +337,6 @@ html {
   justify-content: space-around;
   align-items: center;
 }
-
 .therapy-benefits__text{
 	opacity: 0.5;
 	color: #0C0033;
@@ -581,7 +345,6 @@ html {
 	line-height: 2.5rem;
 	text-align: center;
 }
-
 .therapy-benefits__bullets{
   max-width: 50%;
   display: flex;
@@ -593,14 +356,12 @@ html {
   width: 3rem;
   border: 3px solid #2F5658;
 }
-
 .bullet-list li{
   font-size: 1.5rem;
   line-height: 2rem;
   color: #0C0033;
   margin: .8rem;
 }
-
 .about-nutritional-therapy__title{
 	color: #2F5658;
 	font-family: Average;
@@ -612,20 +373,17 @@ html {
   padding: 50px 0 50px 0;
   background-color: #E7E7E7;
 }
-
 .nut-therapy__wrapper{
   margin: 1.5rem;
   display: flex;
   justify-content: space-around;
 }
-
 .nut-therapy__text-wrapper{
   flex-basis: 60%; 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 .nut-therapy__title{
 	color: #2F5658;
 	font-family: Average;
@@ -643,167 +401,5 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-
-/************************************************************/
-/************************************************************/
-/******************    News Styles   ************************/
-/************************************************************/
-/************************************************************/
-.news-header__button{
-  max-width: 5rem;
-}
-
-.page-content-wrapper{
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.news-post-title{
-	color: #2F5658;
-	font-family: 'Average';
-	font-size: 48px;
-	line-height: 64px;
-}
-
-.news-post-meta{
-	opacity: 0.5;
-	color: #0C0033;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-}
-
-.news-post-content__wrapper{
-	color: #0C0033;
-	font-family: Average;
-	font-size: 17px;
-	line-height: 32px;
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.news-post-content__content{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.news-slider__slider{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.news-slider__post-tile{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-
-.news-slider__post-title{
-  color: #0C0033;
-  font-family: Average;
-  font-size: 2rem;
-  line-height: 2.6rem;	
-  text-align: center;
-  max-width: 85%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin: auto;
-}
-
-.news-slider__post-title-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/************************************************************/
-/************************************************************/
-/******************    Recipe Styles  ***********************/
-/************************************************************/
-/************************************************************/
-.recipe-post__title{
-  color: #0C0033;
-  font-family: Average;
-  font-size: 3rem;
-  text-align: center;
-  line-height: 4rem;
-  margin: 1em;
-}
-
-.recipe-header__button{
-	color: #0C0033;
-	font-family: Montserrat;
-	font-size: 18px;
-	line-height: 24px;
-}
-
-.recipe-post__tags-list{
-  display: flex;
-  justify-content: center;
-}
-
-.recipe-post__tags a{
-  color: #CCD159;
-  font-family: 'Montserrat';
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-}
-
-.recipe-post__featured-image{
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.recipe-post__glyph-info{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
-}
-
-.recipe-post__servings{
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.recipe-post__time{
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.recipe-post__content h1{
-  color: #0C0033;
-  font-family: Georgia, serif;
-  font-size: 2.2rem;
-  font-style: italic;
-  line-height: 2.2rem;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.recipe-post__content h2{
-	color: #CCD159;
-	font-family: Average, serif;
-	font-size: 2rem;
-	line-height: 3.4rem;
-}
-
-.recipe-post__content p{
-	color: #0C0033;
-	font-family: Average;
-	font-size: 1rem;
-	line-height: 2rem;
+  
 }
