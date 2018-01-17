@@ -106,7 +106,7 @@ html {
 
 .nav-container{
   background-color: #00AAAF;
-  height: 3.2rem;
+  height: auto;
 }
 
 .site-navigation__bar{
