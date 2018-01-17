@@ -55,23 +55,20 @@
 	</header>
 	<nav class="nav-container navbar" role="navigation">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="glyphicon glyphicon-menu-hamburger"></span>
       </button>
     </div>
-	  <div class="container-fluid">
-			<div class="site-navigation__bar flex-container">
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-						<li><a type="button" class="button large site-navigation__button" href="/home">HOME</a></li>
-						<li><a type="button" class="button large site-navigation__button" href="/about">ABOUT</a></li>
-						<li><a type="button" class="button large site-navigation__button" href="/recipes">RECIPES</a></li>
-						<li><a type="button" class="button large site-navigation__button" href="/news">NEWS</a></li>
-						<li><a type="button" class="button large site-navigation__button" href="/contact">CONTACT</a></li>
-					</ul>
-				</div>	
-			</div>
+	    <div class="collapse navbar-collapse" id="navbar-collapse">
+	      <ul class="nav navbar-nav flex-container">
+					<li><a type="button" class="site-navigation__button" href="/home">HOME</a></li>
+					<li><a type="button" class="site-navigation__button" href="/about">ABOUT</a></li>
+					<li><a type="button" class="site-navigation__button" href="/recipes">RECIPES</a></li>
+					<li><a type="button" class="site-navigation__button" href="/news">NEWS</a></li>
+					<li><a type="button" class="site-navigation__button" href="/contact">CONTACT</a></li>
+				</ul>
+			</div>	
 		</div>
 	</nav>
 

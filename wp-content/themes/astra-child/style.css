@@ -108,21 +108,24 @@ html {
   background-color: #00AAAF;
   height: auto;
 }
-
-.site-navigation__bar{
+.navbar-nav{
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
+
 .site-navigation__button{
   box-sizing: border-box;
   margin: auto;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.5rem;
+	margin-left: 3em;
+	margin-right: 3em;
+	color: white;
 }
 
 
