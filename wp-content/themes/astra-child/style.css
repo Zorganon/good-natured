@@ -18,7 +18,9 @@
   font-family: glossandbloom;
   src: url(wp-content/themes/astra-child/assets/fonts/Gloss_And_Bloom.ttf);
 }
-
+html {
+  font-size: 16px;
+}
 .page-container{
   background-color: white;
 }
@@ -93,8 +95,8 @@
 	opacity: 0.5;
 	color: #0C0033;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 16px;
+	line-height: 24px;
 	text-align: center;
 	background-color: transparent;
 	margin: auto;
