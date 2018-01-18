@@ -19,7 +19,7 @@
   src: url(wp-content/themes/astra-child/assets/fonts/Gloss_And_Bloom.ttf);
 }
 html {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .body-content-container{
