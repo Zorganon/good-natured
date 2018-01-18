@@ -11,10 +11,11 @@
 ?>
 
 <div class="page-content-wrapper">
-
-	<a class="recipe-header__button" href="/recipes">
-		< ALL RECIPES
-	</a>
+	<div class="recipe-header">
+		<a class="recipe-header__button" href="/recipes">
+			< ALL RECIPES
+		</a>
+	</div>
 	
 	<div class="recipe-post-meta"></div>
 	

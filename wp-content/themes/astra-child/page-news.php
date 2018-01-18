@@ -16,15 +16,17 @@ get_header(); ?>
 			
 			    while ($nloop->have_posts()) : $nloop->the_post(); 
 				?>
-			    <a class="post-tile__tile" href="<?php echo get_permalink(); ?>">
-			      <div class="post-tile__img">
-			        <?php echo the_post_thumbnail( 'medium-large' ); ?>
-			      </div>
-			      <div class="post-tile__title">
-			          <?php echo the_title(); ?>
-			      </div>
-			      <div class="blue-line"></div>
-			    </a>
+			    <div class="post-tile__tile col-sm-12 col-md-4">
+				    <a href="<?php echo get_permalink(); ?>">
+				      <div class="post-tile__img">
+				        <?php echo the_post_thumbnail( 'medium-large' ); ?>
+				      </div>
+				      <div class="post-tile__title">
+				          <?php echo the_title(); ?>
+				      </div>
+				      <div class="blue-line"></div>
+				    </a>
+			    </div>
 			  <?php 
 			    endwhile;
 			    wp_reset_postdata();

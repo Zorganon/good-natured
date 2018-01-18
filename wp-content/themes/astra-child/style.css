@@ -123,14 +123,13 @@ html {
 	color: white;
 	text-align: center;
 }
-
 .navbar{
   border-radius: 0;
   margin: 0;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: #fff;
-    color: #CCD159;
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background-color: #CCD159;
+  color: white;
 }
 
 
@@ -155,6 +154,10 @@ html {
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.post-tile__tile a:hover, .post-tile__tile a:focus{
+  text-decoration: none;
 }
 .post-tile__title{
 	color: #0C0033;
