@@ -161,8 +161,8 @@ html {
 	margin: 1rem;
 }
 .post-tile__img{
-  height: 308px;
-  width: 385px;
+  height: auto;
+  max-width: 100%;
   overflow: hidden;
 }
 
