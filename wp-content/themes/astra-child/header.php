@@ -40,9 +40,9 @@
 			<div class="desktop-title-bar__logo flex-item">
 				<image src="<?php echo real_upload_url(); ?>/gnnlogo.png"></image>
 			</div>
-			<div class="header-consultations flex-item">
-				<a class="header-consultations__button" href="/about">CONSULTATIONS AVAILABLE</a>
-			</div>
+			<a class="header-consultations flex-item hidden-sm hidden-xs" href="/about">
+				<div class="header-consultations__button">CONSULTATIONS AVAILABLE</div>
+			</a>
 		</div>
 	</header>
 	<nav class="nav-container navbar" role="navigation">

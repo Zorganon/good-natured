@@ -21,8 +21,8 @@ get_header(); ?>
 		<?php astra_primary_content_top(); ?>
 
 		<main id="main" role="main">
-			<div class="content-container">
-			<div class="green-dashed-divider"></div>
+			<div class="container">
+				<div class="green-dashed-divider"></div>
 
 			<?php
 			while ( have_posts() ) :

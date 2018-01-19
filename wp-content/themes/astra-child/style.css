@@ -29,13 +29,6 @@ html {
   margin-right: auto;
 }
 
-.content-container{
-  background-color: white;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero-container{
   width: 100%;
   
@@ -72,20 +65,21 @@ html {
   color: #2F5658;
   background-color: #E7E7E7;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .desktop-title-bar__logo{
   max-height: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 .header-consultations{
   border: 2px solid #407375;
   height: 3.12rem;
-  box-sizing: border-box;
-  display: flex;
+	margin: auto;
+	width: 18.8rem;
+	display: flex;
 }
 
 .header-consultations__button{
@@ -96,9 +90,8 @@ html {
 	line-height: 24px;
 	text-align: center;
 	background-color: transparent;
-	margin: auto;
 	max-height: 80%;
-	width: 18.8rem;
+	margin: auto;
 }
 
 .nav-container{
