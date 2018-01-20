@@ -1,12 +1,12 @@
 <?php
 /**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "container" div.
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+* The template for displaying the header
+*
+* Displays all of the head element and everything up until the "container" div.
+*
+* @package FoundationPress
+* @since FoundationPress 1.0.0
+*/
 
 ?>
 <!doctype html>
@@ -36,6 +36,7 @@
 		<?php astra_content_top(); ?>
 		
 	<header class="full-width site-header" role="banner">
+		
 		<div class="desktop-title-bar title-bar flex-container">
 			<div class="desktop-title-bar__logo flex-item">
 				<image src="<?php echo real_upload_url(); ?>/gnnlogo.png"></image>
@@ -45,6 +46,7 @@
 			</div>
 		</div>
 	</header>
+	
 	<nav class="nav-container navbar" role="navigation">
 		
     <div class="navbar-header"> <!--mobile-button-container-->
@@ -64,4 +66,4 @@
 			</ul>
 		</div>	
 	</nav>
-
+	
