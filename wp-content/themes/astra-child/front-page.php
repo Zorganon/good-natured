@@ -9,6 +9,7 @@ get_header(); ?>
 <!-- Hero Slider -->
 		<div class="front-hero-container">
 			<image class="front-hero__image" src="<?php echo real_upload_url(); ?>/front-hero.png"></image>
+			<image class="front-hero-mobile__image" src="<?php echo real_upload_url(); ?>/front-hero-mobile.png"></image>
 		</div>
 <!-- end hero slider -->		
 		<div class="divider-container">
