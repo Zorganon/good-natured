@@ -14,6 +14,7 @@ function gnn_enqueue_styles() {
   wp_enqueue_style( 'recipes', get_stylesheet_directory_uri() . '/assets/css/recipes.css');
 }
 function gnn_enqueue_scripts() {
+  wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/assets/js/jquery-3.2.1.min.js');
   wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 }
 
