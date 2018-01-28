@@ -19,19 +19,12 @@
   src: url(wp-content/themes/astra-child/assets/fonts/Gloss_And_Bloom.ttf);
 }
 html {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .body-content-container{
   background-color: white;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content-container{
-  background-color: white;
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,20 +65,21 @@ html {
   color: #2F5658;
   background-color: #E7E7E7;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .desktop-title-bar__logo{
   max-height: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 .header-consultations{
   border: 2px solid #407375;
   height: 3.12rem;
-  box-sizing: border-box;
-  display: flex;
+	margin: auto;
+	width: 18.8rem;
+	display: flex;
 }
 
 .header-consultations__button{
@@ -96,9 +90,8 @@ html {
 	line-height: 24px;
 	text-align: center;
 	background-color: transparent;
-	margin: auto;
 	max-height: 80%;
-	width: 18.8rem;
+	margin: auto;
 }
 
 .nav-container{
@@ -407,4 +400,58 @@ html {
   flex-direction: column;
   justify-content: space-around;
   
+}
+
+
+.front-hero-mobile__image {
+  display: none;
+}
+
+
+  /*for mobile devices*/
+ 
+ 
+@media (max-width: 768px) {
+  
+  header {
+    display: none; 
+  }
+  
+  .front-hero__image {
+    display: none;
+  }
+  
+  .front-hero-mobile__image {
+    display: block;
+  }
+  
+  .navbar-nav {
+    position: fixed;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    flex-flow: column;
+    background-color: #00AAAF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    padding-top: 90px;
+    top: 0;
+    margin-top: 61px;
+    justify-content: start;
+  }
+  
+  .navbar-nav .site-navigation__button {
+    width: 100%;
+    border-top: 1px solid #00A2A8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .navbar-nav li:last-child .site-navigation__button {
+    border-bottom: 1px solid #00A2A8;
+  }
+ 
 }
