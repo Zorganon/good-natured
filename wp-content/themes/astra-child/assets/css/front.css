@@ -151,7 +151,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(http://natural-client-iamorganon.c9users.io/wp-content/uploads/paleo-table.jpg);
+  background-image: url(/wp-content/uploads/paleo-table.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 85vh;

@@ -441,6 +441,7 @@ html {
     top: 0;
     margin-top: 61px;
     justify-content: start;
+    z-index: 99;
   }
   
   .navbar-nav .site-navigation__button {
@@ -453,5 +454,97 @@ html {
   .navbar-nav li:last-child .site-navigation__button {
     border-bottom: 1px solid #00A2A8;
   }
+  
+  .frontpage-infocard-container {
+    flex-direction: column;
+  }
+  
+  .frontpage-infocard__title,
+  .frontpage-infocard__subtitle,
+  .frontpage-infocard__text p {
+    max-width: 100%;
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  .frontpage-infocard__button {
+    max-width: 100%;
+  }
  
+  .news-excerpt__container {
+    margin: 50px;
+    width: 76%;
+  }
+  
+  .news-excerpt__button-wrapper{
+    width: 10em;
+  }
+  
+  .about-janet-container {
+    flex-direction: column;
+  }
+  
+  .about-janet__text-box,
+  .about-janet__title,
+  .about-janet__text {
+    max-width: 100%;
+    padding: 5px;
+  }
+  
+  .unsure-blurb__text {
+    font-size: 1em;
+    margin: -20%;
+  }
+  
+  .price-tile__container, 
+  .post-page-grid-content {
+    display: inline;
+  }
+ 
+  .frontpage-infocard__content-box, 
+  .nutrition-consultations__text,
+  .therapy-benefits__container, 
+  .page-content-wrapper, 
+  .impact-container {
+    max-width: none;
+  }
+  
+  .impact__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .price-tile__title,
+  .price-tile__price,
+  .price-tile__description {
+    font-size: 1.8em;
+    padding: 10px;
+  }
+  
+  .news-slider__slider,
+  .impact-container {
+    display: block;
+  }
+  
+  .post-tile__img img {
+    padding: 10%;
+  }
+  
+  .short-underscore, 
+  .nutrition-consultations__image-wrapper, 
+  .nut-therapy__image-box {
+    display: none;
+  }
+  
+  .row {
+    margin: 10px 0px 10px -15px;
+  }
+  
+  .nutrition-consultations__textbox,
+  .nut-therapy__text-wrapper {
+    flex-basis: 100%;
+  }
+  
 }
+
