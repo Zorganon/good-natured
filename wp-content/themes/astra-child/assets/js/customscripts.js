@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $("#navbar").sticky({topSpacing:156});
+  $("#navbarsticky").sticky({topSpacing:0});
 });
