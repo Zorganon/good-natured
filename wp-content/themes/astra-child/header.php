@@ -47,7 +47,7 @@
 		</div>
 	</header>
 	
-	<nav class="nav-container navbar navbar-fixed-top" role="navigation">
+	<nav class="nav-container navbar navbar-fixed-top" role="navigation" id="navbar">
 		
     <div class="navbar-header"> <!--mobile-button-container-->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
