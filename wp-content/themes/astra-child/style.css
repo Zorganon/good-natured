@@ -74,22 +74,32 @@ html {
   margin: auto;
   max-width: 100%;
 }
+
 .header-consultations{
   border: 2px solid #407375;
   height: 3.12rem;
 	margin: auto;
 	width: 18.8rem;
 	display: flex;
+	justify-content: center;
+	color: #0C0033;
+	background-color: transparent;
+}
+.header-consultations:hover,
+.header-consultations:focus{
+  background-color: #CCD159;
+  color: white;
+  border-color: white;
 }
 
 .header-consultations__button{
+	color: inherit;
+	background-color: inherit;
 	opacity: 0.5;
-	color: #0C0033;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
-	background-color: transparent;
 	max-height: 80%;
 	margin: auto;
 }
@@ -408,8 +418,9 @@ html {
   display: none;
 }
 
-
-  /*for mobile devices*/
+/**************************************/
+/*******    for mobile devices   ******/
+/**************************************/
  
  
 @media (max-width: 768px) {
