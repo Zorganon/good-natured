@@ -1,3 +1,5 @@
+/* global $*/
+
 $(document).ready(function(){
-  $("#navbarsticky").sticky({topSpacing:0});
+  $("#navbarsticky").sticky({topSpacing:156});
 });
