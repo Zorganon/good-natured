@@ -198,10 +198,7 @@ th {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+  
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -1102,8 +1099,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #CCD159;
-  text-decoration: underline;
+  background-color: #CCD159;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
