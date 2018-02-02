@@ -97,6 +97,7 @@ html {
 .nav-container{
   background-color: #00AAAF;
   height: auto;
+  z-index: 99;
 }
 .navbar-nav{
   display: flex;
