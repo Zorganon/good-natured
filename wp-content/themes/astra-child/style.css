@@ -19,19 +19,12 @@
   src: url(wp-content/themes/astra-child/assets/fonts/Gloss_And_Bloom.ttf);
 }
 html {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .body-content-container{
   background-color: white;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content-container{
-  background-color: white;
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,38 +65,49 @@ html {
   color: #2F5658;
   background-color: #E7E7E7;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .desktop-title-bar__logo{
   max-height: 100%;
+  margin: auto;
+  max-width: 100%;
 }
+
 .header-consultations{
   border: 2px solid #407375;
   height: 3.12rem;
-  box-sizing: border-box;
-  display: flex;
+	margin: auto;
+	width: 18.8rem;
+	display: flex;
+	justify-content: center;
+	color: #0C0033;
+	background-color: transparent;
+}
+.header-consultations:hover,
+.header-consultations:focus{
+  background-color: #CCD159;
+  color: white;
+  border-color: white;
 }
 
 .header-consultations__button{
+	color: inherit;
+	background-color: inherit;
 	opacity: 0.5;
-	color: #0C0033;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
-	background-color: transparent;
-	margin: auto;
 	max-height: 80%;
-	width: 18.8rem;
+	margin: auto;
 }
 
 .nav-container{
   background-color: #00AAAF;
   height: auto;
+  z-index: 99;
 }
 .navbar-nav{
   display: flex;
@@ -423,8 +427,11 @@ html {
   color: white;
 }
 
-  /*for mobile devices*/
- 
+
+/**************************************/
+/*******    for mobile devices   ******/
+/**************************************/
+
  
 @media (max-width: 768px) {
   
