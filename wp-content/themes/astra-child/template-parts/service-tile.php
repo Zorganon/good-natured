@@ -2,7 +2,7 @@
 	<?php $args = array('post_type'=>'service'); ?>
 	<?php $sloop = new WP_Query($args); ?>
 	<?php while ($sloop->have_posts()) : $sloop->the_post(); ?>
-	<div class="price-tile column small-12 medium-3">
+	<a class="price-tile column small-12 medium-3" href="/contact">
 		<div class="price-tile__title">
 			<?php echo the_title(); ?>
 		</div>	
@@ -16,6 +16,6 @@
 		<div class="price-tile__description">
 			<?php echo the_content(); ?>
 		</div>
-	</div>
+	</a>
   <?php endwhile; ?>
 </div>
