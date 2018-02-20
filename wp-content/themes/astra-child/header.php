@@ -48,7 +48,7 @@
 	</header>
 	
 	<nav class="nav-container navbar" role="navigation">
-		
+		<image class="logo-mobile__image" src="<?php echo real_upload_url(); ?>/gnnlogo.png"></image>
     <div class="navbar-header"> <!--mobile-button-container-->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
