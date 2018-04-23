@@ -68,7 +68,10 @@ get_header(); ?>
 		<div class="news-excerpt__wrapper">
 			<?php get_template_part( 'template-parts/news', 'excerpt' ); ?>
 		</div>
-		<div class="fp-news-slider container">
+		<div class="fp-news-slider">
+			<a class="fp-news-slider-bar">
+				NEWS & VIEWS
+			</a>
 			<?php get_template_part( 'template-parts/news', 'slider' ); ?>
 		</div>
 	</div>

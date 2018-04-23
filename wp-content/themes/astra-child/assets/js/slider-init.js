@@ -7,6 +7,7 @@ jQuery(function($) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 2,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -42,6 +43,7 @@ jQuery(function($) {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1024,
