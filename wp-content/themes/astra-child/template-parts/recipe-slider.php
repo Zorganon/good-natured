@@ -1,4 +1,4 @@
-<div class="recipe-slider__slider">
+<div class="recipe-slider__slider" id="recipe-slider">
 	<?php $args = array('post_type'=>'recipe');
 
     $loop = new WP_Query($args);
@@ -21,3 +21,4 @@
     wp_reset_postdata();
     ?>
 </div>
+

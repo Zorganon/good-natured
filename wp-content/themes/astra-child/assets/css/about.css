@@ -119,10 +119,9 @@
 .price-tile__container{
   height: 600px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  align-content: center;
 }
+
 .price-tile__price{
   color: #CECECE;
   font-family: Clarendon;
@@ -144,8 +143,11 @@
 	font-weight: 300;
 	line-height: 32px;
 	text-align: center;
+	max-width: 100%;
 }
-
+a:price-tile{
+  background-color: white !important;
+}
 /*-----------therapy section --> */
 .therapy-benefits__container{
   height: 50rem;
@@ -220,5 +222,4 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }

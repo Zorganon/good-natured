@@ -15,15 +15,12 @@
 <head>
 <?php astra_head_top(); ?>
 <?php wp_head(); ?>
+<?php astra_head_bottom(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Average|Montserrat" rel="stylesheet">
-<link href="http://<?php echo get_stylesheet_directory_uri(); ?>/assets/fonts/Gloss_And_Bloom.ttf"/>
-<link rel="stylesheet" type="text/css" href="<?php echo content_url();?>/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="<?php echo content_url();?>/slick/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"/>
 
-<?php astra_head_bottom(); ?>
 </head>
 
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
