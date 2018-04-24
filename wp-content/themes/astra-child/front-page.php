@@ -68,7 +68,9 @@ get_header(); ?>
 		<div class="news-excerpt__wrapper">
 			<?php get_template_part( 'template-parts/news', 'excerpt' ); ?>
 		</div>
+		
 		<div class="extra-space"></div>
+		
 		<div class="slider-bar-title news-slider-title">
 			<a href="/news">
 			NEWS & VIEWS
@@ -77,12 +79,16 @@ get_header(); ?>
 		<div class="fp-news-slider">
 			<?php get_template_part( 'template-parts/news', 'slider' ); ?>
 		</div>
+		
+		<div class="extra-space"></div>
+		
 		<div class="slider-bar-title recipe-slider-title">
 			<a href="/recipes">RECIPES</a>
 		</div>
 		<div class="fp-recipe-slider">
 			<?php get_template_part( 'template-parts/recipe', 'slider' ); ?>
 		</div>
+		<div class="extra-space"></div>
 	</div>
 </div>
 <?php get_footer(); ?>

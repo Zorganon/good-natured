@@ -106,7 +106,7 @@ html {
 
 .nav-container{
   background-color: #00AAAF;
-  height: auto;
+  height: 3.3rem;
   z-index: 99;
 }
 .navbar-nav{
@@ -121,6 +121,7 @@ html {
 .site-navigation__button{
   box-sizing: border-box;
   width: 10rem;
+  height: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.5rem;
@@ -134,6 +135,8 @@ html {
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
   background-color: #CCD159;
   color: white;
+  margin-top: -1px;
+  margin-bottom: 3px;
 }
 
 
@@ -187,7 +190,36 @@ html {
   height: 5px;
   width: 60%;
   background-color: #2F5658;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.slider-bar-title{
+  text-align: center;
+  font-style: bold;
+  color: white;
+  background-color: #CCD159;
+  height: 3rem;
+  width: 80%;
+  margin: auto;
+}
+.slider-bar-title a{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+}
+.news-slider__slider{
+  max-width: 100%;
+}
+
+.extra-space{
+  height: 10vh;
+  width: 100%;
+}
+
 
 /************************************/
 /************************************/
