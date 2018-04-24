@@ -156,6 +156,7 @@ html {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -169,12 +170,13 @@ html {
 	font-size: 2.2rem;
 	line-height: 2.6rem;
 	text-align: center;  
-	margin: 1rem;
+	margin: auto;
 }
 .post-tile__img{
   height: 308px;
   width: 385px;
   overflow: hidden;
+  margin: auto;
 }
 
 .post-tile__img wp-post-image{
@@ -183,15 +185,18 @@ html {
 }
 .blue-line {
   height: 5px;
-  width: 100%;
+  width: 60%;
   background-color: #2F5658;
 }
+
 /************************************/
 /************************************/
 
 .front-hero-mobile__image {
   display: none;
 }
+
+
 
 /**************************************/
 /*******    for mobile devices   ******/
