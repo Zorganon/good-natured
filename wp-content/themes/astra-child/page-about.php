@@ -32,7 +32,7 @@ get_header(); ?>
 	    	</div>
 	    </div>
 	    <div class="about-janet__image">
-	    	<image src="<?php echo real_upload_url(); ?>/janet.jpg"></image>
+	    	<image class="about-janet__image-image" style="background-image: url('<?php echo real_upload_url(); ?>/janet.jpg');"></image>
 	    </div>
 	  </div>
 <!---- Large size divider text paragraph ---->	  
@@ -47,7 +47,7 @@ get_header(); ?>
 <!---- Nutrition Consultations Text Section -->	  
 	  <div class="nutrition-consultations__wrapper">
 	  	<div class="nutrition-consultations__image-wrapper">
-	  		<image class="nutrition-consultations__image" src="<?php echo real_upload_url(); ?>/veges.jpg"></image>
+	  		<image class="nutrition-consultations__image" style="background-image: url('<?php echo real_upload_url(); ?>/veges.jpg');"></image>
 	  	</div>
 	  	<div class="nutrition-consultations__textbox">
 	  		<div class="nutrition-consultations__text-title">NUTRITION CONSULTATIONS</div>

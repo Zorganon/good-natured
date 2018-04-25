@@ -1,6 +1,8 @@
 /*********************************************************/
 /************         ABOUT PAGE STYLES       ************/
 /*********************************************************/
+
+
 .about-hero-img__wrapper{
   min-height: 95vh;
 }
@@ -61,6 +63,15 @@
   display: flex;
 }
 
+.about-janet__image-image{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 .unsure-blurb-box{
   margin: 100px auto 100px auto;
   max-width: 70%;
@@ -88,8 +99,12 @@
   width: 50%;
 }
 .nutrition-consultations__image{
-  width: 50vw;
-  height: 790px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .nutrition-consultations__textbox{
   flex-basis: 50%;

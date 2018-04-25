@@ -6,10 +6,20 @@ get_header(); ?>
 
 <div class="page-container">
 	<div class="body-content-container">
-<!-- Hero Slider -->
-		<div class="front-hero-container">
-			<image class="front-hero__image" src="<?php echo real_upload_url(); ?>/front-hero.png"></image>
-			<image class="front-hero-mobile__image" src="<?php echo real_upload_url(); ?>/front-hero-mobile.png"></image>
+<!-- Hero Image -->
+		<div class="front-hero-wrapper" id="hero">
+			<div class="front-hero__image" style="background: #00AAAF url('<?php echo real_upload_url(); ?>/front-hero.png') no-repeat center center;">
+				<div class="front-hero__text-wrapper">
+					<div class="front-hero__title">
+						What is Nutritional Therapy?
+					</div>
+					<div class="front-hero__sub-title">
+						<p>The practice of establishing healthy food and lifestyle habits</p>
+					</div>
+					<a class="front-hero__button" href="/contact">BOOK A CONSULTATION</a>
+				</div>
+			</div>
+			<image class="front-hero-mobile__image" style="background: url('<?php echo real_upload_url(); ?>/front-hero-mobile.png') no-repeat center center;"></image>
 		</div>
 <!-- end hero slider -->		
 		<div class="divider-container">
