@@ -133,8 +133,13 @@
 } 
 .price-tile__container{
   height: 600px;
+}
+.price-tile-row{
+  width: 80%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  margin: auto;
 }
 
 .price-tile__price{
@@ -162,6 +167,7 @@
 }
 a:price-tile{
   background-color: white !important;
+  margin: auto;
 }
 /*-----------therapy section --> */
 .therapy-benefits__container{

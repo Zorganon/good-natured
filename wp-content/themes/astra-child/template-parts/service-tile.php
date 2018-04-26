@@ -1,5 +1,5 @@
 <div class="price-tile__container">
-	<div class="row">
+	<div class="row price-tile-row">
 		<?php $args = array('post_type'=>'service'); ?>
 		<?php $sloop = new WP_Query($args); ?>
 		<?php while ($sloop->have_posts()) : $sloop->the_post(); ?>

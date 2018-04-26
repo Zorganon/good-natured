@@ -41,28 +41,3 @@
 	margin-right: auto;
 }
 
-.news-slider__slider{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.post-tile__tile{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-.post-tile__-img{
-  
-}
-.post-tile__title{
-  color: #0C0033;
-  font-family: Average;
-  font-size: 2rem;
-  line-height: 2.6rem;	
-  text-align: center;
-  max-width: 85%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin: auto;
-}
-

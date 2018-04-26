@@ -50,8 +50,18 @@
 .front-hero__button{
   margin: auto;
   text-align: center;
-  border-color: white;
-  
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  height: 52px;
+  width: 302px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.front-hero__button:hover {
+  background-color: white;
+  color: black;
 }
 .divider-container{
   display: flex;
@@ -131,7 +141,10 @@
   max-width: 33%;
   background-color: transparent;
 }
-
+.frontpage-infocard__button:hover{
+  color: white;
+  background-color: #00AAAF;
+}
 /*   impact card */
 .impact-container{
   max-width: 70%;
@@ -251,13 +264,3 @@
   line-height: 1.5em;
 }
 
-.fp-news-slider {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.fp-recipe-slider{
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}

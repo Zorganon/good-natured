@@ -1,4 +1,4 @@
-<div class="news-slider__slider" id="news-slider">
+<div class="news-slider__slider slider-container" id="news-slider">
 	<?php $args = array('post_type'=>'post');
 
     $loop = new WP_Query($args);

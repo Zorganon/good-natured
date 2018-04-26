@@ -174,6 +174,13 @@ html {
 	line-height: 2.6rem;
 	text-align: center;  
 	margin: auto;
+	display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .post-tile__img{
   height: 308px;
@@ -194,31 +201,48 @@ html {
   margin-right: auto;
 }
 
+
+.extra-space{
+  height: 10vh;
+  width: 100%;
+}
+
+/************************************/
+/*********** sliders ****************/
+/************************************/
+
 .slider-bar-title{
   text-align: center;
-  font-style: bold;
+  font-weight: bold;
   color: white;
   background-color: #CCD159;
   height: 3rem;
   width: 80%;
   margin: auto;
+  line-height: 3rem;
 }
-.slider-bar-title a{
+
+.slider-title-button{
   color: white;
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: auto;
   margin-bottom: auto;
   height: 100%;
-}
-.news-slider__slider{
-  max-width: 100%;
+  min-width: 100%;
 }
 
-.extra-space{
-  height: 10vh;
-  width: 100%;
+.slider-wrapper {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.slider-container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 
 
 /************************************/

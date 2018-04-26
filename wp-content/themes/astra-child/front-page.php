@@ -16,7 +16,7 @@ get_header(); ?>
 					<div class="front-hero__sub-title">
 						<p>The practice of establishing healthy food and lifestyle habits</p>
 					</div>
-					<a class="front-hero__button" href="/contact">BOOK A CONSULTATION</a>
+					<a class="front-hero__button button" href="/contact">BOOK A CONSULTATION</a>
 				</div>
 			</div>
 			<image class="front-hero-mobile__image" style="background: url('<?php echo real_upload_url(); ?>/front-hero-mobile.png') no-repeat center center;"></image>
@@ -82,11 +82,11 @@ get_header(); ?>
 		<div class="extra-space"></div>
 		
 		<div class="slider-bar-title news-slider-title">
-			<a href="/news">
+			<a class="slider-title-button" href="/news">
 			NEWS & VIEWS
 			</a>
 		</div>
-		<div class="fp-news-slider">
+		<div class="fp-news-slider slider-wrapper">
 			<?php get_template_part( 'template-parts/news', 'slider' ); ?>
 		</div>
 		
@@ -95,7 +95,7 @@ get_header(); ?>
 		<div class="slider-bar-title recipe-slider-title">
 			<a href="/recipes">RECIPES</a>
 		</div>
-		<div class="fp-recipe-slider">
+		<div class="fp-recipe-slider slider-wrapper">
 			<?php get_template_part( 'template-parts/recipe', 'slider' ); ?>
 		</div>
 		<div class="extra-space"></div>
