@@ -6,9 +6,9 @@ get_header(); ?>
 
 <div class="page-container">
 	<div class="body-content-container">
-<!-- Hero Image -->
-		<div class="front-hero-wrapper" id="hero">
-			<div class="front-hero__image" style="background: #00AAAF url('<?php echo real_upload_url(); ?>/front-hero.png') no-repeat center center;">
+<!-- Hero Slider -->
+		<div class="front-hero-container">
+			<div class="front-hero__image" style="background-image: url('<?php echo real_upload_url(); ?>/front-hero.png');">
 				<div class="front-hero__text-wrapper">
 					<div class="front-hero__title">
 						What is Nutritional Therapy?
@@ -16,7 +16,7 @@ get_header(); ?>
 					<div class="front-hero__sub-title">
 						<p>The practice of establishing healthy food and lifestyle habits</p>
 					</div>
-					<a class="front-hero__button button" href="/contact">BOOK A CONSULTATION</a>
+					<a class="front-hero__button" href="/contact">BOOK A CONSULTATION</a>
 				</div>
 			</div>
 			<image class="front-hero-mobile__image" style="background: url('<?php echo real_upload_url(); ?>/front-hero-mobile.png') no-repeat center center;"></image>
@@ -82,11 +82,11 @@ get_header(); ?>
 		<div class="extra-space"></div>
 		
 		<div class="slider-bar-title news-slider-title">
-			<a class="slider-title-button" href="/news">
+			<a href="/news">
 			NEWS & VIEWS
 			</a>
 		</div>
-		<div class="fp-news-slider slider-wrapper">
+		<div class="fp-news-slider">
 			<?php get_template_part( 'template-parts/news', 'slider' ); ?>
 		</div>
 		
@@ -95,7 +95,7 @@ get_header(); ?>
 		<div class="slider-bar-title recipe-slider-title">
 			<a href="/recipes">RECIPES</a>
 		</div>
-		<div class="fp-recipe-slider slider-wrapper">
+		<div class="fp-recipe-slider">
 			<?php get_template_part( 'template-parts/recipe', 'slider' ); ?>
 		</div>
 		<div class="extra-space"></div>
